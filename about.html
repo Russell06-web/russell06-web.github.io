@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<script>
+(function () {
+  var t = localStorage.getItem("theme");
+  if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", t);
+  document.documentElement.setAttribute("data-lang", localStorage.getItem("lang") || "zh");
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About me — Russell 邱志綸</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Russell<span>.</span></a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav.about">About me</a></li>
+        <li class="has-dropdown">
+          <button class="nav-link-btn">Design <span class="nav-caret"></span></button>
+          <div class="nav-dropdown">
+            <a href="projects/volleyball-hub.html">Volleyball Hub<span class="dd-desc" data-i18n="nav.dd.volleyball">排球活動媒合平台</span></a>
+            <a href="projects/art-ticketing.html"><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span><span class="dd-desc" data-i18n="nav.dd.ticketing.desc">B2B 票務管理系統</span></a>
+            <a href="projects/taiwan-tourbus.html"><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span><span class="dd-desc" data-i18n="nav.dd.tourbus.desc">公共交通旅遊網站重設計</span></a>
+          </div>
+        </li>
+        <li><a href="graphic-design.html">Graphic Design</a></li>
+        <li><a href="about.html#contact" data-i18n="nav.more">More</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button type="button" class="lang-toggle" aria-label="Switch language">EN</button>
+        <button type="button" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+        </button>
+      </div>
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom: 40px;">
+  <div class="container">
+    <span class="eyebrow">About me</span>
+    <h1 data-i18n="about.h1">UI/UX 設計師，<br />也是流程整理者。</h1>
+    <p class="hero-lede" data-i18n="about.lede">Russell 是一位 UI/UX 設計師與產品設計學習者，擁有 5 年行政管理與跨部門協作經驗，專長包括整理複雜資訊、流程優化，以及從使用者角度設計易用的數位介面。</p>
+  </div>
+</header>
+
+<section class="section-tight" style="padding-top:0;">
+  <div class="container about-grid">
+    <div>
+      <h2 data-i18n="about.method.h2">設計方法論</h2>
+      <div class="process-strip" style="grid-template-columns: 1fr; margin-top: 24px;">
+        <div class="step">
+          <span class="num">01</span>
+          <h3 data-i18n="about.method.1.title">理解問題</h3>
+          <p data-i18n="about.method.1.desc">透過研究工具理解使用者問題與情境。</p>
+        </div>
+        <div class="step">
+          <span class="num">02</span>
+          <h3 data-i18n="about.method.2.title">結構化資訊</h3>
+          <p data-i18n="about.method.2.desc">將分散資訊轉化為清晰的結構與流程。</p>
+        </div>
+        <div class="step">
+          <span class="num">03</span>
+          <h3 data-i18n="about.method.3.title">降低操作難度</h3>
+          <p data-i18n="about.method.3.desc">透過回應式設計與原型開發降低操作難度。</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 data-i18n="about.exp.h2">職業經歷</h2>
+      <ul class="timeline">
+        <li>
+          <span class="period">2019 — 2024</span>
+          <div class="role" data-i18n="about.exp.1.role">國立臺灣藝術大學 · 行政管理專員</div>
+          <p data-i18n="about.exp.1.desc">負責流程協調與專案管理。</p>
+        </li>
+        <li>
+          <span class="period">2024</span>
+          <div class="role" data-i18n="about.exp.2.role">動物醫院 · 獸醫助理</div>
+          <p data-i18n="about.exp.2.desc">培養應變與同理溝通能力。</p>
+        </li>
+        <li>
+          <span class="period">2024 — 2025</span>
+          <div class="role" data-i18n="about.exp.3.role">排球系隊 · 總教練</div>
+          <p data-i18n="about.exp.3.desc">發展使用者觀察與團隊協作能力。</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container about-grid">
+    <div>
+      <h2 data-i18n="about.skills.h2">技能範疇</h2>
+      <div class="skill-cloud">
+        <span class="tag">User Research</span>
+        <span class="tag">Wireframe</span>
+        <span class="tag">Responsive Design</span>
+        <span class="tag">Design System</span>
+        <span class="tag">Figma</span>
+        <span class="tag">Adobe Creative Suite</span>
+        <span class="tag">HTML / CSS</span>
+      </div>
+
+      <h2 style="margin-top:40px;" data-i18n="about.edu.h2">教育背景</h2>
+      <ul class="info-list">
+        <li><span>2025</span><span data-i18n="about.edu.1">UI/UX 專業實訓課程</span></li>
+        <li><span data-i18n="about.edu.2.school">臺灣藝術大學</span><span data-i18n="about.edu.2.degree">美術系學位</span></li>
+      </ul>
+    </div>
+
+    <div id="contact">
+      <h2 data-i18n="about.contact.h2">聯絡資訊</h2>
+      <ul class="info-list">
+        <li><span>Email</span><span>william228sys@gmail.com</span></li>
+        <li><span data-i18n="about.contact.location.label">位置</span><span data-i18n="about.contact.location.value">台灣桃園</span></li>
+      </ul>
+      <div class="btn-row">
+        <a href="mailto:william228sys@gmail.com" class="btn btn-primary" data-i18n="about.contact.btn">寄信給我</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="mailto:william228sys@gmail.com">william228sys@gmail.com</a>
+      <a href="index.html" data-i18n="nav.home">首頁</a>
+      <a href="graphic-design.html">Graphic Design</a>
+    </div>
+    <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

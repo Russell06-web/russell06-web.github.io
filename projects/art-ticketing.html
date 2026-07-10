@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<script>
+(function () {
+  var t = localStorage.getItem("theme");
+  if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", t);
+  document.documentElement.setAttribute("data-lang", localStorage.getItem("lang") || "zh");
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>藝文票務管理後台 — Russell 邱志綸</title>
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">Russell<span>.</span></a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="../index.html" data-i18n="nav.home">首頁</a></li>
+        <li><a href="../about.html" data-i18n="nav.about">About me</a></li>
+        <li class="has-dropdown">
+          <button class="nav-link-btn active">Design <span class="nav-caret"></span></button>
+          <div class="nav-dropdown">
+            <a href="volleyball-hub.html">Volleyball Hub<span class="dd-desc" data-i18n="nav.dd.volleyball">排球活動媒合平台</span></a>
+            <a href="art-ticketing.html" class="active"><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span><span class="dd-desc" data-i18n="nav.dd.ticketing.desc">B2B 票務管理系統</span></a>
+            <a href="taiwan-tourbus.html"><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span><span class="dd-desc" data-i18n="nav.dd.tourbus.desc">公共交通旅遊網站重設計</span></a>
+          </div>
+        </li>
+        <li><a href="../graphic-design.html">Graphic Design</a></li>
+        <li><a href="../about.html#contact" data-i18n="nav.more">More</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button type="button" class="lang-toggle" aria-label="Switch language">EN</button>
+        <button type="button" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+        </button>
+      </div>
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="case-hero">
+  <div class="container">
+    <span class="eyebrow">Case Study · Admin Dashboard</span>
+    <h1 data-i18n="nav.dd.ticketing.title">藝文票務管理後台</h1>
+    <p class="hero-lede" data-i18n="tk.lede">B2B 票務管理系統，聚焦高資訊密度下的 Dashboard、票券管理、客服退票與高風險操作防呆，協助藝文場館營運團隊有效率地管理活動與訂單。</p>
+
+    <blockquote class="case-quote" data-i18n="tk.quote">在高資訊密度的後台裡，替每一個高風險操作加上防呆。</blockquote>
+
+    <dl class="case-meta">
+      <div><dt data-i18n="case.role.label">角色</dt><dd data-i18n="case.role.value">UI/UX 設計（個人專案）</dd></div>
+      <div><dt data-i18n="case.tools.label">工具</dt><dd>Figma</dd></div>
+      <div><dt data-i18n="case.timeline.label">時程</dt><dd>2025</dd></div>
+    </dl>
+    <div class="tag-row">
+      <span class="tag">Dashboard UI</span>
+      <span class="tag">Admin System</span>
+      <span class="tag">B2B SaaS</span>
+    </div>
+
+    <div class="case-hero-image">
+      <img src="../assets/images/ticketing/hero.jpg" alt="藝文票務管理後台儀表板" />
+    </div>
+  </div>
+</header>
+
+<section class="case-section">
+  <div class="container">
+    <h2 data-i18n="case.section.background">專案背景</h2>
+    <p class="lede" data-i18n="tk.background">藝文場館的營運人員每天要處理大量活動、票券與客訴資料。後台系統若資訊架構不清楚，容易造成操作失誤，尤其是退換票這類高風險、不可逆的操作。這個專案希望在高資訊密度的介面中，仍維持清楚的層級與安全的操作防呆機制。</p>
+
+    <div class="process-strip">
+      <div class="step">
+        <span class="num" data-i18n="case.problem.1">問題一</span>
+        <h3 data-i18n="tk.problem.1.title">資訊密度高</h3>
+        <p data-i18n="tk.problem.1.desc">儀表板需同時呈現營收、售票、活動與會員數據，容易造成視覺負擔。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.problem.2">問題二</span>
+        <h3 data-i18n="tk.problem.2.title">高風險操作</h3>
+        <p data-i18n="tk.problem.2.desc">退換票、資源回收桶等操作一旦誤觸，會直接影響營收與顧客體驗。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.problem.3">問題三</span>
+        <h3 data-i18n="tk.problem.3.title">模組眾多</h3>
+        <p data-i18n="tk.problem.3.desc">從活動管理到系統設定橫跨十餘個模組，需要清楚的側邊導覽與分類。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 data-i18n="case.section.process">流程與線框</h2>
+    <p class="lede" data-i18n="tk.process.desc">在進入視覺設計前，先透過流程圖釐清票務核心流程，並用 wireframe 確認資訊層級與版位配置。</p>
+
+    <div class="shot-gallery">
+      <figure>
+        <div class="frame"><img src="../assets/images/ticketing/flow.jpg" alt="活動票務核心流程圖" /></div>
+        <figcaption data-i18n="tk.shot.flow">活動票務核心流程 — 從活動建立到售票、退換票的完整流程</figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="../assets/images/ticketing/wireframe-dashboard.jpg" alt="儀表板 wireframe" /></div>
+        <figcaption data-i18n="tk.shot.wireframeDashboard">儀表板 wireframe — 先確認數據卡片與圖表的資訊優先順序</figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="../assets/images/ticketing/wireframe-ticketing.jpg" alt="票務管理 wireframe" /></div>
+        <figcaption data-i18n="tk.shot.wireframeTicketing">票務管理 wireframe — 規劃表格欄位與批次操作的版位</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 data-i18n="case.section.screens">關鍵畫面</h2>
+    <p class="lede" data-i18n="tk.screens.desc">將流程與線框落地為完整視覺設計，並在退換票等高風險流程中加入明確的確認機制。</p>
+
+    <div class="shot-gallery">
+      <figure>
+        <div class="frame"><img src="../assets/images/ticketing/ticket-manage.jpg" alt="票券管理畫面" /></div>
+        <figcaption data-i18n="tk.shot.ticketManage">票券管理 — 表格化呈現票券狀態，支援批次操作</figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="../assets/images/ticketing/refund.jpg" alt="客服中心退換票處理畫面" /></div>
+        <figcaption data-i18n="tk.shot.refund">客服中心 · 退換票處理 — 高風險操作加入二次確認防呆</figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="../assets/images/ticketing/members.jpg" alt="會員管理畫面" /></div>
+        <figcaption data-i18n="tk.shot.members">會員管理 — 整合會員資料與消費紀錄</figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="../assets/images/ticketing/marketing.jpg" alt="行銷工具精準推播畫面" /></div>
+        <figcaption data-i18n="tk.shot.marketing">行銷工具 · 精準推播 — 依會員標籤設定推播條件</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 data-i18n="case.section.outcome">成果與反思</h2>
+    <p class="lede" data-i18n="tk.outcome">這個專案讓我更理解如何在資訊密度高的 B2B 後台中，透過分層資訊架構、清楚的側邊導覽與防呆確認機制，降低操作人員的認知負擔與誤觸風險，同時維持系統的專業感與可信度。</p>
+  </div>
+</section>
+
+<nav class="case-nav">
+  <a href="volleyball-hub.html"><span class="dir">← Previous Case</span>Volleyball Hub</a>
+  <a href="taiwan-tourbus.html" class="next"><span class="dir">Next Case</span><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span></a>
+</nav>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-links">
+      <a href="mailto:william228sys@gmail.com">william228sys@gmail.com</a>
+      <a href="../index.html" data-i18n="nav.home">首頁</a>
+      <a href="../graphic-design.html">Graphic Design</a>
+    </div>
+    <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
+  </div>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
