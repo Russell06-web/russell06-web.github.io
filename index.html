@@ -1,152 +1,370 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8" />
-<script>
-(function () {
-  var t = localStorage.getItem("theme");
-  if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  document.documentElement.setAttribute("data-theme", t);
-  document.documentElement.setAttribute("data-lang", localStorage.getItem("lang") || "zh");
-})();
-</script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Russell 邱志綸 — UI/UX Designer Portfolio</title>
-<meta name="description" content="Russell 邱志綸的 UI/UX 作品集，以使用者需求為核心，透過研究、流程規劃與介面設計解決產品體驗問題。" />
-<link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Russell Chiu｜UI/UX Designer</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      color: #171717;
+      background: #f7f7f4;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 6%;
+      background: rgba(247, 247, 244, 0.92);
+      border-bottom: 1px solid #d8d8d2;
+      backdrop-filter: blur(12px);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    main {
+      width: min(1120px, 88%);
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
+      margin-bottom: 16px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 900px;
+      font-size: clamp(48px, 9vw, 112px);
+      line-height: 0.96;
+      letter-spacing: -0.06em;
+    }
+
+    .hero-description {
+      max-width: 650px;
+      margin-top: 32px;
+      font-size: 20px;
+      color: #555;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 1px solid #171717;
+      border-radius: 999px;
+      transition: 0.2s ease;
+    }
+
+    .button.primary {
+      color: #fff;
+      background: #171717;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 96px 0;
+      border-top: 1px solid #d8d8d2;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      font-size: clamp(32px, 5vw, 56px);
+      letter-spacing: -0.04em;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .project-card {
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 32px;
+      border: 1px solid #cacac4;
+      border-radius: 24px;
+      background: #fff;
+      transition: 0.25s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .project-number {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .project-card h3 {
+      margin-bottom: 12px;
+      font-size: 30px;
+    }
+
+    .project-card p {
+      color: #666;
+    }
+
+    .project-link {
+      margin-top: 24px;
+      font-weight: 700;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 64px;
+    }
+
+    .about-grid p {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #4f4f4f;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      padding: 10px 16px;
+      border: 1px solid #bbb;
+      border-radius: 999px;
+      background: #fff;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      max-width: 580px;
+      margin: 0 auto 28px;
+      color: #555;
+      font-size: 18px;
+    }
+
+    footer {
+      padding: 32px 6%;
+      border-top: 1px solid #d8d8d2;
+      color: #666;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        gap: 12px;
+        font-size: 14px;
+      }
+
+      .projects,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 70vh;
+      }
+
+      section {
+        padding: 72px 0;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <nav>
+    <strong>Russell Chiu</strong>
 
-<nav class="site-nav">
-  <div class="container nav-inner">
-    <a href="index.html" class="nav-logo">Russell<span>.</span></a>
-    <div class="nav-right">
-      <ul class="nav-links">
-        <li><a href="index.html" class="active" data-i18n="nav.home">首頁</a></li>
-        <li><a href="about.html" data-i18n="nav.about">About me</a></li>
-        <li class="has-dropdown">
-          <button class="nav-link-btn">Design <span class="nav-caret"></span></button>
-          <div class="nav-dropdown">
-            <a href="projects/volleyball-hub.html">Volleyball Hub<span class="dd-desc" data-i18n="nav.dd.volleyball">排球活動媒合平台</span></a>
-            <a href="projects/art-ticketing.html"><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span><span class="dd-desc" data-i18n="nav.dd.ticketing.desc">B2B 票務管理系統</span></a>
-            <a href="projects/taiwan-tourbus.html"><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span><span class="dd-desc" data-i18n="nav.dd.tourbus.desc">公共交通旅遊網站重設計</span></a>
-          </div>
-        </li>
-        <li><a href="graphic-design.html">Graphic Design</a></li>
-        <li><a href="about.html#contact" data-i18n="nav.more">More</a></li>
-      </ul>
-      <div class="nav-controls">
-        <button type="button" class="lang-toggle" aria-label="Switch language">EN</button>
-        <button type="button" class="theme-toggle" aria-label="Toggle dark mode">
-          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
-        </button>
+    <ul>
+      <li><a href="#work">作品</a></li>
+      <li><a href="#about">關於我</a></li>
+      <li><a href="#contact">聯絡</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <p class="eyebrow">UI/UX Designer · Product Designer</p>
+
+      <h1>讓複雜資訊變得清楚、好用。</h1>
+
+      <p class="hero-description">
+        我是 Russell，專注於使用者流程、資訊架構、後台系統與介面設計，
+        致力於把複雜問題轉換成容易理解與操作的產品體驗。
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="#work">查看作品</a>
+        <a class="button" href="#contact">聯絡我</a>
       </div>
-      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</nav>
+    </header>
 
-<header class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow">UI / UX Designer · Product Design Portfolio</span>
-      <h1 class="hero-title" data-i18n="home.name">Russell 邱志綸</h1>
-      <p class="hero-lede" data-i18n="home.lede">以使用者需求為核心，透過研究、流程規劃與介面設計，解決產品體驗中的資訊混亂、操作不順與決策成本問題。</p>
-      <div class="btn-row">
-        <a href="about.html" class="btn btn-primary" data-i18n="home.btn.about">認識我</a>
-        <a href="#work" class="btn btn-ghost" data-i18n="home.btn.work">看作品</a>
+    <section id="work">
+      <h2>Selected Works</h2>
+
+      <div class="projects">
+        <article class="project-card">
+          <span class="project-number">01</span>
+
+          <div>
+            <h3>Volleyball Hub</h3>
+            <p>
+              排球活動搜尋與報名平台，透過程度篩選、地圖搜尋與適合度匹配，
+              改善使用者找到合適活動的效率。
+            </p>
+
+            <div class="project-link">查看專案 →</div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">02</span>
+
+          <div>
+            <h3>藝文票務後台</h3>
+            <p>
+              以訂單、會員、活動與客服管理為核心的 Dashboard，
+              著重資訊架構、狀態設計與元件一致性。
+            </p>
+
+            <div class="project-link">查看專案 →</div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">03</span>
+
+          <div>
+            <h3>馬雅文化網站</h3>
+            <p>
+              博物館展覽導覽網站，整合展區資訊、語音導覽、展品索引與收藏功能。
+            </p>
+
+            <div class="project-link">查看專案 →</div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">04</span>
+
+          <div>
+            <h3>更多作品</h3>
+            <p>
+              包含預約系統、後台管理介面、產品流程與介面設計練習。
+            </p>
+
+            <div class="project-link">持續更新中</div>
+          </div>
+        </article>
       </div>
-    </div>
-    <div class="hero-visual" aria-hidden="true">
-      <div class="hero-shot hero-shot-1"><img src="assets/images/tourbus/app-home.jpg" alt="" /></div>
-      <div class="hero-shot hero-shot-2"><img src="assets/images/ticketing/hero.jpg" alt="" /></div>
-      <div class="hero-shot hero-shot-3"><img src="assets/images/volleyball/home.jpg" alt="" /></div>
-    </div>
-  </div>
-</header>
+    </section>
 
-<section id="work">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Selected Work</span>
-      <h2 data-i18n="home.work.h2">三個設計案例</h2>
-      <p data-i18n="home.work.desc">從行動端到後台管理系統，涵蓋研究、資訊架構到高保真原型。</p>
-    </div>
+    <section id="about">
+      <div class="about-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>關於我</h2>
+        </div>
 
-    <div class="project-grid">
-      <a class="project-card" href="projects/volleyball-hub.html">
-        <div class="thumb"><img src="assets/images/volleyball/home.jpg" alt="Volleyball Hub 首頁畫面" loading="lazy" /></div>
-        <div class="card-body">
-          <h3>Volleyball Hub</h3>
-          <p data-i18n="home.card.volleyball.desc">排球活動媒合平台，協助球友依照地點、時間與技能等級快速找到適合的活動。</p>
-          <div class="tag-row">
-            <span class="tag">UX Research</span>
-            <span class="tag">User Flow</span>
-            <span class="tag">Mobile App</span>
-            <span class="tag">Prototype</span>
+        <div>
+          <p>
+            我畢業於國立臺灣藝術大學美術學系，並完成 430 小時 UI/UX
+            專業技術訓練。
+          </p>
+
+          <p>
+            過去的行政管理、教學與團隊合作經驗，使我擅長整理資訊、
+            釐清需求，並在設計與實際執行之間建立清楚的溝通方式。
+          </p>
+
+          <div class="skills">
+            <span class="skill">Figma</span>
+            <span class="skill">User Flow</span>
+            <span class="skill">Wireframe</span>
+            <span class="skill">Prototype</span>
+            <span class="skill">Design System</span>
+            <span class="skill">Dashboard UI</span>
+            <span class="skill">RWD</span>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>一起創造更清楚的產品體驗</h2>
+
+      <p>
+        目前正在尋找 UI/UX Designer、Product Designer
+        與產品介面設計相關機會。
+      </p>
+
+      <a class="button primary" href="mailto:你的Email">
+        寄信給我
       </a>
+    </section>
+  </main>
 
-      <a class="project-card" href="projects/art-ticketing.html">
-        <div class="thumb"><img src="assets/images/ticketing/hero.jpg" alt="藝文票務管理後台儀表板畫面" loading="lazy" /></div>
-        <div class="card-body">
-          <h3 data-i18n="home.card.ticketing.title">藝文票務管理後台</h3>
-          <p data-i18n="home.card.ticketing.desc">B2B 票務管理系統，聚焦高資訊密度下的 Dashboard、票券管理、客服退票與高風險操作防呆。</p>
-          <div class="tag-row">
-            <span class="tag">Dashboard UI</span>
-            <span class="tag">Admin System</span>
-            <span class="tag">Data Table</span>
-            <span class="tag">B2B SaaS</span>
-          </div>
-        </div>
-      </a>
-
-      <a class="project-card" href="projects/taiwan-tourbus.html">
-        <div class="thumb"><img src="assets/images/tourbus/app-home.jpg" alt="台灣好行 RWD 網站首頁畫面" loading="lazy" /></div>
-        <div class="card-body">
-          <h3 data-i18n="home.card.tourbus.title">台灣好行 RWD</h3>
-          <p data-i18n="home.card.tourbus.desc">公共交通旅遊網站重設計，改善旅客查找時刻表、路線、票價與景點資訊的效率。</p>
-          <div class="tag-row">
-            <span class="tag">RWD Design</span>
-            <span class="tag">Public Service</span>
-            <span class="tag">Information Architecture</span>
-            <span class="tag">Accessibility</span>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section-tight">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Graphic Design</span>
-      <h2 data-i18n="home.gd.h2">平面設計作品</h2>
-      <p data-i18n="home.gd.desc">持續整理中，收錄海報、視覺識別與排版相關作品。</p>
-    </div>
-    <div class="btn-row" style="margin-top:0;">
-      <a href="graphic-design.html" class="btn btn-ghost" data-i18n="home.gd.cta">前往查看 →</a>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-links">
-      <a href="mailto:william228sys@gmail.com">william228sys@gmail.com</a>
-      <a href="about.html" data-i18n="nav.about">About me</a>
-      <a href="graphic-design.html">Graphic Design</a>
-    </div>
-    <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
-  </div>
-</footer>
-
-<script src="js/i18n.js"></script>
-<script src="js/main.js"></script>
+  <footer>
+    © 2026 Russell Chiu. Designed and built by Russell.
+  </footer>
 </body>
 </html>
