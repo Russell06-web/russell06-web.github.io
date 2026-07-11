@@ -15,24 +15,25 @@
 <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+<a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳至主要內容</a>
 
 <nav class="site-nav">
   <div class="container nav-inner">
     <a href="../index.html" class="nav-logo">Russell<span>.</span></a>
     <div class="nav-right">
-      <ul class="nav-links">
+      <ul class="nav-links" id="primary-nav">
         <li><a href="../index.html" data-i18n="nav.home">首頁</a></li>
-        <li><a href="../about.html" data-i18n="nav.about">About me</a></li>
         <li class="has-dropdown">
-          <button class="nav-link-btn active">Design <span class="nav-caret"></span></button>
-          <div class="nav-dropdown">
+          <button class="nav-link-btn active" aria-expanded="false" aria-controls="work-dropdown"><span data-i18n="nav.work">作品案例</span> <span class="nav-caret"></span></button>
+          <div class="nav-dropdown" id="work-dropdown">
             <a href="volleyball-hub.html">Volleyball Hub<span class="dd-desc" data-i18n="nav.dd.volleyball">排球活動媒合平台</span></a>
             <a href="art-ticketing.html"><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span><span class="dd-desc" data-i18n="nav.dd.ticketing.desc">B2B 票務管理系統</span></a>
             <a href="taiwan-tourbus.html" class="active"><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span><span class="dd-desc" data-i18n="nav.dd.tourbus.desc">公共交通旅遊網站重設計</span></a>
           </div>
         </li>
-        <li><a href="../graphic-design.html">Graphic Design</a></li>
-        <li><a href="../about.html#contact" data-i18n="nav.more">More</a></li>
+        <li><a href="../about.html" data-i18n="nav.about">關於我</a></li>
+        <li><a href="../about.html#experience" data-i18n="nav.resume">履歷</a></li>
+        <li><a href="../about.html#contact" data-i18n="nav.contact">聯絡我</a></li>
       </ul>
       <div class="nav-controls">
         <button type="button" class="lang-toggle" aria-label="Switch language">EN</button>
@@ -41,33 +42,34 @@
           <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
         </button>
       </div>
-      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </nav>
 
+<main id="main-content">
 <header class="case-hero">
   <div class="container">
-    <span class="eyebrow">Case Study · Responsive Website</span>
-    <h1 data-i18n="nav.dd.tourbus.title">台灣好行 RWD</h1>
-    <p class="hero-lede" data-i18n="tb.lede">公共交通旅遊網站重設計，改善旅客查找時刻表、路線、票價與景點資訊的效率，並確保在手機、平板與桌機都有一致且易用的體驗。</p>
+    <span class="eyebrow reveal">Case Study · Responsive Website</span>
+    <h1 class="reveal" data-i18n="nav.dd.tourbus.title">台灣好行 RWD</h1>
+    <p class="hero-lede reveal" data-i18n="tb.lede">公共交通旅遊網站重設計，改善旅客查找時刻表、路線、票價與景點資訊的效率，並確保在手機、平板與桌機都有一致且易用的體驗。</p>
 
-    <blockquote class="case-quote" data-i18n="tb.quote">同一套設計語言，跨手機、平板、桌機說同一個故事。</blockquote>
+    <blockquote class="case-quote reveal" data-i18n="tb.quote">同一套設計語言，跨手機、平板、桌機說同一個故事。</blockquote>
 
-    <dl class="case-meta">
+    <dl class="case-meta reveal">
       <div><dt data-i18n="case.role.label">角色</dt><dd data-i18n="case.role.value">UI/UX 設計（個人專案）</dd></div>
       <div><dt data-i18n="case.tools.label">工具</dt><dd>Figma</dd></div>
       <div><dt data-i18n="case.timeline.label">時程</dt><dd>2025</dd></div>
     </dl>
-    <div class="tag-row">
+    <div class="tag-row reveal">
       <span class="tag">RWD Design</span>
       <span class="tag">Public Service</span>
       <span class="tag">Accessibility</span>
     </div>
 
-    <div class="case-hero-image">
+    <div class="case-hero-image reveal">
       <img src="../assets/images/tourbus/hero.jpg" alt="台灣好行 RWD 網站整體呈現" />
     </div>
   </div>
@@ -75,10 +77,10 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 data-i18n="case.section.background">專案背景</h2>
-    <p class="lede" data-i18n="tb.background">台灣好行是提供旅客串連景點的公共交通服務，原網站在手機上查找時刻表、路線與票價時，容易因為版面擁擠與資訊層級不清而降低效率。這個重設計專案希望以旅客的查找流程為主軸，重新規劃資訊架構與跨裝置的版面配置。</p>
+    <h2 class="reveal" data-i18n="case.section.background">專案背景</h2>
+    <p class="lede reveal" data-i18n="tb.background">台灣好行是提供旅客串連景點的公共交通服務，原網站在手機上查找時刻表、路線與票價時，容易因為版面擁擠與資訊層級不清而降低效率。這個重設計專案希望以旅客的查找流程為主軸，重新規劃資訊架構與跨裝置的版面配置。</p>
 
-    <div class="process-strip">
+    <div class="process-strip reveal">
       <div class="step">
         <span class="num" data-i18n="case.problem.1">問題一</span>
         <h3 data-i18n="tb.problem.1.title">跨裝置體驗不一致</h3>
@@ -100,22 +102,22 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 data-i18n="tb.devices.h2">跨裝置呈現</h2>
-    <p class="lede" data-i18n="tb.devices.desc">同一套設計系統延伸至手機、平板與筆電，確保資訊架構與視覺語彙一致。</p>
+    <h2 class="reveal" data-i18n="tb.devices.h2">跨裝置呈現</h2>
+    <p class="lede reveal" data-i18n="tb.devices.desc">同一套設計系統延伸至手機、平板與筆電，確保資訊架構與視覺語彙一致。</p>
 
-    <div class="shot-gallery wide">
+    <div class="shot-gallery wide reveal">
       <figure>
         <div class="frame"><img src="../assets/images/tourbus/macbook.jpg" alt="台灣好行網站於筆電呈現" /></div>
         <figcaption data-i18n="tb.shot.macbook">桌機版 — 完整呈現路線地圖與時刻表篩選</figcaption>
       </figure>
     </div>
-    <div class="shot-gallery">
+    <div class="shot-gallery reveal">
       <figure>
         <div class="frame"><img src="../assets/images/tourbus/ipad.jpg" alt="台灣好行網站於平板呈現" /></div>
         <figcaption data-i18n="tb.shot.ipad">平板版 — 保留地圖操作性的同時精簡側欄資訊</figcaption>
       </figure>
       <figure>
-        <div class="frame"><img src="../assets/images/tourbus/app-home.jpg" alt="手機版首頁" /></div>
+        <div class="frame frame--tall"><img src="../assets/images/tourbus/app-home.jpg" alt="手機版首頁" /></div>
         <figcaption data-i18n="tb.shot.appHome">手機版首頁 — 以卡片呈現熱門路線與最新消息</figcaption>
       </figure>
     </div>
@@ -124,12 +126,12 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 data-i18n="case.section.screens">關鍵畫面</h2>
-    <p class="lede" data-i18n="tb.screens.desc">路線查詢、景點介紹到購票專區，皆以清楚的資訊層級降低旅客查找成本。</p>
+    <h2 class="reveal" data-i18n="case.section.screens">關鍵畫面</h2>
+    <p class="lede reveal" data-i18n="tb.screens.desc">路線查詢、景點介紹到購票專區，皆以清楚的資訊層級降低旅客查找成本。</p>
 
-    <div class="shot-gallery">
+    <div class="shot-gallery reveal">
       <figure>
-        <div class="frame"><img src="../assets/images/tourbus/app-route.jpg" alt="路線查詢頁面" /></div>
+        <div class="frame frame--square"><img src="../assets/images/tourbus/app-route.jpg" alt="路線查詢頁面" /></div>
         <figcaption data-i18n="tb.shot.route">路線查詢 — 依站點快速篩選班次與票價</figcaption>
       </figure>
       <figure>
@@ -146,8 +148,8 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 data-i18n="case.section.outcome">成果與反思</h2>
-    <p class="lede" data-i18n="tb.outcome">透過重新規劃資訊架構，並針對不同裝置調整版面而非單純縮放，使旅客在手機上也能快速完成查找路線與購票等任務。這個專案也讓我更重視公共服務類網站在可及性與資訊層級上的責任。</p>
+    <h2 class="reveal" data-i18n="case.section.outcome">成果與反思</h2>
+    <p class="lede reveal" data-i18n="tb.outcome">透過重新規劃資訊架構，並針對不同裝置調整版面而非單純縮放，使旅客在手機上也能快速完成查找路線與購票等任務。這個專案也讓我更重視公共服務類網站在可及性與資訊層級上的責任。</p>
   </div>
 </section>
 
@@ -155,6 +157,7 @@
   <a href="art-ticketing.html"><span class="dir">← Previous Case</span><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span></a>
   <a href="../index.html" class="next"><span class="dir">Back to</span><span data-i18n="case.nav.allWork">所有作品</span></a>
 </nav>
+</main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
@@ -162,6 +165,7 @@
       <a href="mailto:william228sys@gmail.com">william228sys@gmail.com</a>
       <a href="../index.html" data-i18n="nav.home">首頁</a>
       <a href="../graphic-design.html">Graphic Design</a>
+      <a href="../about.html#contact" data-i18n="nav.contact">聯絡我</a>
     </div>
     <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
   </div>

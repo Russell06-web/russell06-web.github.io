@@ -15,24 +15,25 @@
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+<a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳至主要內容</a>
 
 <nav class="site-nav">
   <div class="container nav-inner">
     <a href="index.html" class="nav-logo">Russell<span>.</span></a>
     <div class="nav-right">
-      <ul class="nav-links">
+      <ul class="nav-links" id="primary-nav">
         <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
-        <li><a href="about.html" class="active" data-i18n="nav.about">About me</a></li>
         <li class="has-dropdown">
-          <button class="nav-link-btn">Design <span class="nav-caret"></span></button>
-          <div class="nav-dropdown">
+          <button class="nav-link-btn" aria-expanded="false" aria-controls="work-dropdown"><span data-i18n="nav.work">作品案例</span> <span class="nav-caret"></span></button>
+          <div class="nav-dropdown" id="work-dropdown">
             <a href="projects/volleyball-hub.html">Volleyball Hub<span class="dd-desc" data-i18n="nav.dd.volleyball">排球活動媒合平台</span></a>
             <a href="projects/art-ticketing.html"><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span><span class="dd-desc" data-i18n="nav.dd.ticketing.desc">B2B 票務管理系統</span></a>
             <a href="projects/taiwan-tourbus.html"><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span><span class="dd-desc" data-i18n="nav.dd.tourbus.desc">公共交通旅遊網站重設計</span></a>
           </div>
         </li>
-        <li><a href="graphic-design.html">Graphic Design</a></li>
-        <li><a href="about.html#contact" data-i18n="nav.more">More</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav.about">關於我</a></li>
+        <li><a href="about.html#experience" data-i18n="nav.resume">履歷</a></li>
+        <li><a href="about.html#contact" data-i18n="nav.contact">聯絡我</a></li>
       </ul>
       <div class="nav-controls">
         <button type="button" class="lang-toggle" aria-label="Switch language">EN</button>
@@ -41,24 +42,25 @@
           <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
         </button>
       </div>
-      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </nav>
 
+<main id="main-content">
 <header class="hero" style="padding-bottom: 40px;">
   <div class="container">
-    <span class="eyebrow">About me</span>
-    <h1 data-i18n="about.h1">UI/UX 設計師，<br />也是流程整理者。</h1>
-    <p class="hero-lede" data-i18n="about.lede">Russell 是一位 UI/UX 設計師與產品設計學習者，擁有 5 年行政管理與跨部門協作經驗，專長包括整理複雜資訊、流程優化，以及從使用者角度設計易用的數位介面。</p>
+    <span class="eyebrow reveal">About me</span>
+    <h1 class="reveal" data-i18n="about.h1">UI/UX 設計師，<br />也是流程整理者。</h1>
+    <p class="hero-lede reveal" data-i18n="about.lede">Russell 是一位 UI/UX 設計師，擁有 5 年行政管理與跨部門協作經驗，專長包括整理複雜資訊、流程優化，以及從使用者角度設計易用的數位介面。</p>
   </div>
 </header>
 
 <section class="section-tight" style="padding-top:0;">
   <div class="container about-grid">
-    <div>
+    <div class="reveal">
       <h2 data-i18n="about.method.h2">設計方法論</h2>
       <div class="process-strip" style="grid-template-columns: 1fr; margin-top: 24px;">
         <div class="step">
@@ -79,7 +81,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="reveal" id="experience">
       <h2 data-i18n="about.exp.h2">職業經歷</h2>
       <ul class="timeline">
         <li>
@@ -104,17 +106,22 @@
 
 <section class="section-tight">
   <div class="container about-grid">
-    <div>
+    <div class="reveal">
       <h2 data-i18n="about.skills.h2">技能範疇</h2>
-      <div class="skill-cloud">
-        <span class="tag">User Research</span>
-        <span class="tag">Wireframe</span>
-        <span class="tag">Responsive Design</span>
-        <span class="tag">Design System</span>
-        <span class="tag">Figma</span>
-        <span class="tag">Adobe Creative Suite</span>
-        <span class="tag">HTML / CSS</span>
-      </div>
+      <table class="skill-table">
+        <tr>
+          <th data-i18n="about.skills.cat1">研究與流程</th>
+          <td>User Research · Wireframe</td>
+        </tr>
+        <tr>
+          <th data-i18n="about.skills.cat2">介面設計</th>
+          <td>Responsive Design · Design System</td>
+        </tr>
+        <tr>
+          <th data-i18n="about.skills.cat3">工具</th>
+          <td>Figma · Adobe Creative Suite · HTML / CSS</td>
+        </tr>
+      </table>
 
       <h2 style="margin-top:40px;" data-i18n="about.edu.h2">教育背景</h2>
       <ul class="info-list">
@@ -123,7 +130,7 @@
       </ul>
     </div>
 
-    <div id="contact">
+    <div class="reveal" id="contact">
       <h2 data-i18n="about.contact.h2">聯絡資訊</h2>
       <ul class="info-list">
         <li><span>Email</span><span>william228sys@gmail.com</span></li>
@@ -135,6 +142,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
@@ -142,6 +150,7 @@
       <a href="mailto:william228sys@gmail.com">william228sys@gmail.com</a>
       <a href="index.html" data-i18n="nav.home">首頁</a>
       <a href="graphic-design.html">Graphic Design</a>
+      <a href="about.html#contact" data-i18n="nav.contact">聯絡我</a>
     </div>
     <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
   </div>

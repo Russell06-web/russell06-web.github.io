@@ -15,24 +15,25 @@
 <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+<a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳至主要內容</a>
 
 <nav class="site-nav">
   <div class="container nav-inner">
     <a href="../index.html" class="nav-logo">Russell<span>.</span></a>
     <div class="nav-right">
-      <ul class="nav-links">
+      <ul class="nav-links" id="primary-nav">
         <li><a href="../index.html" data-i18n="nav.home">首頁</a></li>
-        <li><a href="../about.html" data-i18n="nav.about">About me</a></li>
         <li class="has-dropdown">
-          <button class="nav-link-btn active">Design <span class="nav-caret"></span></button>
-          <div class="nav-dropdown">
+          <button class="nav-link-btn active" aria-expanded="false" aria-controls="work-dropdown"><span data-i18n="nav.work">作品案例</span> <span class="nav-caret"></span></button>
+          <div class="nav-dropdown" id="work-dropdown">
             <a href="volleyball-hub.html" class="active">Volleyball Hub<span class="dd-desc" data-i18n="nav.dd.volleyball">排球活動媒合平台</span></a>
             <a href="art-ticketing.html"><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span><span class="dd-desc" data-i18n="nav.dd.ticketing.desc">B2B 票務管理系統</span></a>
             <a href="taiwan-tourbus.html"><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span><span class="dd-desc" data-i18n="nav.dd.tourbus.desc">公共交通旅遊網站重設計</span></a>
           </div>
         </li>
-        <li><a href="../graphic-design.html">Graphic Design</a></li>
-        <li><a href="../about.html#contact" data-i18n="nav.more">More</a></li>
+        <li><a href="../about.html" data-i18n="nav.about">關於我</a></li>
+        <li><a href="../about.html#experience" data-i18n="nav.resume">履歷</a></li>
+        <li><a href="../about.html#contact" data-i18n="nav.contact">聯絡我</a></li>
       </ul>
       <div class="nav-controls">
         <button type="button" class="lang-toggle" aria-label="Switch language">EN</button>
@@ -41,33 +42,34 @@
           <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
         </button>
       </div>
-      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </nav>
 
+<main id="main-content">
 <header class="case-hero">
   <div class="container">
-    <span class="eyebrow">Case Study · Mobile App</span>
-    <h1>Volleyball Hub</h1>
-    <p class="hero-lede" data-i18n="vb.lede">排球活動媒合平台，協助球友依照地點、時間與技能等級快速找到適合的活動，並簡化報名、繳費與活動管理流程。</p>
+    <span class="eyebrow reveal">Case Study · Mobile App</span>
+    <h1 class="reveal">Volleyball Hub</h1>
+    <p class="hero-lede reveal" data-i18n="vb.lede">排球活動媒合平台，協助球友依照地點、時間與技能等級快速找到適合的活動，並簡化報名、繳費與活動管理流程。</p>
 
-    <blockquote class="case-quote" data-i18n="vb.quote">讓找場地、報名、管理報名，都在同一個體驗裡完成。</blockquote>
+    <blockquote class="case-quote reveal" data-i18n="vb.quote">讓找場地、報名、管理報名，都在同一個體驗裡完成。</blockquote>
 
-    <dl class="case-meta">
+    <dl class="case-meta reveal">
       <div><dt data-i18n="case.role.label">角色</dt><dd data-i18n="case.role.value">UI/UX 設計（個人專案）</dd></div>
       <div><dt data-i18n="case.tools.label">工具</dt><dd data-i18n="vb.tools">Figma、Adobe Illustrator</dd></div>
       <div><dt data-i18n="case.timeline.label">時程</dt><dd>2025</dd></div>
     </dl>
-    <div class="tag-row">
+    <div class="tag-row reveal">
       <span class="tag">UX Research</span>
       <span class="tag">User Flow</span>
       <span class="tag">Prototype</span>
     </div>
 
-    <div class="case-hero-image">
+    <div class="case-hero-image reveal">
       <img src="../assets/images/volleyball/hero.jpg" alt="Volleyball Hub App 手機呈現" />
     </div>
   </div>
@@ -75,10 +77,10 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 data-i18n="case.section.background">專案背景</h2>
-    <p class="lede" data-i18n="vb.background">許多球友想約球，卻常常卡在「不知道哪裡有場次」「不確定程度合不合適」「報名流程太麻煩」這幾個問題上。Volleyball Hub 希望把找活動、報名、管理報名這三件事，整合進一個好用的行動端體驗中，降低揪團與參加的門檻。</p>
+    <h2 class="reveal" data-i18n="case.section.background">專案背景</h2>
+    <p class="lede reveal" data-i18n="vb.background">許多球友想約球，卻常常卡在「不知道哪裡有場次」「不確定程度合不合適」「報名流程太麻煩」這幾個問題上。Volleyball Hub 希望把找活動、報名、管理報名這三件事，整合進一個好用的行動端體驗中，降低揪團與參加的門檻。</p>
 
-    <div class="process-strip">
+    <div class="process-strip reveal">
       <div class="step">
         <span class="num" data-i18n="case.problem.1">問題一</span>
         <h3 data-i18n="vb.problem.1.title">資訊分散</h3>
@@ -100,10 +102,10 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 data-i18n="case.section.screens">關鍵畫面</h2>
-    <p class="lede" data-i18n="vb.screens.desc">從探索活動、查看詳情到報名成功、管理報名與好友，建立一致且清楚的操作流程。</p>
+    <h2 class="reveal" data-i18n="case.section.screens">關鍵畫面</h2>
+    <p class="lede reveal" data-i18n="vb.screens.desc">從探索活動、查看詳情到報名成功、管理報名與好友，建立一致且清楚的操作流程。</p>
 
-    <div class="shot-gallery">
+    <div class="shot-gallery reveal">
       <figure>
         <div class="frame"><img src="../assets/images/volleyball/home.jpg" alt="活動探索首頁" /></div>
         <figcaption data-i18n="vb.shot.home">活動探索首頁 — 依熱門度、地區與程度篩選場次</figcaption>
@@ -134,8 +136,8 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 data-i18n="case.section.outcome">成果與反思</h2>
-    <p class="lede" data-i18n="vb.outcome">透過將「找活動—報名—管理」拆解為清楚的步驟與狀態回饋，讓球友能在幾個步驟內完成報名，也讓主揪不再需要靠人工對帳。這個專案也讓我更熟悉如何在資訊量大的活動列表中，透過標籤與篩選降低使用者的決策成本。</p>
+    <h2 class="reveal" data-i18n="case.section.outcome">成果與反思</h2>
+    <p class="lede reveal" data-i18n="vb.outcome">透過將「找活動—報名—管理」拆解為清楚的步驟與狀態回饋，讓球友能在幾個步驟內完成報名，也讓主揪不再需要靠人工對帳。這個專案也讓我更熟悉如何在資訊量大的活動列表中，透過標籤與篩選降低使用者的決策成本。</p>
   </div>
 </section>
 
@@ -143,6 +145,7 @@
   <a href="../index.html"><span class="dir">← Back to</span><span data-i18n="case.nav.allWork">所有作品</span></a>
   <a href="art-ticketing.html" class="next"><span class="dir">Next Case</span><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span></a>
 </nav>
+</main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
@@ -150,6 +153,7 @@
       <a href="mailto:william228sys@gmail.com">william228sys@gmail.com</a>
       <a href="../index.html" data-i18n="nav.home">首頁</a>
       <a href="../graphic-design.html">Graphic Design</a>
+      <a href="../about.html#contact" data-i18n="nav.contact">聯絡我</a>
     </div>
     <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
   </div>

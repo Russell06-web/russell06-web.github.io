@@ -15,24 +15,25 @@
 <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+<a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳至主要內容</a>
 
 <nav class="site-nav">
   <div class="container nav-inner">
     <a href="../index.html" class="nav-logo">Russell<span>.</span></a>
     <div class="nav-right">
-      <ul class="nav-links">
+      <ul class="nav-links" id="primary-nav">
         <li><a href="../index.html" data-i18n="nav.home">首頁</a></li>
-        <li><a href="../about.html" data-i18n="nav.about">About me</a></li>
         <li class="has-dropdown">
-          <button class="nav-link-btn active">Design <span class="nav-caret"></span></button>
-          <div class="nav-dropdown">
+          <button class="nav-link-btn active" aria-expanded="false" aria-controls="work-dropdown"><span data-i18n="nav.work">作品案例</span> <span class="nav-caret"></span></button>
+          <div class="nav-dropdown" id="work-dropdown">
             <a href="volleyball-hub.html">Volleyball Hub<span class="dd-desc" data-i18n="nav.dd.volleyball">排球活動媒合平台</span></a>
             <a href="art-ticketing.html" class="active"><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span><span class="dd-desc" data-i18n="nav.dd.ticketing.desc">B2B 票務管理系統</span></a>
             <a href="taiwan-tourbus.html"><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span><span class="dd-desc" data-i18n="nav.dd.tourbus.desc">公共交通旅遊網站重設計</span></a>
           </div>
         </li>
-        <li><a href="../graphic-design.html">Graphic Design</a></li>
-        <li><a href="../about.html#contact" data-i18n="nav.more">More</a></li>
+        <li><a href="../about.html" data-i18n="nav.about">關於我</a></li>
+        <li><a href="../about.html#experience" data-i18n="nav.resume">履歷</a></li>
+        <li><a href="../about.html#contact" data-i18n="nav.contact">聯絡我</a></li>
       </ul>
       <div class="nav-controls">
         <button type="button" class="lang-toggle" aria-label="Switch language">EN</button>
@@ -41,33 +42,34 @@
           <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
         </button>
       </div>
-      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </nav>
 
+<main id="main-content">
 <header class="case-hero">
   <div class="container">
-    <span class="eyebrow">Case Study · Admin Dashboard</span>
-    <h1 data-i18n="nav.dd.ticketing.title">藝文票務管理後台</h1>
-    <p class="hero-lede" data-i18n="tk.lede">B2B 票務管理系統，聚焦高資訊密度下的 Dashboard、票券管理、客服退票與高風險操作防呆，協助藝文場館營運團隊有效率地管理活動與訂單。</p>
+    <span class="eyebrow reveal">Case Study · Admin Dashboard</span>
+    <h1 class="reveal" data-i18n="nav.dd.ticketing.title">藝文票務管理後台</h1>
+    <p class="hero-lede reveal" data-i18n="tk.lede">B2B 票務管理系統，聚焦高資訊密度下的 Dashboard、票券管理、客服退票與高風險操作防呆，協助藝文場館營運團隊有效率地管理活動與訂單。</p>
 
-    <blockquote class="case-quote" data-i18n="tk.quote">在高資訊密度的後台裡，替每一個高風險操作加上防呆。</blockquote>
+    <blockquote class="case-quote reveal" data-i18n="tk.quote">在高資訊密度的後台裡，替每一個高風險操作加上防呆。</blockquote>
 
-    <dl class="case-meta">
+    <dl class="case-meta reveal">
       <div><dt data-i18n="case.role.label">角色</dt><dd data-i18n="case.role.value">UI/UX 設計（個人專案）</dd></div>
       <div><dt data-i18n="case.tools.label">工具</dt><dd>Figma</dd></div>
       <div><dt data-i18n="case.timeline.label">時程</dt><dd>2025</dd></div>
     </dl>
-    <div class="tag-row">
+    <div class="tag-row reveal">
       <span class="tag">Dashboard UI</span>
       <span class="tag">Admin System</span>
       <span class="tag">B2B SaaS</span>
     </div>
 
-    <div class="case-hero-image">
+    <div class="case-hero-image reveal">
       <img src="../assets/images/ticketing/hero.jpg" alt="藝文票務管理後台儀表板" />
     </div>
   </div>
@@ -75,10 +77,10 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 data-i18n="case.section.background">專案背景</h2>
-    <p class="lede" data-i18n="tk.background">藝文場館的營運人員每天要處理大量活動、票券與客訴資料。後台系統若資訊架構不清楚，容易造成操作失誤，尤其是退換票這類高風險、不可逆的操作。這個專案希望在高資訊密度的介面中，仍維持清楚的層級與安全的操作防呆機制。</p>
+    <h2 class="reveal" data-i18n="case.section.background">專案背景</h2>
+    <p class="lede reveal" data-i18n="tk.background">藝文場館的營運人員每天要處理大量活動、票券與客訴資料。後台系統若資訊架構不清楚，容易造成操作失誤，尤其是退換票這類高風險、不可逆的操作。這個專案希望在高資訊密度的介面中，仍維持清楚的層級與安全的操作防呆機制。</p>
 
-    <div class="process-strip">
+    <div class="process-strip reveal">
       <div class="step">
         <span class="num" data-i18n="case.problem.1">問題一</span>
         <h3 data-i18n="tk.problem.1.title">資訊密度高</h3>
@@ -100,10 +102,10 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 data-i18n="case.section.process">流程與線框</h2>
-    <p class="lede" data-i18n="tk.process.desc">在進入視覺設計前，先透過流程圖釐清票務核心流程，並用 wireframe 確認資訊層級與版位配置。</p>
+    <h2 class="reveal" data-i18n="case.section.process">流程與線框</h2>
+    <p class="lede reveal" data-i18n="tk.process.desc">在進入視覺設計前，先透過流程圖釐清票務核心流程，並用 wireframe 確認資訊層級與版位配置。</p>
 
-    <div class="shot-gallery">
+    <div class="shot-gallery reveal">
       <figure>
         <div class="frame"><img src="../assets/images/ticketing/flow.jpg" alt="活動票務核心流程圖" /></div>
         <figcaption data-i18n="tk.shot.flow">活動票務核心流程 — 從活動建立到售票、退換票的完整流程</figcaption>
@@ -122,16 +124,16 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 data-i18n="case.section.screens">關鍵畫面</h2>
-    <p class="lede" data-i18n="tk.screens.desc">將流程與線框落地為完整視覺設計，並在退換票等高風險流程中加入明確的確認機制。</p>
+    <h2 class="reveal" data-i18n="case.section.screens">關鍵畫面</h2>
+    <p class="lede reveal" data-i18n="tk.screens.desc">將流程與線框落地為完整視覺設計，並在退換票等高風險流程中加入明確的確認機制。</p>
 
-    <div class="shot-gallery">
+    <div class="shot-gallery reveal">
       <figure>
         <div class="frame"><img src="../assets/images/ticketing/ticket-manage.jpg" alt="票券管理畫面" /></div>
         <figcaption data-i18n="tk.shot.ticketManage">票券管理 — 表格化呈現票券狀態，支援批次操作</figcaption>
       </figure>
       <figure>
-        <div class="frame"><img src="../assets/images/ticketing/refund.jpg" alt="客服中心退換票處理畫面" /></div>
+        <div class="frame frame--square"><img src="../assets/images/ticketing/refund.jpg" alt="客服中心退換票處理畫面" /></div>
         <figcaption data-i18n="tk.shot.refund">客服中心 · 退換票處理 — 高風險操作加入二次確認防呆</figcaption>
       </figure>
       <figure>
@@ -148,8 +150,8 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 data-i18n="case.section.outcome">成果與反思</h2>
-    <p class="lede" data-i18n="tk.outcome">這個專案讓我更理解如何在資訊密度高的 B2B 後台中，透過分層資訊架構、清楚的側邊導覽與防呆確認機制，降低操作人員的認知負擔與誤觸風險，同時維持系統的專業感與可信度。</p>
+    <h2 class="reveal" data-i18n="case.section.outcome">成果與反思</h2>
+    <p class="lede reveal" data-i18n="tk.outcome">這個專案讓我更理解如何在資訊密度高的 B2B 後台中，透過分層資訊架構、清楚的側邊導覽與防呆確認機制，降低操作人員的認知負擔與誤觸風險，同時維持系統的專業感與可信度。</p>
   </div>
 </section>
 
@@ -157,6 +159,7 @@
   <a href="volleyball-hub.html"><span class="dir">← Previous Case</span>Volleyball Hub</a>
   <a href="taiwan-tourbus.html" class="next"><span class="dir">Next Case</span><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span></a>
 </nav>
+</main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
@@ -164,6 +167,7 @@
       <a href="mailto:william228sys@gmail.com">william228sys@gmail.com</a>
       <a href="../index.html" data-i18n="nav.home">首頁</a>
       <a href="../graphic-design.html">Graphic Design</a>
+      <a href="../about.html#contact" data-i18n="nav.contact">聯絡我</a>
     </div>
     <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
   </div>
