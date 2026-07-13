@@ -11,12 +11,18 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!navToggle || !navLinks) return;
     navLinks.classList.remove("open");
     navToggle.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("nav-open");
   };
 
   if (navToggle && navLinks) {
     navToggle.addEventListener("click", () => {
       const isOpen = navLinks.classList.toggle("open");
       navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      document.body.classList.toggle("nav-open", isOpen);
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMobileNav);
     });
   }
 
@@ -24,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
      "Case Studies" dropdown
      ------------------------------------------------------------------- */
   document.querySelectorAll(".has-dropdown > .nav-link-btn").forEach((btn) => {
+    btn.setAttribute("aria-haspopup", "true");
     btn.addEventListener("click", () => {
       const parent = btn.closest(".has-dropdown");
       const isOpen = parent.classList.contains("open");

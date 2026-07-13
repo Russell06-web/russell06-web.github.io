@@ -11,8 +11,8 @@
 })();
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Russell 邱志綸 — UI/UX Designer Portfolio</title>
-<meta name="description" content="Russell 邱志綸的 UI/UX 作品集，以使用者需求為核心，透過研究、流程規劃與介面設計解決產品體驗問題。" />
+<title>Russell 邱志綸 — Product Designer Portfolio</title>
+<meta name="description" content="Russell 邱志綸的 Product / UI/UX 設計作品集，擅長把複雜流程、資訊架構與後台系統整理成清楚可用的產品體驗。" />
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -53,61 +53,73 @@
 <main id="main-content">
 <header class="hero">
   <span class="hero-mark" aria-hidden="true">PORTFOLIO — 2026</span>
+  <span class="hero-scroll" aria-hidden="true"><span class="line"></span>SCROLL DOWN</span>
   <div class="container hero-grid">
     <div class="hero-copy reveal-stagger">
-      <span class="eyebrow">UI / UX Designer · Product Design Portfolio</span>
-      <h1 class="hero-title" data-i18n="home.name">Russell 邱志綸</h1>
-      <p class="hero-lede" data-i18n="home.lede">以使用者需求為核心，透過研究、流程規劃與介面設計，解決產品體驗中的資訊混亂、操作不順與決策成本問題。</p>
+      <span class="eyebrow">PRODUCT DESIGNER · TAIWAN</span>
+      <h1 class="hero-title" data-i18n="home.hero.h1">把複雜流程，整理成清楚可用的產品體驗。</h1>
+      <p class="hero-lede" data-i18n="home.lede">我具備行政流程管理與美術背景，專注於資訊架構、後台系統，以及容易理解的數位介面。</p>
+      <p class="hero-evidence" data-i18n="home.hero.evidence">5 年行政流程經驗 ／ 美術背景 ／ 430 小時 UI/UX 實訓</p>
       <div class="btn-row">
-        <a href="#work" class="btn btn-primary" data-i18n="home.btn.work">看作品</a>
-        <a href="about.html#contact" class="btn btn-ghost" data-i18n="home.btn.contact">聯絡我</a>
+        <a href="#work" class="btn btn-primary" data-i18n="home.btn.work">查看精選作品</a>
+        <a href="about.html" class="btn btn-ghost" data-i18n="nav.about">關於我</a>
       </div>
     </div>
     <div class="hero-visual reveal" aria-hidden="true">
       <div class="hero-visual-label"><span>Selected Interface</span><span>2025—2026</span></div>
-      <div class="hero-shot hero-shot-1"><img src="assets/images/tourbus/app-home.jpg" alt="" loading="eager" /></div>
-      <div class="hero-shot hero-shot-2"><img src="assets/images/ticketing/hero.jpg" alt="" loading="eager" /></div>
-      <div class="hero-shot hero-shot-3"><img src="assets/images/volleyball/home.jpg" alt="" loading="eager" /></div>
+      <div class="hero-shot-primary"><img src="assets/images/ticketing/hero.jpg" alt="" loading="eager" /></div>
+      <div class="hero-shot-secondary"><img src="assets/images/volleyball/home.jpg" alt="" loading="eager" /></div>
     </div>
   </div>
 </header>
 
-<section class="design-principles" aria-labelledby="principles-title">
+<section id="work" class="featured-case">
   <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Design Approach</span>
-      <h2 id="principles-title" data-i18n="home.principles.h2">從複雜中建立秩序</h2>
+    <div class="section-rule reveal">
+      <span class="index">02</span>
+      <span class="line"></span>
     </div>
-    <div class="principle-grid reveal">
-      <div class="principle-item">
-        <span class="principle-num">01</span>
-        <h3 data-i18n="about.method.1.title">理解問題</h3>
-        <p data-i18n="about.method.1.desc">透過研究工具理解使用者問題與情境。</p>
+    <div class="section-head reveal">
+      <span class="eyebrow">Featured Case Study</span>
+      <p class="featured-case-name" data-i18n="nav.dd.ticketing.title">藝文票務管理後台</p>
+      <h2 data-i18n="home.featured.value">在高資訊密度的票務後台中，降低查找成本與高風險操作失誤。</h2>
+      <p data-i18n="home.featured.summary">重新整理 Dashboard、票務表格與退換票流程，讓營運人員更快找到資訊，並在不可逆操作前獲得清楚確認。</p>
+    </div>
+
+    <a class="featured-case-media reveal" href="projects/art-ticketing.html">
+      <img src="assets/images/ticketing/hero.jpg" alt="藝文票務管理後台儀表板整體畫面" loading="eager" />
+    </a>
+
+    <div class="featured-case-foot reveal">
+      <dl class="case-meta">
+        <div><dt data-i18n="case.role.label">角色</dt><dd data-i18n="case.role.value">UI/UX 設計（個人專案）</dd></div>
+        <div><dt data-i18n="home.featured.focusLabel">專注</dt><dd data-i18n="home.featured.focusValue">高風險操作防呆、資訊密度管理</dd></div>
+        <div><dt data-i18n="home.featured.deliverablesLabel">交付項目</dt><dd data-i18n="home.featured.deliverablesValue">流程圖、Wireframe、Dashboard 與高保真原型</dd></div>
+      </dl>
+      <div class="tag-row">
+        <span class="tag">Complex Workflow</span>
+        <span class="tag">Information Hierarchy</span>
+        <span class="tag">High-risk Interaction</span>
+        <span class="tag">Design System</span>
       </div>
-      <div class="principle-item">
-        <span class="principle-num">02</span>
-        <h3 data-i18n="about.method.2.title">結構化資訊</h3>
-        <p data-i18n="about.method.2.desc">將分散資訊轉化為清晰的結構與流程。</p>
-      </div>
-      <div class="principle-item">
-        <span class="principle-num">03</span>
-        <h3 data-i18n="about.method.3.title">降低操作難度</h3>
-        <p data-i18n="about.method.3.desc">透過回應式設計與原型開發降低操作難度。</p>
-      </div>
+      <a href="projects/art-ticketing.html" class="btn btn-primary">
+        <span data-i18n="home.featured.cta">查看完整案例</span> <span aria-hidden="true">→</span>
+      </a>
     </div>
   </div>
 </section>
 
-<section id="work">
-  <div class="container">
+<section class="section-tight">
+  <div class="container has-drift">
     <div class="section-rule reveal">
-      <span class="index">01</span>
+      <span class="index">03</span>
       <span class="line"></span>
     </div>
+    <span class="drift-dots" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>
     <div class="section-head reveal">
       <span class="eyebrow">Selected Work</span>
-      <h2 data-i18n="home.work.h2">三個設計案例</h2>
-      <p data-i18n="home.work.desc">從行動端到後台管理系統，涵蓋研究、資訊架構到高保真原型。</p>
+      <h2 data-i18n="home.work.h2">其他精選案例</h2>
+      <p data-i18n="home.work.desc">行動端體驗設計與公共服務網站的資訊架構規劃。</p>
     </div>
 
     <div class="project-list">
@@ -119,7 +131,8 @@
             <span data-i18n="case.role.value">UI/UX 設計（個人專案）</span>
           </div>
           <h3>Volleyball Hub</h3>
-          <p data-i18n="home.card.volleyball.desc">排球活動媒合平台，協助球友依照地點、時間與技能等級快速找到適合的活動。</p>
+          <p class="problem" data-i18n="home.card.volleyball.problem">讓球友快速判斷場次是否適合自己</p>
+          <p data-i18n="home.card.volleyball.desc">整合地點、時間、程度與名額資訊，降低使用者在社群訊息中反覆查找與確認的成本。</p>
           <div class="tag-row">
             <span class="tag">UX Research</span>
             <span class="tag">User Flow</span>
@@ -132,36 +145,16 @@
         </div>
       </a>
 
-      <a class="project-row reveal" href="projects/art-ticketing.html">
-        <span class="project-index">02</span>
-        <div class="project-info">
-          <div class="project-meta">
-            <span>Admin Dashboard</span>
-            <span data-i18n="case.role.value">UI/UX 設計（個人專案）</span>
-          </div>
-          <h3 data-i18n="home.card.ticketing.title">藝文票務管理後台</h3>
-          <p data-i18n="home.card.ticketing.desc">B2B 票務管理系統，聚焦高資訊密度下的 Dashboard、票券管理、客服退票與高風險操作防呆。</p>
-          <div class="tag-row">
-            <span class="tag">Dashboard UI</span>
-            <span class="tag">Admin System</span>
-            <span class="tag">B2B SaaS</span>
-          </div>
-          <span class="link-arrow"><span data-i18n="project.view">查看案例</span> <span class="arrow">→</span></span>
-        </div>
-        <div class="project-media">
-          <img src="assets/images/ticketing/hero.jpg" alt="藝文票務管理後台儀表板畫面" loading="lazy" />
-        </div>
-      </a>
-
       <a class="project-row reveal" href="projects/taiwan-tourbus.html">
-        <span class="project-index">03</span>
+        <span class="project-index">02</span>
         <div class="project-info">
           <div class="project-meta">
             <span>Responsive Website</span>
             <span data-i18n="case.role.value">UI/UX 設計（個人專案）</span>
           </div>
           <h3 data-i18n="home.card.tourbus.title">台灣好行 RWD</h3>
-          <p data-i18n="home.card.tourbus.desc">公共交通旅遊網站重設計，改善旅客查找時刻表、路線、票價與景點資訊的效率。</p>
+          <p class="problem" data-i18n="home.card.tourbus.problem">縮短旅客查找路線、時刻與票價的路徑</p>
+          <p data-i18n="home.card.tourbus.desc">重整公共交通旅遊網站的資訊架構，依不同裝置調整內容優先順序，而不是只做比例縮放。</p>
           <div class="tag-row">
             <span class="tag">RWD Design</span>
             <span class="tag">Public Service</span>
@@ -177,19 +170,69 @@
   </div>
 </section>
 
-<section class="section-tight">
+<section class="section-tight" aria-labelledby="strengths-title">
   <div class="container">
     <div class="section-rule reveal">
-      <span class="index">02</span>
+      <span class="index">04</span>
       <span class="line"></span>
     </div>
     <div class="section-head reveal">
-      <span class="eyebrow">Graphic Design</span>
-      <h2 data-i18n="home.gd.h2">平面設計作品</h2>
-      <p data-i18n="home.gd.desc">持續整理中，收錄海報、視覺識別與排版相關作品。</p>
+      <span class="eyebrow">Design Strengths</span>
+      <h2 id="strengths-title" data-i18n="home.strengths.h2">從案例出發的設計優勢</h2>
+    </div>
+    <div class="principle-grid reveal">
+      <div class="principle-item">
+        <span class="principle-num">01</span>
+        <h3 data-i18n="home.strengths.1.title">複雜流程</h3>
+        <p data-i18n="home.strengths.1.evidence">在藝文票務後台中，將退換票等高風險流程拆解為清楚步驟，並加入二次確認機制。</p>
+      </div>
+      <div class="principle-item">
+        <span class="principle-num">02</span>
+        <h3 data-i18n="home.strengths.2.title">資訊架構</h3>
+        <p data-i18n="home.strengths.2.evidence">為台灣好行 RWD 依裝置調整資訊優先順序，而非單純縮放版面。</p>
+      </div>
+      <div class="principle-item">
+        <span class="principle-num">03</span>
+        <h3 data-i18n="home.strengths.3.title">設計系統與一致性</h3>
+        <p data-i18n="home.strengths.3.evidence">為三個案例建立一致的色彩、字級與間距系統，並延伸至元件與互動狀態。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight about-preview">
+  <div class="container">
+    <div class="section-rule reveal">
+      <span class="index">05</span>
+      <span class="line"></span>
+    </div>
+    <div class="about-preview-grid reveal">
+      <div>
+        <span class="eyebrow">About</span>
+        <h2 data-i18n="home.aboutPreview.h2">從行政流程到產品設計</h2>
+      </div>
+      <div>
+        <p class="lede" data-i18n="home.aboutPreview.body">在投入 UI/UX 設計之前，我有 5 年時間負責行政流程管理與跨部門溝通，需要在時間壓力下整理龐雜資訊並做出清楚判斷。同時具備美術系背景與排球隊總教練經驗，讓我在設計時，習慣先理解使用者的決策脈絡，再轉化為清楚易用的資訊架構與介面。</p>
+        <span class="link-arrow"><a href="about.html"><span data-i18n="home.aboutPreview.cta">深入了解我的背景</span></a> <span class="arrow">→</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" id="contact-preview">
+  <div class="container">
+    <div class="section-rule reveal">
+      <span class="index">06</span>
+      <span class="line"></span>
+    </div>
+    <div class="section-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2 data-i18n="home.contact.h2">聯絡我</h2>
+      <p data-i18n="home.contact.status">目前正在尋找 UI/UX Designer 或 Product Designer 的全職機會，歡迎透過 Email 與我聯繫。</p>
     </div>
     <div class="btn-row reveal" style="margin-top:0;">
-      <a href="graphic-design.html" class="btn btn-ghost" data-i18n="home.gd.cta">前往查看 →</a>
+      <a href="mailto:william228sys@gmail.com" class="btn btn-primary" data-i18n="home.contact.emailBtn">寄信給我</a>
+      <a href="about.html#experience" class="btn btn-ghost" data-i18n="home.contact.resumeBtn">查看完整經歷</a>
     </div>
   </div>
 </section>
@@ -200,7 +243,6 @@
     <div class="footer-links">
       <a href="mailto:william228sys@gmail.com">william228sys@gmail.com</a>
       <a href="about.html" data-i18n="nav.about">關於我</a>
-      <a href="graphic-design.html">Graphic Design</a>
       <a href="about.html#contact" data-i18n="nav.contact">聯絡我</a>
     </div>
     <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
