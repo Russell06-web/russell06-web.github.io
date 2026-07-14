@@ -12,7 +12,7 @@ window.I18N = {
     "nav.dd.tourbus.desc": "公共交通旅遊網站重設計",
     "a11y.skip": "跳至主要內容",
 
-    "home.hero.availability": "目前接受 UI/UX 全職機會",
+    "home.hero.availability": "目前接受 UI/UX 全職機會（僅限台灣）",
     "home.hero.h1": "把複雜流程，整理成清楚可用的產品體驗。",
     "home.lede": "我具備行政流程管理與美術背景，專注於資訊架構、後台系統，以及容易理解的數位介面。",
     "home.hero.evidence": "5 年行政流程經驗 ／ 美術背景 ／ 430 小時 UI/UX 實訓",
@@ -70,7 +70,7 @@ window.I18N = {
     "home.background.3.desc": "具備 GA4 基礎，能以資料與情境檢核產品假設。",
 
     "home.contact.h2": "正在尋找能把複雜化為清楚的設計師嗎？",
-    "home.contact.status": "目前尋找 UI/UX、產品設計、網頁設計與數位產品相關全職機會，歡迎透過 Email 與我聯繫。",
+    "home.contact.status": "目前尋找 UI/UX、產品設計、網頁設計與數位產品相關全職機會（工作地點僅限台灣），歡迎透過 Email 與我聯繫。",
     "home.contact.emailBtn": "寄信給我",
     "home.contact.resumeBtn": "下載履歷 PDF",
 
@@ -118,6 +118,8 @@ window.I18N = {
     "about.contact.h2": "聯絡資訊",
     "about.contact.location.label": "位置",
     "about.contact.location.value": "台灣桃園",
+    "about.contact.availability.label": "可到職地區",
+    "about.contact.availability.value": "僅限台灣",
     "about.contact.btn": "寄信給我",
 
     "gd.h1": "平面設計作品",
@@ -210,7 +212,7 @@ window.I18N = {
     "nav.dd.tourbus.desc": "Public transit site redesign",
     "a11y.skip": "Skip to main content",
 
-    "home.hero.availability": "Available for UI/UX opportunities",
+    "home.hero.availability": "Available for UI/UX opportunities (Taiwan only)",
     "home.hero.h1": "Turning complex workflows into clear, usable product experiences.",
     "home.lede": "With a background in administrative process management and fine arts, I focus on information architecture, admin systems, and interfaces that are easy to understand.",
     "home.hero.evidence": "5 years in admin process management / Fine arts background / 430-hour UI/UX training program",
@@ -268,7 +270,7 @@ window.I18N = {
     "home.background.3.desc": "Grounded in GA4 fundamentals — able to validate product assumptions with data and context.",
 
     "home.contact.h2": "Looking for a designer who brings clarity to complexity?",
-    "home.contact.status": "Currently looking for full-time opportunities in UI/UX, product design, web design, and digital products — feel free to reach out by email.",
+    "home.contact.status": "Currently looking for full-time opportunities in UI/UX, product design, web design, and digital products (Taiwan-based roles only) — feel free to reach out by email.",
     "home.contact.emailBtn": "Email Me",
     "home.contact.resumeBtn": "Download Resume (PDF)",
 
@@ -316,6 +318,8 @@ window.I18N = {
     "about.contact.h2": "Contact",
     "about.contact.location.label": "Location",
     "about.contact.location.value": "Taoyuan, Taiwan",
+    "about.contact.availability.label": "Open to Roles In",
+    "about.contact.availability.value": "Taiwan Only",
     "about.contact.btn": "Send an Email",
 
     "gd.h1": "Graphic Design Work",
