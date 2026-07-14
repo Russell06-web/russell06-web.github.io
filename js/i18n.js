@@ -138,6 +138,7 @@ window.I18N = {
     "case.problem.2": "問題二",
     "case.problem.3": "問題三",
     "case.nav.allWork": "所有作品",
+    "case.viewPrototype": "查看 Figma 原型",
 
     "vb.lede": "排球活動媒合平台，協助球友依照地點、時間與技能等級快速找到適合的活動，並簡化報名、繳費與活動管理流程。",
     "vb.quote": "讓找場地、報名、管理報名，都在同一個體驗裡完成。",
@@ -338,6 +339,7 @@ window.I18N = {
     "case.problem.2": "Problem 2",
     "case.problem.3": "Problem 3",
     "case.nav.allWork": "All Work",
+    "case.viewPrototype": "View Figma Prototype",
 
     "vb.lede": "A volleyball meetup platform that helps players find the right match by location, time, and skill level — while simplifying registration, payment, and event management.",
     "vb.quote": "Finding a court, signing up, and managing registrations — all in one seamless experience.",
