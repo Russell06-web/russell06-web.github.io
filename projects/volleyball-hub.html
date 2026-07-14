@@ -81,7 +81,14 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.background">專案背景</h2>
+    <h2 class="reveal" data-i18n="case.section.overview">專案總覽</h2>
+    <p class="lede reveal" data-i18n="vb.overview">Volleyball Hub 是一個以「揪團排球」為情境的行動端獨立設計專案，由我一人完成研究、資訊架構、視覺設計與原型製作。設計目標是把原本分散在社群貼文與訊息群組裡的「找場次、報名、管理名單」三個動作，收斂進單一體驗，讓球友與主揪都不必再靠人工對帳與反覆私訊確認狀態。</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.problem">問題</h2>
     <p class="lede reveal" data-i18n="vb.background">許多球友想約球，卻常常卡在「不知道哪裡有場次」「不確定程度合不合適」「報名流程太麻煩」這幾個問題上。Volleyball Hub 希望把找活動、報名、管理報名這三件事，整合進一個好用的行動端體驗中，降低揪團與參加的門檻。</p>
 
     <div class="process-strip reveal">
@@ -100,6 +107,82 @@
         <h3 data-i18n="vb.problem.3.title">管理成本高</h3>
         <p data-i18n="vb.problem.3.desc">主揪需要手動整理名單與收款紀錄，容易出錯也耗時。</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.research">研究</h2>
+    <p class="lede reveal" data-i18n="vb.research.desc">獨立專案沒有正式的使用者研究資源，改以「情境模擬 + 同儕訪談」交叉驗證需求：用 ChatGPT 模擬新手球友、老手球友與主揪三種角色在揪團時的真實對話與痛點，再訪談身邊實際有揪團經驗的球友，比對兩者的落差以收斂真正重要的問題。</p>
+
+    <div class="process-strip reveal">
+      <div class="step">
+        <span class="num" data-i18n="case.research.1">洞察一</span>
+        <h3 data-i18n="vb.research.1.title">主揪的隱性成本</h3>
+        <p data-i18n="vb.research.1.desc">主揪多半在賽後才整理收款紀錄，容易忘記誰還沒繳費，甚至得回頭翻聊天記錄核對。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.research.2">洞察二</span>
+        <h3 data-i18n="vb.research.2.title">新手的資訊落差</h3>
+        <p data-i18n="vb.research.2.desc">新手球友難以從純文字貼文判斷自己的程度是否適合，容易因誤判而在現場感到尷尬。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.research.3">洞察三</span>
+        <h3 data-i18n="vb.research.3.title">報名狀態的不確定感</h3>
+        <p data-i18n="vb.research.3.desc">報名後常要等主揪回覆才確定是否候補成功，等待期間的不確定感是常見抱怨。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.strategy">設計策略</h2>
+    <p class="lede reveal" data-i18n="vb.strategy.desc">依研究洞察整理出三個設計原則，作為後續資訊架構與畫面決策的依據。</p>
+
+    <div class="process-strip reveal">
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.1">原則一</span>
+        <h3 data-i18n="vb.strategy.1.title">狀態要看得到，不要用問的</h3>
+        <p data-i18n="vb.strategy.1.desc">報名、繳費、候補都要有明確的視覺狀態，不需要再靠私訊確認。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.2">原則二</span>
+        <h3 data-i18n="vb.strategy.2.title">第一眼就要判斷合不合適</h3>
+        <p data-i18n="vb.strategy.2.desc">地點、時間、程度、名額四項關鍵資訊要能在列表卡片上直接看到。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.3">原則三</span>
+        <h3 data-i18n="vb.strategy.3.title">管理是主揪的日常，要盡量自動化</h3>
+        <p data-i18n="vb.strategy.3.desc">收款與名單管理要盡量減少手動輸入與對帳的步驟。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <div class="reveal">
+      <h2 data-i18n="case.section.decisions">關鍵決策</h2>
+      <table class="skill-table">
+        <tr>
+          <th data-i18n="vb.decisions.1.point">篩選機制</th>
+          <td data-i18n="vb.decisions.1.reason">依地點、時間、程度三軸篩選，而非單純的時間列表——研究顯示球友最常見的疑問是「這場適合我嗎」，需要把程度當成第一層篩選條件。</td>
+        </tr>
+        <tr>
+          <th data-i18n="vb.decisions.2.point">報名狀態呈現</th>
+          <td data-i18n="vb.decisions.2.reason">用顏色與文字雙重標示（已確認／候補中／已額滿），而非只靠顏色區分，避免色弱使用者誤判狀態。</td>
+        </tr>
+        <tr>
+          <th data-i18n="vb.decisions.3.point">主揪工具</th>
+          <td data-i18n="vb.decisions.3.reason">把名單管理與收款狀態整合在同一個「活動管理」畫面，減少主揪在報名清單與收款紀錄間來回核對的心力。</td>
+        </tr>
+        <tr>
+          <th data-i18n="vb.decisions.4.point">社交機制</th>
+          <td data-i18n="vb.decisions.4.reason">加入「我的好友」而非只做報名紀錄——排球揪團多半是熟人帶熟人，社交關係本身也是找到合適場次的路徑。</td>
+        </tr>
+      </table>
     </div>
   </div>
 </section>
@@ -140,7 +223,14 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.outcome">成果與反思</h2>
+    <h2 class="reveal" data-i18n="case.section.validation">驗證</h2>
+    <p class="lede reveal" data-i18n="vb.validation">獨立作品沒有正式的可用性測試資源，驗證聚焦在自我檢核與同儕走查：對照 WCAG 對比度標準檢查文字與狀態顏色，並用新手／老手／主揪三種情境腳本重新走一次關鍵流程，確認資訊層級與操作路徑沒有邏輯斷點。</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.reflection">反思</h2>
     <p class="lede reveal" data-i18n="vb.outcome">透過將「找活動—報名—管理」拆解為清楚的步驟與狀態回饋，讓球友能在幾個步驟內完成報名，也讓主揪不再需要靠人工對帳。這個專案也讓我更熟悉如何在資訊量大的活動列表中，透過標籤與篩選降低使用者的決策成本。</p>
   </div>
 </section>

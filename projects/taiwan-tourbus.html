@@ -81,7 +81,14 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.background">專案背景</h2>
+    <h2 class="reveal" data-i18n="case.section.overview">專案總覽</h2>
+    <p class="lede reveal" data-i18n="tb.overview">台灣好行 RWD 是一個以公共交通旅遊服務為主題的響應式網站重設計獨立專案，聚焦在旅客用手機查找路線、時刻表與票價時的體驗。設計範圍涵蓋資訊架構重整、跨裝置版面規劃到視覺設計，目標是讓同一套內容在手機、平板與桌機上都能維持清楚的操作邏輯，而不是單純把桌機版縮小。</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.problem">問題</h2>
     <p class="lede reveal" data-i18n="tb.background">台灣好行是提供旅客串連景點的公共交通服務，原網站在手機上查找時刻表、路線與票價時，容易因為版面擁擠與資訊層級不清而降低效率。這個重設計專案希望以旅客的查找流程為主軸，重新規劃資訊架構與跨裝置的版面配置。</p>
 
     <div class="process-strip reveal">
@@ -100,6 +107,82 @@
         <h3 data-i18n="tb.problem.3.title">公共服務可及性</h3>
         <p data-i18n="tb.problem.3.desc">使用族群橫跨不同年齡層，需兼顧清楚的字級對比與操作可及性。</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.research">研究</h2>
+    <p class="lede reveal" data-i18n="tb.research.desc">以現有台灣好行官網為對象進行可用性走查，並用 ChatGPT 模擬不同旅客情境（首次到訪的自由行旅客、行前規劃的家庭旅客、臨時查詢的隨性旅客），比對走查結果與情境模擬之間的落差，找出真正卡住旅客的環節。</p>
+
+    <div class="process-strip reveal">
+      <div class="step">
+        <span class="num" data-i18n="case.research.1">洞察一</span>
+        <h3 data-i18n="tb.research.1.title">手機版資訊層級被壓縮</h3>
+        <p data-i18n="tb.research.1.desc">原網站在手機上把桌機版的多欄版面直接堆疊，時刻表、票價與路線常需要滾動好幾個畫面才找得到。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.research.2">洞察二</span>
+        <h3 data-i18n="tb.research.2.title">內容類型混用同一版型</h3>
+        <p data-i18n="tb.research.2.desc">時刻表、景點介紹、套票資訊性質不同，卻套用相近的清單樣式，難以一眼分辨。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.research.3">洞察三</span>
+        <h3 data-i18n="tb.research.3.title">高齡與低頻使用者的操作門檻</h3>
+        <p data-i18n="tb.research.3.desc">公共服務網站的使用族群橫跨不同年齡層與熟悉度，過小的字級與過密的按鈕間距容易造成誤觸。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.strategy">設計策略</h2>
+    <p class="lede reveal" data-i18n="tb.strategy.desc">根據走查結果整理出三個設計原則，作為跨裝置版面決策的依據。</p>
+
+    <div class="process-strip reveal">
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.1">原則一</span>
+        <h3 data-i18n="tb.strategy.1.title">依裝置調整內容優先序，而非單純縮放</h3>
+        <p data-i18n="tb.strategy.1.desc">手機版優先呈現查詢與篩選，桌機版才展開完整地圖與比較表格。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.2">原則二</span>
+        <h3 data-i18n="tb.strategy.2.title">依內容類型分化版型</h3>
+        <p data-i18n="tb.strategy.2.desc">時刻表用表格化呈現、景點用圖文卡片、套票用比較清單，各自匹配資訊性質。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.3">原則三</span>
+        <h3 data-i18n="tb.strategy.3.title">對比與觸控目標優先於精緻裝飾</h3>
+        <p data-i18n="tb.strategy.3.desc">字級對比與按鈕尺寸符合無障礙標準，優先服務最多元的使用族群。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <div class="reveal">
+      <h2 data-i18n="case.section.decisions">關鍵決策</h2>
+      <table class="skill-table">
+        <tr>
+          <th data-i18n="tb.decisions.1.point">跨裝置版面策略</th>
+          <td data-i18n="tb.decisions.1.reason">採用「內容優先序調整」而非等比例縮放——手機版把地圖收合為條列，桌機版才展開完整地圖，避免小螢幕被地圖佔滿。</td>
+        </tr>
+        <tr>
+          <th data-i18n="tb.decisions.2.point">時刻表呈現方式</th>
+          <td data-i18n="tb.decisions.2.reason">手機版把時刻表由橫向表格改為直向清單並支援站點篩選，避免橫向捲動造成資訊遺漏。</td>
+        </tr>
+        <tr>
+          <th data-i18n="tb.decisions.3.point">景點與路線串接</th>
+          <td data-i18n="tb.decisions.3.reason">景點介紹頁附上對應路線連結，讓旅客在規劃行程時不必切換頁面查路線。</td>
+        </tr>
+        <tr>
+          <th data-i18n="tb.decisions.4.point">無障礙與可及性</th>
+          <td data-i18n="tb.decisions.4.reason">提高本文與按鈕的對比度並放大觸控熱區，因應公共服務網站橫跨不同年齡層使用者的需求。</td>
+        </tr>
+      </table>
     </div>
   </div>
 </section>
@@ -152,7 +235,14 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.outcome">成果與反思</h2>
+    <h2 class="reveal" data-i18n="case.section.validation">驗證</h2>
+    <p class="lede reveal" data-i18n="tb.validation">沒有正式的跨裝置測試資源，驗證方式聚焦於實機走查與自我檢核：在手機、平板、筆電三種實際裝置上重新測試路線查詢、購票等關鍵流程，並對照 WCAG 對比度標準逐一檢查文字與按鈕配色。</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.reflection">反思</h2>
     <p class="lede reveal" data-i18n="tb.outcome">透過重新規劃資訊架構，並針對不同裝置調整版面而非單純縮放，使旅客在手機上也能快速完成查找路線與購票等任務。這個專案也讓我更重視公共服務類網站在可及性與資訊層級上的責任。</p>
   </div>
 </section>
