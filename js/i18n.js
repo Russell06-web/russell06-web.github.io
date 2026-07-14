@@ -72,7 +72,7 @@ window.I18N = {
     "home.contact.h2": "正在尋找能把複雜化為清楚的設計師嗎？",
     "home.contact.status": "目前尋找 UI/UX、產品設計、網頁設計與數位產品相關全職機會，歡迎透過 Email 與我聯繫。",
     "home.contact.emailBtn": "寄信給我",
-    "home.contact.resumeBtn": "查看完整經歷",
+    "home.contact.resumeBtn": "下載履歷 PDF",
 
     "footer.meta": "台灣桃園 · © 2026 Russell Chiu",
 
@@ -87,15 +87,15 @@ window.I18N = {
     "about.philosophy.4": "偏好乾淨、有秩序且容易閱讀的視覺風格，同時也重視產品中的情感與溫度。好的使用體驗不只需要協助使用者完成任務，也應該讓操作過程保持清楚、安心，並能自然理解下一步。",
 
     "about.ai.h2": "AI 與設計實作",
-    "about.ai.1": "擅長使用 Claude Code 與 OpenAI Codex，並將 AI 工具整合至產品設計與開發流程。",
-    "about.ai.2": "可運用 AI 協助拆解需求、建立專案架構、製作互動介面、排查程式錯誤，以及將 Figma 設計稿延伸為可實際操作的網頁原型，提升設計驗證與迭代效率。",
-    "about.ai.3": "AI 主要作為設計與開發之間的協作工具；產品方向、使用者體驗與最終設計決策，仍會依據真實需求與使用情境進行判斷。",
+    "about.ai.1": "使用 ChatGPT 模擬使用者情境、整理需求與檢查例外流程；透過 Figma Make 快速建立互動原型，驗證版面與操作邏輯；再使用 Claude Code／Codex 將設計轉換為響應式前端介面，完成元件化、無障礙、除錯與 GitHub 部署。",
+    "about.ai.2": "決策與驗證留在自己手上：自建驗證關卡（如 WCAG 對比檢查、模擬研究標註），並以美學訓練把關生成結果。",
 
     "about.next.h2": "下一步",
     "about.next.1": "目前作品涵蓋排球賽事報名平台、藝文票務管理後台與文化主題 RWD 網站。",
     "about.next.2": "期望參與完整的產品設計流程，從需求探索、問題定義、流程規劃與介面設計，到原型測試、設計交付與後續迭代，並與產品經理、工程師及團隊成員共同打造清楚、可靠、具有溫度且真正能被使用的產品體驗。",
 
     "about.exp.h2": "職業經歷",
+    "about.exp.resumeLink": "下載履歷 PDF",
     "about.exp.1.role": "國立臺灣藝術大學 · 行政管理專員",
     "about.exp.1.desc": "負責流程協調與專案管理。",
     "about.exp.2.role": "動物醫院 · 獸醫助理",
@@ -270,7 +270,7 @@ window.I18N = {
     "home.contact.h2": "Looking for a designer who brings clarity to complexity?",
     "home.contact.status": "Currently looking for full-time opportunities in UI/UX, product design, web design, and digital products — feel free to reach out by email.",
     "home.contact.emailBtn": "Email Me",
-    "home.contact.resumeBtn": "View Full Experience",
+    "home.contact.resumeBtn": "Download Resume (PDF)",
 
     "footer.meta": "Taoyuan, Taiwan · © 2026 Russell Chiu",
 
@@ -285,15 +285,15 @@ window.I18N = {
     "about.philosophy.4": "I favor a clean, orderly, and readable visual style, while still valuing warmth and emotion in a product. A good experience doesn't just help users complete tasks — it keeps the process clear, reassuring, and easy to anticipate what comes next.",
 
     "about.ai.h2": "AI in Design Practice",
-    "about.ai.1": "Skilled with Claude Code and OpenAI Codex, integrating AI tools into the product design and development workflow.",
-    "about.ai.2": "I use AI to help break down requirements, set up project structure, build interactive interfaces, debug code, and extend Figma designs into working web prototypes — speeding up design validation and iteration.",
-    "about.ai.3": "AI mainly serves as a collaboration tool between design and development — product direction, user experience, and final design decisions are still judged against real needs and usage context.",
+    "about.ai.1": "I use ChatGPT to simulate user scenarios, organize requirements, and check for edge cases; Figma Make to quickly build interactive prototypes and validate layout and interaction logic; then Claude Code / Codex to turn the design into a responsive front-end interface — handling componentization, accessibility, debugging, and GitHub deployment.",
+    "about.ai.2": "Decisions and validation stay in my own hands: I build my own checkpoints (such as WCAG contrast checks and mock research annotations), and rely on my design training to vet whatever AI produces.",
 
     "about.next.h2": "What's Next",
     "about.next.1": "Current work spans a volleyball event sign-up platform, an arts ticketing admin backend, and a culture-themed responsive website.",
     "about.next.2": "I'm looking to take part in a complete product design process — from discovery, problem definition, flow planning, and interface design, through prototype testing, handoff, and iteration — working alongside product managers, engineers, and teammates to build product experiences that are clear, reliable, warm, and genuinely usable.",
 
     "about.exp.h2": "Experience",
+    "about.exp.resumeLink": "Download Resume (PDF)",
     "about.exp.1.role": "National Taiwan University of Arts · Admin Coordinator",
     "about.exp.1.desc": "Led process coordination and project management.",
     "about.exp.2.role": "Animal Hospital · Vet Assistant",
