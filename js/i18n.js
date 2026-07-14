@@ -122,10 +122,6 @@ window.I18N = {
     "about.contact.availability.value": "僅限台灣",
     "about.contact.btn": "寄信給我",
 
-    "gd.h1": "平面設計作品",
-    "gd.lede": "收錄海報、視覺識別、排版與簡報設計等平面作品，內容持續整理中。",
-    "gd.placeholder": "作品籌備中<br />即將上線",
-
     "case.role.label": "角色",
     "case.role.value": "UI/UX 設計（個人專案）",
     "case.tools.label": "工具",
@@ -383,10 +379,6 @@ window.I18N = {
     "about.contact.availability.label": "Open to Roles In",
     "about.contact.availability.value": "Taiwan Only",
     "about.contact.btn": "Send an Email",
-
-    "gd.h1": "Graphic Design Work",
-    "gd.lede": "Posters, visual identity, layout, and presentation design — currently being curated.",
-    "gd.placeholder": "Coming soon",
 
     "case.role.label": "Role",
     "case.role.value": "UI/UX Design (Personal Project)",
