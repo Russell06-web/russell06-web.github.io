@@ -25,6 +25,16 @@ window.I18N = {
     "home.positioning.h2": "美術養成的視覺敏銳度，加上產品設計的結構化思考。",
     "home.positioning.body": "我不只設計畫面，也設計資訊關係、操作路徑與決策節奏。好的介面應讓使用者知道自己在哪裡、能做什麼，以及下一步是什麼。",
 
+    "home.featured.open": "查看藝文票務管理後台案例",
+    "home.featured.label": "FEATURED CASE STUDY",
+    "home.featured.count": "01 / 03",
+    "home.featured.cardFlow": "INFORMATION ARCHITECTURE",
+    "home.featured.cardError": "ERROR PREVENTION",
+    "home.featured.type": "B2B Admin System",
+    "home.featured.tag1": "資訊架構",
+    "home.featured.tag2": "後台系統",
+    "home.featured.tag3": "操作防呆",
+    "home.featured.tag4": "設計系統",
     "home.featured.value": "在高資訊密度的票務後台中，降低查找成本與高風險操作失誤。",
     "home.featured.summary": "重新整理 Dashboard、票務表格與退換票流程，讓營運人員更快找到資訊，並在不可逆操作前獲得清楚確認。",
     "home.featured.challengeLabel": "挑戰",
@@ -223,6 +233,16 @@ window.I18N = {
     "home.positioning.h2": "Visual sensitivity from fine arts. Structured thinking from product design.",
     "home.positioning.body": "I don't just design screens — I design information relationships, task flows, and decision rhythm. A good interface tells users where they are, what they can do, and what comes next.",
 
+    "home.featured.open": "View the Arts Ticketing Admin System case study",
+    "home.featured.label": "FEATURED CASE STUDY",
+    "home.featured.count": "01 / 03",
+    "home.featured.cardFlow": "INFORMATION ARCHITECTURE",
+    "home.featured.cardError": "ERROR PREVENTION",
+    "home.featured.type": "B2B Admin System",
+    "home.featured.tag1": "Information Architecture",
+    "home.featured.tag2": "Dashboard",
+    "home.featured.tag3": "Error Prevention",
+    "home.featured.tag4": "Design System",
     "home.featured.value": "Reducing search cost and high-risk mistakes in a data-dense ticketing admin system.",
     "home.featured.summary": "Reorganized the dashboard, ticket tables, and refund flow so operations staff can find information faster — with clear confirmation before irreversible actions.",
     "home.featured.challengeLabel": "Challenge",
@@ -401,6 +421,10 @@ window.applyTranslations = function (lang) {
   document.querySelectorAll("[data-i18n]").forEach(function (el) {
     var key = el.getAttribute("data-i18n");
     if (dict[key] !== undefined) el.innerHTML = dict[key];
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+    var key = el.getAttribute("data-i18n-aria");
+    if (dict[key] !== undefined) el.setAttribute("aria-label", dict[key]);
   });
   document.documentElement.lang = lang === "en" ? "en" : "zh-Hant";
 };
