@@ -12,7 +12,7 @@
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>藝文票務管理後台 — Russell</title>
-<link rel="stylesheet" href="../css/style.css?v=20260716" />
+<link rel="stylesheet" href="../css/style.css?v=20260717" />
 </head>
 <body>
 <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳至主要內容</a>
@@ -74,7 +74,7 @@
     </div>
 
     <div class="case-hero-image reveal">
-      <img src="../assets/images/ticketing/hero.jpg" alt="藝文票務管理後台儀表板" />
+      <img src="../assets/images/ticketing/hero.jpg" alt="藝文票務管理後台儀表板" loading="eager" fetchpriority="high" decoding="async" />
     </div>
   </div>
 </header>
@@ -104,6 +104,33 @@
   </div>
 </section>
 
+<!-- TODO(Russell): 研究方式與關鍵發現沿用既有頁面「訪談 3 位相關使用者」的既定內容，並依規格文件補上使用者背景描述。若實際訪談對象、人數或方式與此不符，請直接修改此區塊文字，不要保留誤導性描述。 -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.research">研究</h2>
+    <div class="case-meta reveal" style="margin-top: 0; padding-top: 0; border-top: none;">
+      <div><dt data-i18n="tk.research.methodLabel">研究方式</dt><dd data-i18n="tk.research.method">訪談 3 位具有行政、客服或活動管理經驗的相關使用者。</dd></div>
+      <div><dt data-i18n="tk.research.purposeLabel">研究目的</dt><dd data-i18n="tk.research.purpose">理解營運人員如何查找活動、票券、會員與退換票資訊，以及高風險操作中最容易產生不確定性的節點。</dd></div>
+    </div>
+
+    <span class="eyebrow reveal" data-i18n="tk.research.findingsLabel">關鍵發現</span>
+    <div class="process-strip reveal">
+      <div class="step">
+        <span class="num" data-i18n="case.research.1">洞察一</span>
+        <p data-i18n="tk.research.finding.1">操作人員需在多個模組間反覆切換。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.research.2">洞察二</span>
+        <p data-i18n="tk.research.finding.2">重要狀態與操作後果不容易快速辨認。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.research.3">洞察三</span>
+        <p data-i18n="tk.research.finding.3">退換票等不可逆操作缺乏清楚確認。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="case-section">
   <div class="container">
     <h2 class="reveal" data-i18n="case.section.process">流程與線框</h2>
@@ -111,15 +138,15 @@
 
     <div class="shot-gallery reveal">
       <figure>
-        <div class="frame"><img src="../assets/images/ticketing/flow.jpg" alt="活動票務核心流程圖" /></div>
+        <div class="frame"><img src="../assets/images/ticketing/flow.jpg" alt="活動票務核心流程圖" loading="lazy" decoding="async" /></div>
         <figcaption data-i18n="tk.shot.flow">活動票務核心流程 — 從活動建立到售票、退換票的完整流程</figcaption>
       </figure>
       <figure>
-        <div class="frame"><img src="../assets/images/ticketing/wireframe-dashboard.jpg" alt="儀表板 wireframe" /></div>
+        <div class="frame"><img src="../assets/images/ticketing/wireframe-dashboard.jpg" alt="儀表板 wireframe" loading="lazy" decoding="async" /></div>
         <figcaption data-i18n="tk.shot.wireframeDashboard">儀表板 wireframe — 先確認數據卡片與圖表的資訊優先順序</figcaption>
       </figure>
       <figure>
-        <div class="frame"><img src="../assets/images/ticketing/wireframe-ticketing.jpg" alt="票務管理 wireframe" /></div>
+        <div class="frame"><img src="../assets/images/ticketing/wireframe-ticketing.jpg" alt="票務管理 wireframe" loading="lazy" decoding="async" /></div>
         <figcaption data-i18n="tk.shot.wireframeTicketing">票務管理 wireframe — 規劃表格欄位與批次操作的版位</figcaption>
       </figure>
     </div>
@@ -133,22 +160,83 @@
 
     <div class="shot-gallery reveal">
       <figure>
-        <div class="frame"><img src="../assets/images/ticketing/ticket-manage.jpg" alt="票券管理畫面" /></div>
+        <div class="frame"><img src="../assets/images/ticketing/ticket-manage.jpg" alt="票券管理畫面" loading="lazy" decoding="async" /></div>
         <figcaption data-i18n="tk.shot.ticketManage">票券管理 — 表格化呈現票券狀態，支援批次操作</figcaption>
       </figure>
       <figure>
-        <div class="frame frame--square"><img src="../assets/images/ticketing/refund.jpg" alt="客服中心退換票處理畫面" /></div>
+        <div class="frame frame--square"><img src="../assets/images/ticketing/refund.jpg" alt="客服中心退換票處理畫面" loading="lazy" decoding="async" /></div>
         <figcaption data-i18n="tk.shot.refund">客服中心 · 退換票處理 — 高風險操作加入二次確認防呆</figcaption>
       </figure>
       <figure>
-        <div class="frame"><img src="../assets/images/ticketing/members.jpg" alt="會員管理畫面" /></div>
+        <div class="frame"><img src="../assets/images/ticketing/members.jpg" alt="會員管理畫面" loading="lazy" decoding="async" /></div>
         <figcaption data-i18n="tk.shot.members">會員管理 — 整合會員資料與消費紀錄</figcaption>
       </figure>
       <figure>
-        <div class="frame"><img src="../assets/images/ticketing/marketing.jpg" alt="行銷工具精準推播畫面" /></div>
+        <div class="frame"><img src="../assets/images/ticketing/marketing.jpg" alt="行銷工具精準推播畫面" loading="lazy" decoding="async" /></div>
         <figcaption data-i18n="tk.shot.marketing">行銷工具 · 精準推播 — 依會員標籤設定推播條件</figcaption>
       </figure>
     </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.insightMap">從洞察到設計決策</h2>
+    <div class="insight-map reveal">
+      <div class="insight-row">
+        <span class="insight-part insight" data-i18n="tk.insight.1.insight">重要狀態難辨認</span>
+        <span class="insight-arrow" aria-hidden="true">→</span>
+        <span class="insight-part decision" data-i18n="tk.insight.1.decision">強化狀態標籤與表格層級</span>
+        <span class="insight-arrow" aria-hidden="true">→</span>
+        <span class="insight-part screen" data-i18n="tk.insight.1.screen">Ticket Management</span>
+      </div>
+      <div class="insight-row">
+        <span class="insight-part insight" data-i18n="tk.insight.2.insight">不可逆操作缺乏確認</span>
+        <span class="insight-arrow" aria-hidden="true">→</span>
+        <span class="insight-part decision" data-i18n="tk.insight.2.decision">加入二次確認與後果說明</span>
+        <span class="insight-arrow" aria-hidden="true">→</span>
+        <span class="insight-part screen" data-i18n="tk.insight.2.screen">Refund Flow</span>
+      </div>
+      <div class="insight-row">
+        <span class="insight-part insight" data-i18n="tk.insight.3.insight">跨模組查找成本高</span>
+        <span class="insight-arrow" aria-hidden="true">→</span>
+        <span class="insight-part decision" data-i18n="tk.insight.3.decision">重整側邊導覽與分類</span>
+        <span class="insight-arrow" aria-hidden="true">→</span>
+        <span class="insight-part screen" data-i18n="tk.insight.3.screen">Dashboard / Navigation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TODO(Russell): 迭代原因為依現有 wireframe／上線畫面差異推論出的合理設計判斷，非逐字紀錄的設計日誌。若與實際修改原因不同，請直接修改文字。 -->
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.iteration">設計迭代</h2>
+    <p class="lede reveal" data-i18n="tk.iteration.desc">以儀表板為例，說明從初版線框到上線畫面的調整依據。</p>
+
+    <div class="iteration-media reveal">
+      <figure>
+        <div class="frame"><img src="../assets/images/ticketing/wireframe-dashboard.jpg" alt="儀表板初版 wireframe" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="tk.iteration.wireframeLabel">Wireframe</figcaption>
+      </figure>
+      <span class="iteration-arrow" aria-hidden="true">→</span>
+      <figure>
+        <div class="frame"><img src="../assets/images/ticketing/dashboard-bare.jpg" alt="目前上線的儀表板畫面" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="tk.iteration.finalLabel">Final UI</figcaption>
+      </figure>
+    </div>
+
+    <dl class="case-meta reveal">
+      <div><dt data-i18n="tk.iteration.problemLabel">第一版問題</dt><dd data-i18n="tk.iteration.problem">初版線框將所有數據卡片以相近的視覺權重並列，未特別標示何者對營運判斷最關鍵。</dd></div>
+      <div><dt data-i18n="tk.iteration.reasonLabel">修改原因</dt><dd data-i18n="tk.iteration.reason">依營運優先順序調整卡片大小與位置，讓最重要的指標（如營收與待處理退票）優先被看到。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.limitations">限制與下一步</h2>
+    <p class="lede reveal" data-i18n="tk.limitations">目前研究樣本有限，部分效率改善屬設計推估，未經正式量化測試。下一步應進行任務測試，觀察資訊查找時間、錯誤率與確認流程理解度。</p>
   </div>
 </section>
 
