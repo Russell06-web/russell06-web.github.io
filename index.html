@@ -62,8 +62,8 @@
       <p class="hero-lede" data-i18n="home.lede">我具備行政流程管理與美術背景，專注於資訊架構、後台系統，以及容易理解的數位介面。</p>
       <p class="hero-evidence" data-i18n="home.hero.evidence">5 年行政流程經驗 ／ 美術背景 ／ 430 小時 UI/UX 實訓</p>
       <div class="btn-row">
-        <a href="#work" class="btn btn-primary" data-i18n="home.btn.work">查看精選作品</a>
-        <a href="about.html" class="btn btn-ghost" data-i18n="nav.about">關於我</a>
+        <a href="assets/resume/Russell-Chiu-Resume.pdf" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="home.contact.resumeBtn">下載履歷 PDF</a>
+        <a href="#work" class="btn btn-ghost" data-i18n="home.btn.work">查看精選作品</a>
       </div>
       <div class="proof-grid">
         <div><strong>03</strong><span data-i18n="home.hero.proof1">完整案例研究</span></div>
@@ -71,38 +71,9 @@
         <div><strong>GA4</strong><span data-i18n="home.hero.proof3">Google Analytics 認證</span></div>
       </div>
     </div>
-    <a class="hero-visual featured-evidence reveal" href="projects/art-ticketing.html" data-i18n-aria="home.featured.open" aria-label="查看藝文票務管理後台案例">
-      <div class="featured-evidence-label">
-        <span data-i18n="home.featured.label">FEATURED CASE STUDY</span>
-        <span data-i18n="home.featured.count">01 / 03</span>
-      </div>
-      <div class="featured-evidence-main">
-        <img src="assets/images/ticketing/dashboard-bare.jpg" alt="藝文票務管理後台儀表板，顯示總營收、已售票券、活動數量與熱門活動列表" loading="eager" />
-      </div>
-      <div class="featured-evidence-cards">
-        <div class="evidence-card card-flow">
-          <img src="assets/images/ticketing/flow.jpg" alt="" />
-          <span data-i18n="home.featured.cardFlow">INFORMATION ARCHITECTURE</span>
-        </div>
-        <div class="evidence-card card-error">
-          <img src="assets/images/ticketing/refund.jpg" alt="" />
-          <span data-i18n="home.featured.cardError">ERROR PREVENTION</span>
-        </div>
-      </div>
-      <div class="featured-evidence-foot">
-        <div class="featured-evidence-heading">
-          <h3 data-i18n="nav.dd.ticketing.title">藝文票務管理後台</h3>
-          <span data-i18n="home.featured.type">B2B Admin System</span>
-        </div>
-        <div class="tag-row">
-          <span class="tag" data-i18n="home.featured.tag1">資訊架構</span>
-          <span class="tag" data-i18n="home.featured.tag2">後台系統</span>
-          <span class="tag" data-i18n="home.featured.tag3">操作防呆</span>
-          <span class="tag" data-i18n="home.featured.tag4">設計系統</span>
-        </div>
-        <span class="link-arrow"><span data-i18n="project.view">查看案例</span> <span class="arrow">→</span></span>
-      </div>
-    </a>
+    <div class="hero-visual hero-photo reveal">
+      <img src="assets/images/profile/portrait.jpg" alt="Russell Chiu 大頭照" loading="eager" width="720" height="900" />
+    </div>
   </div>
 </header>
 
@@ -170,10 +141,13 @@
       <p data-i18n="home.work.desc">行動端體驗設計與公共服務網站的資訊架構規劃。</p>
     </div>
 
-    <div class="project-list">
-      <a class="project-row reveal" href="projects/volleyball-hub.html">
-        <span class="project-index">01</span>
+    <div class="project-grid">
+      <a class="project-card reveal" href="projects/volleyball-hub.html">
+        <div class="project-media">
+          <img src="assets/images/volleyball/homepage-phones.jpg" alt="Volleyball Hub App 三支手機呈現的介面畫面" loading="lazy" />
+        </div>
         <div class="project-info">
+          <span class="project-index">01</span>
           <div class="project-meta">
             <span>Mobile App</span>
             <span data-i18n="case.role.value">UI/UX 設計（個人專案）</span>
@@ -189,14 +163,14 @@
           </div>
           <span class="link-arrow"><span data-i18n="project.view">查看案例</span> <span class="arrow">→</span></span>
         </div>
-        <div class="project-media">
-          <img src="assets/images/volleyball/homepage-phones.jpg" alt="Volleyball Hub App 三支手機呈現的介面畫面" loading="lazy" />
-        </div>
       </a>
 
-      <a class="project-row reveal" href="projects/taiwan-tourbus.html">
-        <span class="project-index">02</span>
+      <a class="project-card reveal" href="projects/taiwan-tourbus.html">
+        <div class="project-media">
+          <img src="assets/images/tourbus/homepage-devices.jpg" alt="台灣好行 RWD 網站於桌機、平板與手機的呈現畫面" loading="lazy" />
+        </div>
         <div class="project-info">
+          <span class="project-index">02</span>
           <div class="project-meta">
             <span>Responsive Website</span>
             <span data-i18n="case.role.value">UI/UX 設計（個人專案）</span>
@@ -211,9 +185,6 @@
             <span class="tag">Accessibility</span>
           </div>
           <span class="link-arrow"><span data-i18n="project.view">查看案例</span> <span class="arrow">→</span></span>
-        </div>
-        <div class="project-media">
-          <img src="assets/images/tourbus/homepage-devices.jpg" alt="台灣好行 RWD 網站於桌機、平板與手機的呈現畫面" loading="lazy" />
         </div>
       </a>
     </div>
