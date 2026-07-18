@@ -13,7 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Russell — Product Designer Portfolio</title>
 <meta name="description" content="Russell 的 Product / UI/UX 設計作品集，擅長把複雜流程、資訊架構與後台系統整理成清楚可用的產品體驗。" />
-<link rel="stylesheet" href="css/style.css?v=20260717" />
+<link rel="stylesheet" href="css/style.css?v=20260719c" />
 </head>
 <body>
 <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳至主要內容</a>
@@ -30,6 +30,7 @@
             <a href="projects/volleyball-hub.html">Volleyball Hub<span class="dd-desc" data-i18n="nav.dd.volleyball">排球活動媒合平台</span></a>
             <a href="projects/art-ticketing.html"><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span><span class="dd-desc" data-i18n="nav.dd.ticketing.desc">B2B 票務管理系統</span></a>
             <a href="projects/taiwan-tourbus.html"><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span><span class="dd-desc" data-i18n="nav.dd.tourbus.desc">公共交通旅遊網站重設計</span></a>
+            <a href="projects/mwr-museum.html"><span data-i18n="nav.dd.mwr.title">MWR 世界宗教博物館</span><span class="dd-desc" data-i18n="nav.dd.mwr.desc">沉浸式博物館網站</span></a>
           </div>
         </li>
         <li><a href="about.html" data-i18n="nav.about">關於我</a></li>
@@ -66,13 +67,17 @@
         <a href="#work" class="btn btn-ghost" data-i18n="home.btn.work">查看精選作品</a>
       </div>
     </div>
-    <div class="hero-visual hero-photo reveal">
-      <div class="hero-photo-frame">
-        <img src="assets/images/profile/portrait.jpg" alt="Russell Chiu 大頭照" loading="eager" fetchpriority="high" decoding="async" width="720" height="900" />
-      </div>
-      <div class="hero-photo-foot">
-        <span>Russell Chiu</span>
-        <span class="hero-photo-role">Product Designer · Taiwan</span>
+    <div class="hero-visual hero-work-preview reveal">
+      <a class="hero-work-main" href="projects/mwr-museum.html" aria-label="查看 MWR 世界宗教博物館案例">
+        <img src="assets/images/mwr/hero.jpg" alt="MWR 世界宗教博物館首頁，深色主視覺搭配博物館空間攝影" loading="eager" fetchpriority="high" decoding="async" />
+      </a>
+      <div class="hero-work-secondary">
+        <a class="hero-work-thumb" href="projects/volleyball-hub.html" aria-label="查看 Volleyball Hub 案例">
+          <img src="assets/images/volleyball/homepage-phones.jpg" alt="Volleyball Hub App 介面" loading="eager" decoding="async" />
+        </a>
+        <a class="hero-work-thumb" href="projects/art-ticketing.html" aria-label="查看藝文票務管理後台案例">
+          <img src="assets/images/ticketing/homepage-login.jpg" alt="藝文票務管理後台介面" loading="eager" decoding="async" />
+        </a>
       </div>
     </div>
     <div class="proof-grid hero-proof reveal">
@@ -91,7 +96,7 @@
     <div class="section-head reveal">
       <span class="eyebrow">Featured Work</span>
       <h2 data-i18n="home.work.h2">精選作品</h2>
-      <p data-i18n="home.work.desc">涵蓋複雜後台系統、行動端體驗設計與公共服務網站的三個完整案例研究。</p>
+      <p data-i18n="home.work.desc">涵蓋複雜後台系統、行動端體驗設計、公共服務網站與沉浸式動效網站的四個完整案例研究。</p>
     </div>
 
     <div class="project-grid">
@@ -159,6 +164,29 @@
             <span class="tag">RWD Design</span>
             <span class="tag">Public Service</span>
             <span class="tag">Accessibility</span>
+          </div>
+          <span class="link-arrow"><span data-i18n="project.view">查看案例</span> <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <a class="project-card reveal" href="projects/mwr-museum.html">
+        <div class="project-media">
+          <img src="assets/images/mwr/hero.jpg" alt="MWR 世界宗教博物館首頁，深色主視覺搭配博物館空間攝影與大型標題" loading="lazy" decoding="async" />
+        </div>
+        <div class="project-info">
+          <span class="project-index" data-i18n="project.number.4">04 / 04</span>
+          <div class="project-meta">
+            <span>Interactive Website</span>
+            <span data-i18n="mwr.role.value">UI/UX 概念設計＋前端實作（個人練習專案）</span>
+          </div>
+          <h3 data-i18n="nav.dd.mwr.title">MWR 世界宗教博物館</h3>
+          <p class="problem" data-i18n="home.card.mwr.problem">把靜態概念稿實作成有真實互動的完整網站</p>
+          <p data-i18n="home.card.mwr.desc">深色沉浸式多頁網站，包含全螢幕導覽疊層、拖曳輪播與灰階轉全彩的圖片揭露動效，並補上雙語與無障礙支援。</p>
+          <p class="project-contribution"><b data-i18n="home.work.contributionLabel">貢獻</b> <span data-i18n="home.card.mwr.contribution">Motion Design、Interaction Design、Accessibility、Bilingual i18n</span></p>
+          <div class="tag-row">
+            <span class="tag">Motion Design</span>
+            <span class="tag">Accessibility</span>
+            <span class="tag">Dark Mode</span>
           </div>
           <span class="link-arrow"><span data-i18n="project.view">查看案例</span> <span class="arrow">→</span></span>
         </div>
@@ -231,32 +259,24 @@
   </div>
 </section>
 
-<section class="section-tight" id="contact-preview">
-  <div class="container">
-    <div class="section-rule reveal">
-      <span class="line"></span>
-    </div>
-    <div class="section-head reveal">
-      <span class="eyebrow">Contact</span>
-      <h2 data-i18n="home.contact.h2">正在尋找能把複雜化為清楚的設計師嗎？</h2>
-      <p data-i18n="home.contact.status">目前尋找 UI/UX、產品設計、網頁設計與數位產品相關全職機會（工作地點僅限台灣），歡迎透過 Email 與我聯繫。</p>
-    </div>
-    <div class="btn-row reveal" style="margin-top:0;">
-      <a href="mailto:william228sys@gmail.com" class="btn btn-primary" data-i18n="home.contact.emailBtn">寄信給我</a>
-      <a href="assets/resume/Russell-Chiu-Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="home.contact.resumeBtn">查看履歷 PDF</a>
-    </div>
-  </div>
-</section>
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-links">
-      <a href="mailto:william228sys@gmail.com">william228sys@gmail.com</a>
-      <a href="about.html" data-i18n="nav.about">關於我</a>
-      <a href="about.html#contact" data-i18n="nav.contact">聯絡我</a>
+  <div class="container footer-grid">
+    <div class="footer-contact">
+      <span class="footer-label" data-i18n="footer.contactLabel">聯絡</span>
+      <a href="mailto:william228sys@gmail.com" class="footer-contact-link">william228sys@gmail.com</a>
+      <a href="https://github.com/Russell06-web" target="_blank" rel="noopener" class="footer-contact-link">github.com/Russell06-web <svg class="icon-external" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
     </div>
-    <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
+    <div class="footer-mark" aria-hidden="true">
+      <span class="footer-mark-ring"></span>
+      <span class="footer-mark-dot"></span>
+    </div>
+    <div class="footer-info">
+      <p data-i18n="footer.tagline">本站以 Claude Code 開發，設計與程式皆為本人作品。</p>
+      <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
+      <a href="#main-content" class="footer-top"><span aria-hidden="true">↑</span> <span data-i18n="footer.backTop">回到頂部</span></a>
+    </div>
   </div>
 </footer>
 

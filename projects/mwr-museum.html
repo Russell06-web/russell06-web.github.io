@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<script>
+(function () {
+  var t = localStorage.getItem("theme");
+  if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", t);
+  document.documentElement.setAttribute("data-lang", localStorage.getItem("lang") || "zh");
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MWR 世界宗教博物館 — Russell</title>
+<link rel="stylesheet" href="../css/style.css?v=20260719c" />
+</head>
+<body>
+<a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳至主要內容</a>
+
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">Russell<span>.</span></a>
+    <div class="nav-right">
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="../index.html" data-i18n="nav.home">首頁</a></li>
+        <li class="has-dropdown">
+          <button class="nav-link-btn active" aria-expanded="false" aria-controls="work-dropdown"><span data-i18n="nav.work">作品案例</span> <span class="nav-caret"></span></button>
+          <div class="nav-dropdown" id="work-dropdown">
+            <a href="volleyball-hub.html">Volleyball Hub<span class="dd-desc" data-i18n="nav.dd.volleyball">排球活動媒合平台</span></a>
+            <a href="art-ticketing.html"><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span><span class="dd-desc" data-i18n="nav.dd.ticketing.desc">B2B 票務管理系統</span></a>
+            <a href="taiwan-tourbus.html"><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span><span class="dd-desc" data-i18n="nav.dd.tourbus.desc">公共交通旅遊網站重設計</span></a>
+            <a href="mwr-museum.html" class="active"><span data-i18n="nav.dd.mwr.title">MWR 世界宗教博物館</span><span class="dd-desc" data-i18n="nav.dd.mwr.desc">沉浸式博物館網站</span></a>
+          </div>
+        </li>
+        <li><a href="../about.html" data-i18n="nav.about">關於我</a></li>
+        <li><a href="../about.html#experience" data-i18n="nav.resume">履歷</a></li>
+        <li><a href="../about.html#contact" data-i18n="nav.contact">聯絡我</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button type="button" class="lang-toggle" aria-label="Switch language">EN</button>
+        <button type="button" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+        </button>
+      </div>
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+<header class="case-hero">
+  <div class="container">
+    <span class="eyebrow reveal">Case Study · Interactive Website</span>
+    <h1 class="reveal" data-i18n="nav.dd.mwr.title">MWR 世界宗教博物館</h1>
+    <p class="hero-lede reveal" data-i18n="mwr.lede">虛構的世界宗教博物館網站，把一份靜態的 Figma Make 概念稿，實作成具備真實互動動效、雙語切換與無障礙支援的完整多頁網站。</p>
+
+    <blockquote class="case-quote reveal" data-i18n="mwr.quote">把靜態設計稿，做成一個有呼吸感的真實網站。</blockquote>
+
+    <dl class="case-meta reveal">
+      <div><dt data-i18n="case.role.label">角色</dt><dd data-i18n="mwr.role.value">UI/UX 概念設計＋前端實作（個人練習專案）</dd></div>
+      <div><dt data-i18n="case.tools.label">工具</dt><dd data-i18n="mwr.tools">Figma Make、Claude Code</dd></div>
+      <div><dt data-i18n="case.timeline.label">時程</dt><dd>2026</dd></div>
+    </dl>
+    <div class="tag-row reveal">
+      <span class="tag">Motion Design</span>
+      <span class="tag">Accessibility</span>
+      <span class="tag">Bilingual i18n</span>
+      <span class="tag">Dark Mode</span>
+    </div>
+
+    <div class="btn-row reveal">
+      <a href="https://russell06-web.github.io/mwr-museum-redesign/" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="mwr.viewSite">查看線上網站</a>
+    </div>
+
+    <div class="case-hero-image reveal">
+      <img src="../assets/images/mwr/hero.jpg" alt="MWR 世界宗教博物館首頁，深色主視覺搭配博物館空間攝影與大型標題" loading="eager" fetchpriority="high" decoding="async" />
+    </div>
+  </div>
+</header>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.overview">專案總覽</h2>
+    <p class="lede reveal" data-i18n="mwr.overview">MWR 世界宗教博物館是一個以「虛構博物館網站」為題的個人練習專案，起點是一份 Figma Make 產生的概念稿。目標不是設計一個新的資訊架構，而是測試 AI 輔助工作流能把一份高視覺複雜度、高動效需求的靜態設計，實作到多接近真實、可上線的程度——包含真實互動、雙語切換與無障礙支援。</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.problem">問題</h2>
+    <p class="lede reveal" data-i18n="mwr.background">原始概念稿只是一組靜態畫面，導覽選單、輪播、篩選頁籤等關鍵互動都必須從頭定義行為與動效；同時全站採用深色主題並疊加大量攝影與動效，容易在氛圍感與可讀性之間失衡；館內參觀／展覽／館藏／關於／訪客服務橫跨 9 個頁面，也需要清楚的導覽避免使用者迷路。</p>
+
+    <div class="process-strip reveal">
+      <div class="step">
+        <span class="num" data-i18n="case.problem.1">問題一</span>
+        <h3 data-i18n="mwr.problem.1.title">靜態稿缺乏真實互動</h3>
+        <p data-i18n="mwr.problem.1.desc">導覽選單、虛擬導覽輪播、展覽篩選頁籤等關鍵互動，原始設計都只有畫面，沒有行為定義。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.problem.2">問題二</span>
+        <h3 data-i18n="mwr.problem.2.title">深色高氛圍但需兼顧可讀性</h3>
+        <p data-i18n="mwr.problem.2.desc">全站深色模式搭配大量攝影疊加濾鏡，容易在視覺氛圍與文字對比、可及性之間失衡。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.problem.3">問題三</span>
+        <h3 data-i18n="mwr.problem.3.title">多頁式資訊架構</h3>
+        <p data-i18n="mwr.problem.3.desc">參觀、展覽、館藏、關於、訪客服務橫跨 9 個頁面，選單項目一多容易讓使用者迷路。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.research">研究</h2>
+    <p class="lede reveal" data-i18n="mwr.research.desc">這是虛構機構、沒有真實使用者可以訪談。驗證方式改為：逐一比對 Figma Make 原始碼與畫面稿，確認動效與互動邏輯的真實設計意圖，並用 WCAG 對比標準檢查深色介面的文字可讀性。</p>
+
+    <div class="process-strip reveal">
+      <div class="step">
+        <span class="num" data-i18n="case.research.1">洞察一</span>
+        <p data-i18n="mwr.research.finding.1">Figma Make 原始碼本身就是可互動的程式，比純截圖能還原更多真實動效邏輯，值得直接參考而非憑截圖猜測。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.research.2">洞察二</span>
+        <p data-i18n="mwr.research.finding.2">深色背景疊加攝影濾鏡後，部分內文對比在 WCAG AA 標準下不足，需要另外收斂濾鏡強度。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.research.3">洞察三</span>
+        <p data-i18n="mwr.research.finding.3">導覽選單項目分散在多層次選單中時，使用者容易失去「目前在哪裡」的方向感。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.strategy">設計策略</h2>
+    <p class="lede reveal" data-i18n="mwr.strategy.desc">依上述觀察整理出三個設計原則，作為互動、動效與資訊架構決策的依據。</p>
+
+    <div class="process-strip reveal">
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.1">原則一</span>
+        <h3 data-i18n="mwr.strategy.1.title">動效服務內容，不搶戲</h3>
+        <p data-i18n="mwr.strategy.1.desc">呼吸感背景、灰階轉全彩揭露等動效保留但克制，優先確保文字可讀與操作不被干擾。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.2">原則二</span>
+        <h3 data-i18n="mwr.strategy.2.title">深色不等於低對比</h3>
+        <p data-i18n="mwr.strategy.2.desc">文字與互動元件的對比度另外檢查，不因為深色氛圍犧牲可讀性。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.3">原則三</span>
+        <h3 data-i18n="mwr.strategy.3.title">選單即地圖</h3>
+        <p data-i18n="mwr.strategy.3.desc">把五大分類收進單一全螢幕導覽疊層，用清楚分類與子選單降低多頁式架構的迷路風險。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <div class="reveal">
+      <h2 data-i18n="case.section.decisions">關鍵決策</h2>
+      <table class="skill-table">
+        <tr>
+          <th data-i18n="mwr.decisions.1.point">全螢幕導覽疊層</th>
+          <td data-i18n="mwr.decisions.1.reason">把參觀／展覽／館藏／關於等分類收進同一個全螢幕選單，滑鼠移到分類會換右側子選單與照片，取代原本分散的多層選單。</td>
+        </tr>
+        <tr>
+          <th data-i18n="mwr.decisions.2.point">灰階轉全彩的圖片揭露</th>
+          <td data-i18n="mwr.decisions.2.reason">攝影素材進入畫面時先以灰階呈現，滾動就位後才緩緩轉為全彩，用一致的視覺語言標示內容載入，也呼應博物館策展的沉浸感。</td>
+        </tr>
+        <tr>
+          <th data-i18n="mwr.decisions.3.point">拖曳式虛擬導覽輪播</th>
+          <td data-i18n="mwr.decisions.3.reason">把原本的靜態四宮格畫面改成可拖曳橫向捲動的卡片輪播，貼近實際導覽瀏覽的行為。</td>
+        </tr>
+        <tr>
+          <th data-i18n="mwr.decisions.4.point">雙語與無障礙補強</th>
+          <td data-i18n="mwr.decisions.4.reason">全站補上 EN／中雙語切換，並逐頁檢查 WCAG 對比與鍵盤操作，讓深色高動效介面仍維持可讀性與可及性。</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.screens">關鍵畫面</h2>
+    <p class="lede reveal" data-i18n="mwr.screens.desc">從首頁沉浸式視覺、全螢幕導覽疊層到展覽與館藏頁的篩選互動，維持一致的深色語彙與動效節奏。</p>
+
+    <div class="shot-gallery reveal">
+      <figure>
+        <div class="frame frame--wide"><img src="../assets/images/mwr/nav-overlay.jpg" alt="全螢幕導覽疊層，左側為五大分類，右側隨滑鼠移入切換子選單與照片" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="mwr.shot.nav">全螢幕導覽疊層 — 分類與子選單、照片同步切換</figcaption>
+      </figure>
+      <figure>
+        <div class="frame frame--wide"><img src="../assets/images/mwr/exhibitions.jpg" alt="展覽頁面，含當期／即將開展／歷年展覽頁籤篩選" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="mwr.shot.exhibitions">展覽頁 — 當期／即將開展／歷年展覽頁籤篩選</figcaption>
+      </figure>
+      <figure>
+        <div class="frame frame--wide"><img src="../assets/images/mwr/collection.jpg" alt="館藏頁面，含宗教傳統分類篩選與文物卡片格線" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="mwr.shot.collection">館藏頁 — 依宗教傳統分類篩選的文物格線</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.validation">驗證</h2>
+    <p class="lede reveal" data-i18n="mwr.validation">虛構機構、練習性質專案，沒有真人使用者測試資源。驗證聚焦在自我檢核：用 Playwright 逐頁檢查零 console error、零版面溢出、導覽疊層開關與鍵盤操作是否正常，並人工核對深色文字與互動元件的對比度是否符合 WCAG AA。</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.reflection">反思</h2>
+    <p class="lede reveal" data-i18n="mwr.outcome">這個專案讓我練習把一份靜態、高視覺複雜度的設計稿，轉換成有真實互動邏輯、無障礙與雙語支援的完整網站，也更清楚 AI 輔助工作流在動效與互動實作上能承擔多少、哪些判斷仍必須自己把關——例如對比度、可讀性與整體資訊架構是否清楚。</p>
+  </div>
+</section>
+
+<nav class="case-nav">
+  <a href="taiwan-tourbus.html"><span class="dir">← Previous Case</span><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span></a>
+  <a href="../index.html" class="next"><span class="dir">Back to</span><span data-i18n="case.nav.allWork">所有作品</span></a>
+</nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-contact">
+      <span class="footer-label" data-i18n="footer.contactLabel">聯絡</span>
+      <a href="mailto:william228sys@gmail.com" class="footer-contact-link">william228sys@gmail.com</a>
+      <a href="https://github.com/Russell06-web" target="_blank" rel="noopener" class="footer-contact-link">github.com/Russell06-web <svg class="icon-external" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    </div>
+    <div class="footer-mark" aria-hidden="true">
+      <span class="footer-mark-ring"></span>
+      <span class="footer-mark-dot"></span>
+    </div>
+    <div class="footer-info">
+      <p data-i18n="footer.tagline">本站以 Claude Code 開發，設計與程式皆為本人作品。</p>
+      <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
+      <a href="#main-content" class="footer-top"><span aria-hidden="true">↑</span> <span data-i18n="footer.backTop">回到頂部</span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
