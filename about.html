@@ -12,7 +12,7 @@
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>About me — Russell</title>
-<link rel="stylesheet" href="css/style.css?v=20260720" />
+<link rel="stylesheet" href="css/style.css?v=20260720e" />
 </head>
 <body>
 <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳至主要內容</a>
@@ -33,8 +33,6 @@
           </div>
         </li>
         <li><a href="about.html" class="active" data-i18n="nav.about">關於我</a></li>
-        <li><a href="about.html#experience" data-i18n="nav.resume">履歷</a></li>
-        <li><a href="about.html#contact" data-i18n="nav.contact">聯絡我</a></li>
       </ul>
       <div class="nav-controls">
         <button type="button" class="lang-toggle" aria-label="Switch language">EN</button>
@@ -51,28 +49,31 @@
 </nav>
 
 <main id="main-content">
-<header class="hero" style="padding-bottom: 40px;">
+<header class="hero about-hero">
   <div class="container about-hero-grid">
     <div class="about-hero-photo reveal">
-      <img src="assets/images/profile/portrait.jpg" alt="Russell Chiu 大頭照" loading="eager" decoding="async" width="720" height="900" />
+      <img src="assets/images/profile/portrait.jpg" alt="Russell Chiu 戶外半身照" loading="eager" decoding="async" width="1408" height="1056" />
     </div>
-    <div class="reveal">
+    <div class="about-hero-copy reveal">
       <span class="eyebrow">About me</span>
-      <h1 data-i18n="about.h1">Russell，具備美術背景、流程管理經驗與產品思維的 UI/UX Designer。</h1>
-      <p class="hero-lede" data-i18n="about.lede">畢業於國立臺灣藝術大學美術學系。美術訓練培養了對色彩、比例、視覺層級與細節的敏感度；五年的高等學校行政管理經驗，則累積了資訊整理、需求釐清、跨角色溝通與流程規劃能力。</p>
-      <p data-i18n="about.lede2">曾擔任排球教練的經歷，也帶來對不同個體狀態與理解方式的觀察。面對不同情境時，會依照實際需求調整溝通與策略。這些跨領域經驗，也逐漸形成目前的設計方式：從情境出發、整理問題、建立流程，再透過介面將複雜資訊轉化為容易理解的體驗。</p>
+      <p class="about-hero-kicker">Russell Chiu</p>
+      <h1 data-i18n="about.h1">把複雜流程整理成清楚可用體驗的 UI/UX Designer。</h1>
+      <p class="hero-lede" data-i18n="about.lede">具備美術背景與五年行政流程管理經驗，擅長資訊架構、後台系統與跨角色協作。目前尋找台灣地區的 UI/UX／Product Designer 全職機會。</p>
+      <p class="about-hero-meta" data-i18n="about.hero.meta">Taiwan · Open to UI/UX opportunities</p>
+      <div class="btn-row">
+        <a href="assets/resume/Russell-Chiu-Resume.pdf" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="about.hero.resumeBtn">查看履歷 PDF</a>
+      </div>
     </div>
   </div>
 </header>
 
-<section class="section-tight" style="padding-top:0;">
+<section class="section-tight about-story">
   <div class="container">
     <div class="reveal">
-      <h2 data-i18n="about.philosophy.h2">從美術與流程管理走向產品設計</h2>
-      <p data-i18n="about.philosophy.1">設計過程重視觀察、整理與轉化。</p>
-      <p data-i18n="about.philosophy.2">面對一項產品需求時，會先釐清目標使用者、任務情境與現有流程中的問題，再進一步整理資訊架構、User Flow 與操作邏輯。</p>
-      <p data-i18n="about.philosophy.3">進入介面設計階段後，透過 Wireframe、Prototype、元件系統與狀態設計，逐步確認資訊層級、操作一致性與開發可行性。</p>
-      <p data-i18n="about.philosophy.4">偏好乾淨、有秩序且容易閱讀的視覺風格，同時也重視產品中的情感與溫度。好的使用體驗不只需要協助使用者完成任務，也應該讓操作過程保持清楚、安心，並能自然理解下一步。</p>
+      <h2 data-i18n="about.story.h2">從行政與美術走向產品設計</h2>
+      <p data-i18n="about.story.1">在投入 UI/UX 設計之前，曾有五年行政流程管理與跨部門協作經驗，長期處理資訊彙整、需求確認、進度追蹤與角色溝通。這些經驗讓我熟悉真實工作中資訊不完整、流程複雜，但使用者仍必須完成任務的情境。</p>
+      <p data-i18n="about.story.2">美術背景培養了對構圖、色彩、比例與細節的敏感度。轉入產品設計後，將這些能力運用在資訊層級、操作流程與介面一致性上。</p>
+      <p data-i18n="about.story.3">面對需求時，習慣先整理情境與流程，再建立資訊架構、User Flow 與原型，最後透過介面讓複雜內容變得容易理解。</p>
     </div>
   </div>
 </section>
@@ -80,85 +81,99 @@
 <section class="section-tight">
   <div class="container">
     <div class="reveal">
-      <h2 data-i18n="about.ai.h2">AI 與設計實作</h2>
-      <p data-i18n="about.ai.1">使用 ChatGPT 模擬使用者情境、整理需求與檢查例外流程；透過 Figma Make 快速建立互動原型，驗證版面與操作邏輯；再使用 Claude Code／Codex 將設計轉換為響應式前端介面，完成元件化、無障礙、除錯與 GitHub 部署。</p>
-      <p data-i18n="about.ai.2">決策與驗證留在自己手上：自建驗證關卡（如 WCAG 對比檢查、模擬研究標註），並以美學訓練把關生成結果。</p>
+      <h2 data-i18n="about.work.h2">我的工作方式</h2>
+      <div class="work-grid">
+        <div class="work-item">
+          <h3 data-i18n="about.work.1.h3">01 釐清問題</h3>
+          <p data-i18n="about.work.1.p">整理使用者、任務情境、限制條件與例外狀態，先確認真正需要解決的問題。</p>
+        </div>
+        <div class="work-item">
+          <h3 data-i18n="about.work.2.h3">02 建立結構</h3>
+          <p data-i18n="about.work.2.p">規劃資訊架構、User Flow、Wireframe 與元件狀態，讓內容與操作邏輯清楚一致。</p>
+        </div>
+        <div class="work-item">
+          <h3 data-i18n="about.work.3.h3">03 驗證實作</h3>
+          <p data-i18n="about.work.3.p">透過 Figma、Claude Code 與 Codex 製作可操作原型，並檢查 RWD、無障礙與實作結果。</p>
+        </div>
+      </div>
+      <p class="work-note" data-i18n="about.work.note">AI 用於加速整理、原型與實作，但設計決策、內容判斷與最終驗證仍由設計者負責。</p>
     </div>
   </div>
 </section>
 
 <section class="section-tight">
-  <div class="container about-grid">
-    <div class="reveal" id="experience">
-      <h2 data-i18n="about.exp.h2">職業經歷</h2>
-      <a class="link-arrow" href="assets/resume/Russell-Chiu-Resume.pdf" target="_blank" rel="noopener" style="margin-bottom: 24px;"><span data-i18n="about.exp.resumeLink">查看履歷 PDF</span> <span class="arrow">→</span></a>
-      <ul class="timeline">
-        <li>
-          <span class="period">2019 — 2024</span>
-          <div class="role" data-i18n="about.exp.1.role">國立臺灣藝術大學 · 行政管理專員</div>
-          <p data-i18n="about.exp.1.desc">負責流程協調與專案管理。</p>
-        </li>
-        <li>
-          <span class="period">2024</span>
-          <div class="role" data-i18n="about.exp.2.role">動物醫院 · 獸醫助理</div>
-          <p data-i18n="about.exp.2.desc">培養應變與同理溝通能力。</p>
-        </li>
-        <li>
-          <span class="period">2024 — 2025</span>
-          <div class="role" data-i18n="about.exp.3.role">排球系隊 · 總教練</div>
-          <p data-i18n="about.exp.3.desc">發展使用者觀察與團隊協作能力。</p>
-        </li>
-      </ul>
-    </div>
-
+  <div class="container">
     <div class="reveal">
-      <h2 data-i18n="about.next.h2">下一步</h2>
-      <p data-i18n="about.next.1">目前作品涵蓋排球賽事報名平台、藝文票務管理後台與文化主題 RWD 網站。</p>
-      <p data-i18n="about.next.2">期望參與完整的產品設計流程，從需求探索、問題定義、流程規劃與介面設計，到原型測試、設計交付與後續迭代，並與產品經理、工程師及團隊成員共同打造清楚、可靠、具有溫度且真正能被使用的產品體驗。</p>
+      <h2 data-i18n="about.skillsGrid.h2">核心能力</h2>
+      <div class="skills-grid">
+        <div>
+          <h3 data-i18n="about.skillsGrid.cat1">產品與體驗設計</h3>
+          <p data-i18n="about.skillsGrid.val1">需求整理、Information Architecture、User Flow、Wireframe、Prototype、RWD</p>
+        </div>
+        <div>
+          <h3 data-i18n="about.skillsGrid.cat2">UI 與設計系統</h3>
+          <p data-i18n="about.skillsGrid.val2">Figma、Auto Layout、Components、Variants、Design System、Dashboard／Admin System</p>
+        </div>
+        <div>
+          <h3 data-i18n="about.skillsGrid.cat3">原型與實作協作</h3>
+          <p data-i18n="about.skillsGrid.val3">Claude Code、OpenAI Codex、HTML／CSS、GitHub、Accessibility、Front-end Prototyping</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section-tight">
-  <div class="container about-grid">
+<section class="section-tight" id="experience">
+  <div class="container">
     <div class="reveal">
-      <h2 data-i18n="about.skills.h2">設計能力</h2>
-      <table class="skill-table">
-        <tr>
-          <th data-i18n="about.skills.cat1">產品與體驗設計</th>
-          <td data-i18n="about.skills.val1">需求整理、資訊架構、User Flow、Wireframe、Prototype、Dashboard 與後台系統設計、RWD 規劃</td>
-        </tr>
-        <tr>
-          <th data-i18n="about.skills.cat2">介面與設計系統</th>
-          <td data-i18n="about.skills.val2">視覺層級、Auto Layout、Components、Variants、Design System、元件狀態與介面一致性</td>
-        </tr>
-        <tr>
-          <th data-i18n="about.skills.cat3">AI 與開發協作</th>
-          <td data-i18n="about.skills.val3">Claude Code、OpenAI Codex、AI 輔助需求拆解、網頁原型製作、程式除錯與設計實作</td>
-        </tr>
-        <tr>
-          <th data-i18n="about.skills.cat4">設計與協作工具</th>
-          <td data-i18n="about.skills.val4">Figma、FigJam、Adobe Photoshop、Adobe Illustrator、GitHub</td>
-        </tr>
-      </table>
-
-      <h2 style="margin-top:40px;" data-i18n="about.edu.h2">教育背景</h2>
-      <ul class="info-list">
-        <li><span>2025</span><span data-i18n="about.edu.1">UI/UX 專業實訓課程（430 小時）</span></li>
-        <li><span data-i18n="about.edu.2.school">臺灣藝術大學</span><span data-i18n="about.edu.2.degree">美術系學位</span></li>
-        <li><span>2025</span><span data-i18n="about.edu.3">Google Analytics Individual Qualification（GA4 認證）</span></li>
-      </ul>
+      <h2 data-i18n="about.expEdu.h2">經歷與教育</h2>
+      <div class="about-grid">
+        <div>
+          <h3 data-i18n="about.exp.subH">職業經歷</h3>
+          <ul class="timeline">
+            <li>
+              <span class="period">2019 — 2024</span>
+              <div class="role" data-i18n="about.exp.1.role">國立臺灣藝術大學 · 行政管理專員</div>
+              <p data-i18n="about.exp.1.desc">流程協調、資訊整理與跨部門專案管理</p>
+            </li>
+            <li>
+              <span class="period">2024</span>
+              <div class="role" data-i18n="about.exp.2.role">動物醫院 · 獸醫助理</div>
+              <p data-i18n="about.exp.2.desc">培養臨場應變與同理溝通能力</p>
+            </li>
+            <li>
+              <span class="period">2024 — 2025</span>
+              <div class="role" data-i18n="about.exp.3.role">排球系隊 · 總教練</div>
+              <p data-i18n="about.exp.3.desc">負責訓練規劃、團隊溝通與決策</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="about.edu.subH">教育背景</h3>
+          <ul class="info-list">
+            <li><span>2025</span><span data-i18n="about.edu.1">UI/UX 專業技術實訓</span></li>
+            <li><span data-i18n="about.edu.2.school">國立臺灣藝術大學</span><span data-i18n="about.edu.2.degree">美術學系</span></li>
+            <li><span>2025</span><span data-i18n="about.edu.3">Google Analytics Individual Qualification（GA4 認證）</span></li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="reveal" id="contact">
-      <h2 data-i18n="about.contact.h2">聯絡資訊</h2>
-      <ul class="info-list">
-        <li><span>Email</span><span>william228sys@gmail.com</span></li>
-        <li><span data-i18n="about.contact.location.label">位置</span><span data-i18n="about.contact.location.value">台灣桃園</span></li>
-        <li><span data-i18n="about.contact.availability.label">可到職地區</span><span data-i18n="about.contact.availability.value">僅限台灣</span></li>
+<section class="section-tight" id="contact">
+  <div class="container">
+    <div class="reveal">
+      <h2 data-i18n="about.cta.h2">一起打造清楚、好用的產品體驗</h2>
+      <p data-i18n="about.cta.lede">目前尋找台灣地區的 UI/UX／Product Designer 全職機會，歡迎透過 Email 與我聯絡。</p>
+      <ul class="info-list about-cta-info">
+        <li><span data-i18n="about.cta.email.label">Email</span><span>william228sys@gmail.com</span></li>
+        <li><span data-i18n="about.cta.github.label">GitHub</span><span>github.com/Russell06-web</span></li>
+        <li><span data-i18n="about.cta.location.label">所在地</span><span data-i18n="about.cta.location.value">台灣桃園</span></li>
       </ul>
       <div class="btn-row">
-        <a href="mailto:william228sys@gmail.com" class="btn btn-primary" data-i18n="about.contact.btn">寄信給我</a>
+        <a href="mailto:william228sys@gmail.com" class="btn btn-primary" data-i18n="about.cta.btnPrimary">寄信給我</a>
+        <a href="assets/resume/Russell-Chiu-Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="about.hero.resumeBtn">查看履歷 PDF</a>
       </div>
     </div>
   </div>
@@ -169,7 +184,6 @@
   <div class="container footer-grid">
     <div class="footer-contact">
       <span class="footer-label" data-i18n="footer.contactLabel">聯絡</span>
-      <a href="mailto:william228sys@gmail.com" class="footer-contact-link">william228sys@gmail.com</a>
       <a href="https://github.com/Russell06-web" target="_blank" rel="noopener" class="footer-contact-link">github.com/Russell06-web <svg class="icon-external" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
     </div>
     <div class="footer-mark" aria-hidden="true">
@@ -178,7 +192,7 @@
     </div>
     <div class="footer-info">
       <p data-i18n="footer.tagline">本站以 Claude Code 開發，設計與程式皆為本人作品。</p>
-      <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
+      <span class="footer-meta" data-i18n="about.footer.meta">© 2026 Russell Chiu</span>
       <a href="#main-content" class="footer-top"><span aria-hidden="true">↑</span> <span data-i18n="footer.backTop">回到頂部</span></a>
     </div>
   </div>

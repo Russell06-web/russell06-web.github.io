@@ -683,9 +683,7 @@ section.case-section {
   z-index: 1;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  grid-template-areas:
-    "copy visual"
-    "proof visual";
+  grid-template-areas: "copy visual";
   gap: 32px 48px;
   align-items: start;
   padding-left: 28px;
@@ -693,10 +691,6 @@ section.case-section {
 
 .hero-copy {
   grid-area: copy;
-}
-
-.hero-proof {
-  grid-area: proof;
 }
 
 .hero-title {
@@ -710,6 +704,23 @@ section.case-section {
 .hero-lede {
   max-width: 520px;
   font-size: 18px;
+}
+
+.hero-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-text-faint);
+}
+
+.hero-skills span:not(:last-child)::after {
+  content: "·";
+  margin-left: 10px;
+  color: var(--color-border);
 }
 
 .availability {
@@ -732,32 +743,6 @@ section.case-section {
   border-radius: 50%;
   background: var(--color-accent);
   flex-shrink: 0;
-}
-
-.proof-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 520px;
-  margin-top: 36px;
-  padding-top: 22px;
-  border-top: 1px solid var(--color-border);
-}
-
-.proof-grid strong {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 500;
-  color: var(--color-text-primary);
-}
-
-.proof-grid span {
-  display: block;
-  margin-top: 4px;
-  font-size: 12px;
-  line-height: 1.4;
-  color: var(--color-text-faint);
 }
 
 .hero-visual {
@@ -848,53 +833,6 @@ section.case-section {
 
 .about-body .link-arrow {
   margin-top: 24px;
-}
-
-.ai-workflow {
-  margin-top: var(--space-8);
-}
-
-.ai-workflow-limitation {
-  max-width: 640px;
-  margin: 20px 0 0;
-  font-size: 13.5px;
-  color: var(--color-text-faint);
-}
-
-/* ==========================================================================
-   Design strengths
-   ========================================================================== */
-.principle-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 8px;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.principle-item {
-  padding: var(--space-6) var(--space-5) var(--space-7);
-}
-
-.principle-item + .principle-item {
-  border-left: 1px solid var(--color-border);
-}
-
-.principle-num {
-  display: block;
-  margin-bottom: var(--space-6);
-  font-family: var(--font-display);
-  font-size: 14px;
-  color: var(--color-accent-secondary);
-}
-
-.principle-item h3 {
-  margin-bottom: 8px;
-}
-
-.principle-item p {
-  font-size: 14.5px;
-  margin-bottom: 0;
 }
 
 /* ==========================================================================
@@ -1354,21 +1292,107 @@ section.case-section {
 /* ==========================================================================
    About page
    ========================================================================== */
+.about-hero {
+  padding-bottom: clamp(40px, 6vw, 64px);
+}
+
 .about-hero-grid {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 40px;
-  align-items: start;
+  grid-template-columns: minmax(0, 280px) 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-hero-photo {
+  width: min(100%, 280px);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-muted);
 }
 
 .about-hero-photo img {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
+  height: 100%;
   object-fit: cover;
-  object-position: top center;
-  border-radius: 8px;
+  object-position: 52% 35%;
+}
+
+.about-hero-copy {
+  max-width: 680px;
+}
+
+.about-hero-kicker {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.about-hero-meta {
+  margin: 14px 0 0;
+  font-size: 13.5px;
+  color: var(--color-text-faint);
+}
+
+.about-story {
+  padding-top: 0;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 8px;
+}
+
+.work-item h3 {
+  margin-bottom: 8px;
+}
+
+.work-item p {
+  margin-bottom: 0;
+  font-size: 14.5px;
+}
+
+.work-note {
+  margin: 28px 0 0;
+  max-width: 640px;
+  font-size: 13px;
+  color: var(--color-text-faint);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 8px;
+}
+
+.skills-grid h3 {
+  margin-bottom: 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-faint);
+}
+
+.skills-grid p {
+  margin-bottom: 0;
+  font-size: 14.5px;
+}
+
+.about-cta-info {
+  max-width: 480px;
+  margin-top: 8px;
+}
+
+#experience,
+#contact {
+  scroll-margin-top: 100px;
 }
 
 .about-grid {
@@ -1652,12 +1676,12 @@ section.case-section {
     display: none;
   }
 
-  .principle-item {
-    padding: var(--space-5) var(--space-4) var(--space-6);
-  }
-
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1666,8 +1690,7 @@ section.case-section {
     grid-template-columns: 1fr;
     grid-template-areas:
       "copy"
-      "visual"
-      "proof";
+      "visual";
     padding-left: 24px;
   }
 
@@ -1706,8 +1729,9 @@ section.case-section {
     gap: 24px;
   }
 
-  .about-hero-photo img {
-    width: 160px;
+  .about-hero-photo {
+    width: min(100%, 240px);
+    margin: 0 auto;
   }
 
   .about-grid,
@@ -1719,20 +1743,22 @@ section.case-section {
   .about-preview-grid h2 {
     max-width: none;
   }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-photo {
+    width: min(100%, 200px);
+  }
 }
 
 @media (max-width: 760px) {
   .hero-visual::before {
     display: none;
-  }
-
-  .principle-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .principle-item + .principle-item {
-    border-left: none;
-    border-top: 1px solid var(--color-border);
   }
 
   .nav-toggle {
@@ -1802,6 +1828,10 @@ section.case-section {
   .btn-row .btn {
     flex: 1;
     justify-content: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
 
