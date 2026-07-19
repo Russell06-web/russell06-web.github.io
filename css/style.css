@@ -823,15 +823,6 @@ section.case-section {
   margin-top: 18px;
 }
 
-.hero-featured-label {
-  width: 100%;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--color-text-faint);
-}
-
 .hero-featured-caption strong {
   font-size: 16px;
   font-weight: 600;
