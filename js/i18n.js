@@ -12,7 +12,7 @@ window.I18N = {
     "nav.dd.mwr.desc": "沉浸式博物館網站",
     "a11y.skip": "跳至主要內容",
 
-    "home.hero.availability": "目前接受 UI/UX 全職機會（僅限台灣）",
+    "home.hero.availability": "目前接受 UI/UX 全職機會（台灣）",
     "home.hero.h1": "簡化複雜流程，<br>設計舒服、<br>直覺的產品體驗。",
     "home.lede": "產品設計師 × 資訊架構 × AI 輔助實作",
     "home.btn.work": "查看精選作品",
@@ -323,7 +323,7 @@ window.I18N = {
     "nav.dd.mwr.desc": "Immersive museum website",
     "a11y.skip": "Skip to main content",
 
-    "home.hero.availability": "Available for UI/UX opportunities (Taiwan only)",
+    "home.hero.availability": "Available for UI/UX opportunities (Taiwan)",
     "home.hero.h1": "Simplifying complex processes,<br>designing comfortable,<br>intuitive product experiences.",
     "home.lede": "Product Designer × Information Architecture × AI-Assisted Implementation",
     "home.btn.work": "View Featured Work",
