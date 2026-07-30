@@ -176,6 +176,9 @@ window.I18N = {
     "vb.decisions.4.point": "社交機制",
     "vb.decisions.4.reason": "加入「我的好友」而非只做報名紀錄——排球揪團多半是熟人帶熟人，社交關係本身也是找到合適場次的路徑。",
     "vb.validation": "獨立作品沒有正式的可用性測試資源，驗證聚焦在自我檢核與同儕走查：對照 WCAG 對比度標準檢查文字與狀態顏色，並用新手／老手／主揪三種情境腳本重新走一次關鍵流程，確認資訊層級與操作路徑沒有邏輯斷點。",
+    "vb.stat1.label": "種情境模擬",
+    "vb.stat2.label": "項關鍵決策",
+    "vb.stat3.label": "個核心畫面",
 
     "tk.lede": "B2B 票務管理系統，聚焦高資訊密度下的 Dashboard、票券管理、客服退票與高風險操作防呆，協助藝文場館營運團隊有效率地管理活動與訂單。",
     "tk.quote": "在高資訊密度的後台裡，替每一個高風險操作加上防呆。",
@@ -225,6 +228,9 @@ window.I18N = {
     "tk.shot.members": "會員管理 — 整合會員資料與消費紀錄",
     "tk.shot.marketing": "行銷工具 · 精準推播 — 依會員標籤設定推播條件",
     "tk.outcome": "這個專案讓我更理解如何在資訊密度高的 B2B 後台中，透過分層資訊架構、清楚的側邊導覽與防呆確認機制，降低操作人員的認知負擔與誤觸風險，同時維持系統的專業感與可信度。",
+    "tk.stat1.label": "位受訪使用者",
+    "tk.stat2.label": "個管理模組",
+    "tk.stat3.label": "張流程與畫面",
 
     "tb.lede": "公共交通旅遊網站重設計，把時刻表查詢、即時路線地圖、線上購票與會員票夾整合成一致的體驗，確保旅客從規劃行程到搭車購票，在手機、平板與桌機都能維持同一套操作邏輯。",
     "tb.quote": "從查路線到刷票上車，讓同一套設計語言走完整趟旅程。",
@@ -271,6 +277,9 @@ window.I18N = {
     "tb.decisions.5.point": "無障礙與可及性",
     "tb.decisions.5.reason": "提高本文與按鈕的對比度並放大觸控熱區，付款表單加上明確的欄位標籤與安全提示，因應公共服務網站橫跨不同年齡層使用者的需求。",
     "tb.validation": "沒有正式的跨裝置測試資源，驗證方式聚焦於實機走查與自我檢核：在手機、平板、筆電三種實際裝置上重新測試路線查詢、購票與會員查票等關鍵流程，並對照 WCAG 對比度標準逐一檢查文字與按鈕配色，同時確認全站色彩與元件樣式是否統一。",
+    "tb.stat1.label": "種旅客情境",
+    "tb.stat2.label": "項關鍵決策",
+    "tb.stat3.label": "張跨裝置畫面",
 
     "mwr.lede": "虛構的世界宗教博物館網站，把一份靜態的 Figma Make 概念稿，實作成具備真實互動動效、雙語切換與無障礙支援的完整多頁網站。",
     "mwr.quote": "把靜態設計稿，做成一個有呼吸感的真實網站。",
@@ -309,7 +318,10 @@ window.I18N = {
     "mwr.shot.exhibitions": "展覽頁 — 當期／即將開展／歷年展覽頁籤篩選",
     "mwr.shot.collection": "館藏頁 — 依宗教傳統分類篩選的文物格線",
     "mwr.validation": "虛構機構、練習性質專案，沒有真人使用者測試資源。驗證聚焦在自我檢核：用 Playwright 逐頁檢查零 console error、零版面溢出、導覽疊層開關與鍵盤操作是否正常，並人工核對深色文字與互動元件的對比度是否符合 WCAG AA。",
-    "mwr.outcome": "這個專案讓我練習把一份靜態、高視覺複雜度的設計稿，轉換成有真實互動邏輯、無障礙與雙語支援的完整網站，也更清楚 AI 輔助工作流在動效與互動實作上能承擔多少、哪些判斷仍必須自己把關——例如對比度、可讀性與整體資訊架構是否清楚。"
+    "mwr.outcome": "這個專案讓我練習把一份靜態、高視覺複雜度的設計稿，轉換成有真實互動邏輯、無障礙與雙語支援的完整網站，也更清楚 AI 輔助工作流在動效與互動實作上能承擔多少、哪些判斷仍必須自己把關——例如對比度、可讀性與整體資訊架構是否清楚。",
+    "mwr.stat1.label": "個網站頁面",
+    "mwr.stat2.label": "項關鍵決策",
+    "mwr.stat3.label": "個互動畫面展示"
   },
 
   en: {
@@ -489,6 +501,9 @@ window.I18N = {
     "vb.decisions.4.point": "Social layer",
     "vb.decisions.4.reason": "Add a \"My Friends\" feature instead of stopping at registration history — volleyball meetups mostly spread through existing social circles, so the social graph is itself a way to discover the right game.",
     "vb.validation": "Without a budget for formal usability testing, validation focused on self-review and peer walkthroughs: checking text and status colors against WCAG contrast standards, and re-walking the key flows through beginner / veteran / organizer scenario scripts to confirm there were no logical gaps in hierarchy or task flow.",
+    "vb.stat1.label": "Scenarios Simulated",
+    "vb.stat2.label": "Key Decisions",
+    "vb.stat3.label": "Core Screens",
 
     "tk.lede": "A B2B ticketing admin system focused on high-density dashboards, ticket management, refund handling, and safeguards for high-risk actions — helping arts venue teams manage events and orders efficiently.",
     "tk.quote": "In a data-dense admin panel, every high-risk action gets a safety net.",
@@ -538,6 +553,9 @@ window.I18N = {
     "tk.shot.members": "Member management — unified profile and purchase history",
     "tk.shot.marketing": "Marketing · Targeted push — segment by member tags",
     "tk.outcome": "This project deepened my understanding of reducing cognitive load and misclick risk in dense B2B admin systems — through layered information architecture, clear sidebar navigation, and confirmation safeguards — while keeping the system feeling professional and trustworthy.",
+    "tk.stat1.label": "Users Interviewed",
+    "tk.stat2.label": "Admin Modules",
+    "tk.stat3.label": "Flows & Screens",
 
     "tb.lede": "A public transit tourism site redesign that unifies schedule search, real-time route tracking, online ticketing, and a member ticket wallet into one consistent experience — so travelers can plan and ride with the same interaction logic on phone, tablet, and desktop.",
     "tb.quote": "From checking a route to tapping a ticket at the door — one design language, the whole trip.",
@@ -584,6 +602,9 @@ window.I18N = {
     "tb.decisions.5.point": "Accessibility",
     "tb.decisions.5.reason": "Increased text and button contrast and enlarged tap targets; payment forms got clear field labels and security notices, matching the wide age range of users a public-service site needs to serve.",
     "tb.validation": "Without a budget for formal cross-device testing, validation centered on hands-on walkthroughs and self-review: re-testing key flows like route search, ticketing, and checking a ticket as a member on actual phone, tablet, and laptop devices, checking text and button colors against WCAG contrast standards one by one, and confirming color and component styles were consistent site-wide.",
+    "tb.stat1.label": "Traveler Scenarios",
+    "tb.stat2.label": "Key Decisions",
+    "tb.stat3.label": "Cross-Device Screens",
 
     "mwr.lede": "A fictional world religions museum website — turning a static Figma Make concept file into a full multi-page site with real interaction, bilingual support, and accessibility.",
     "mwr.quote": "Turning a static design file into a website that breathes.",
@@ -622,7 +643,10 @@ window.I18N = {
     "mwr.shot.exhibitions": "Exhibitions page — filterable Current / Upcoming / Past tabs",
     "mwr.shot.collection": "Collection page — artifact grid filterable by religious tradition",
     "mwr.validation": "A fictional institution and a practice project — there's no budget for real user testing. Validation focused on self-review: a Playwright pass across every page checking zero console errors, zero layout overflow, and correct nav-overlay open/close and keyboard behavior, plus a manual check of dark-mode text and interactive-element contrast against WCAG AA.",
-    "mwr.outcome": "This project let me practice turning a static, visually complex design file into a fully interactive, accessible, bilingual website — and clarified how much an AI-assisted workflow can carry on motion and interaction implementation, versus which judgment calls (contrast, readability, whether the overall IA reads clearly) still have to stay on me."
+    "mwr.outcome": "This project let me practice turning a static, visually complex design file into a fully interactive, accessible, bilingual website — and clarified how much an AI-assisted workflow can carry on motion and interaction implementation, versus which judgment calls (contrast, readability, whether the overall IA reads clearly) still have to stay on me.",
+    "mwr.stat1.label": "Site Pages",
+    "mwr.stat2.label": "Key Decisions",
+    "mwr.stat3.label": "Interactive Screens"
   }
 };
 

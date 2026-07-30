@@ -1048,6 +1048,35 @@ section.case-section {
   background: var(--color-muted);
 }
 
+.case-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(28px, 5vw, 56px);
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
+}
+
+.case-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.case-stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.4vw, 38px);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.case-stat-label {
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-faint);
+}
+
 .case-section h2 {
   max-width: 640px;
 }
