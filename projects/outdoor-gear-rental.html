@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<script>
+(function () {
+  var t = localStorage.getItem("theme");
+  if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", t);
+  document.documentElement.setAttribute("data-lang", localStorage.getItem("lang") || "zh");
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GearLoop 戶外裝備租購平台 — Russell</title>
+<link rel="stylesheet" href="../css/style.css?v=20260720e" />
+</head>
+<body>
+<a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳至主要內容</a>
+
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">Russell<span>.</span></a>
+    <div class="nav-right">
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="../index.html" data-i18n="nav.home">首頁</a></li>
+        <li class="has-dropdown">
+          <button class="nav-link-btn active" aria-expanded="false" aria-controls="work-dropdown"><span data-i18n="nav.work">作品案例</span> <span class="nav-caret"></span></button>
+          <div class="nav-dropdown" id="work-dropdown">
+            <a href="volleyball-hub.html">Volleyball Hub<span class="dd-desc" data-i18n="nav.dd.volleyball">排球活動媒合平台</span></a>
+            <a href="art-ticketing.html"><span data-i18n="nav.dd.ticketing.title">藝文票務管理後台</span><span class="dd-desc" data-i18n="nav.dd.ticketing.desc">B2B 票務管理系統</span></a>
+            <a href="taiwan-tourbus.html"><span data-i18n="nav.dd.tourbus.title">台灣好行 RWD</span><span class="dd-desc" data-i18n="nav.dd.tourbus.desc">公共交通旅遊網站重設計</span></a>
+            <a href="mwr-museum.html"><span data-i18n="nav.dd.mwr.title">MWR 世界宗教博物館</span><span class="dd-desc" data-i18n="nav.dd.mwr.desc">沉浸式博物館網站</span></a>
+            <a href="outdoor-gear-rental.html" class="active"><span data-i18n="nav.dd.gearloop.title">GearLoop 戶外裝備租購平台</span><span class="dd-desc" data-i18n="nav.dd.gearloop.desc">先租後買電商平台</span></a>
+          </div>
+        </li>
+        <li><a href="../about.html" data-i18n="nav.about">關於我</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button type="button" class="lang-toggle" aria-label="Switch language">EN</button>
+        <button type="button" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+        </button>
+      </div>
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+<header class="case-hero">
+  <div class="container">
+    <span class="eyebrow reveal">Case Study · E-Commerce Platform</span>
+    <h1 class="reveal">GearLoop</h1>
+    <p class="hero-lede reveal" data-i18n="ogr.lede">戶外裝備「先租後買」電商平台，讓使用者在買齊裝備前先租用實際商品試用，已付租金可折抵未來購買價，並提供尺寸／難度比對工具、租借與購買雙模式切換，協助新手安心踏出第一次戶外旅行。</p>
+
+    <blockquote class="case-quote reveal" data-i18n="ogr.quote">先租，再決定要不要買。</blockquote>
+
+    <dl class="case-meta reveal">
+      <div><dt data-i18n="case.role.label">角色</dt><dd data-i18n="ogr.role.value">UI/UX 設計＋前端開發（個人專案）</dd></div>
+      <div><dt data-i18n="case.tools.label">工具</dt><dd data-i18n="ogr.tools">HTML、CSS、JavaScript</dd></div>
+      <div><dt data-i18n="case.timeline.label">時程</dt><dd>2026</dd></div>
+    </dl>
+    <div class="tag-row reveal">
+      <span class="tag">E-Commerce</span>
+      <span class="tag">Rent-to-Buy</span>
+      <span class="tag">Product Discovery</span>
+    </div>
+
+    <div class="btn-row reveal">
+      <a href="https://russell06-web.github.io/outdoor-gear-rental/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="case.viewLive">查看即時網站</a>
+    </div>
+
+    <div class="case-hero-image reveal">
+      <img src="../assets/images/gearloop/hero.jpg" alt="GearLoop 首頁，深綠主視覺搭配露營照片與先租後買訴求" loading="eager" fetchpriority="high" decoding="async" />
+    </div>
+
+    <div class="case-stats reveal">
+      <div class="case-stat"><span class="case-stat-num">13</span><span class="case-stat-label" data-i18n="ogr.stat1.label">個裝備品項</span></div>
+      <div class="case-stat"><span class="case-stat-num">4</span><span class="case-stat-label" data-i18n="ogr.stat2.label">項關鍵決策</span></div>
+      <div class="case-stat"><span class="case-stat-num">9</span><span class="case-stat-label" data-i18n="ogr.stat3.label">項端對端測試</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.overview">專案總覽</h2>
+    <p class="lede reveal" data-i18n="ogr.overview">GearLoop 是一個從零開始的戶外裝備電商概念專案，也是目前唯一一個沒有 Figma 稿作為起點的案例——直接從一份文字規格（使用者痛點、核心功能、作品集角度）出發，由我一人完成資訊架構、視覺設計與前端實作。核心訴求是「先租後買」：讓使用者在真正買下登山鞋、帳篷等裝備前，先用租借的方式實際試用，已付租金還能折抵未來的購買價。</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.problem">問題</h2>
+    <p class="lede reveal" data-i18n="ogr.background">戶外新手往往不確定自己該租哪些裝備、尺寸或難度是否合適；一般電商網站的介面設計是為了「買斷」而生，看不出租借特有的可租日期、庫存與租/買雙模式資訊；裝備一次買齊的門檻也高，卻沒有一個介於「用朋友的」跟「直接買」之間的低成本試用選項。</p>
+
+    <div class="process-strip reveal">
+      <div class="step">
+        <span class="num" data-i18n="case.problem.1">問題一</span>
+        <h3 data-i18n="ogr.problem.1.title">新手不知道該租什麼</h3>
+        <p data-i18n="ogr.problem.1.desc">尺寸、難度與裝備適用天數若沒有明確引導，新手容易租錯或買錯不適合的裝備。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.problem.2">問題二</span>
+        <h3 data-i18n="ogr.problem.2.title">租借特有資訊被忽略</h3>
+        <p data-i18n="ogr.problem.2.desc">一般電商介面看不出可租日期、當下庫存與租/買狀態，這些正是租賃服務最關鍵的資訊。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.problem.3">問題三</span>
+        <h3 data-i18n="ogr.problem.3.title">買斷是唯一選項</h3>
+        <p data-i18n="ogr.problem.3.desc">裝備一次買齊成本高，卻沒有比「直接買」門檻更低的方式可以先試用再決定。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.research">研究</h2>
+    <p class="lede reveal" data-i18n="ogr.research.desc">這是一個獨立概念專案，沒有真實使用者可以訪談，起點也不是 Figma 稿，而是一份寫清楚使用者痛點與核心功能的文字規格。開始動工前，先用結構化的問答鎖定兩個關鍵決策（視覺方向、要做完整可互動原型還是先做線框），避免猜錯方向造成白工，之後再依這份規格持續迭代。</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.strategy">設計策略</h2>
+    <p class="lede reveal" data-i18n="ogr.strategy.desc">依上述問題整理出三個設計原則，作為商品頁、租購邏輯與驗證方式的依據。</p>
+
+    <div class="process-strip reveal">
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.1">原則一</span>
+        <h3 data-i18n="ogr.strategy.1.title">用工具取代文案</h3>
+        <p data-i18n="ogr.strategy.1.desc">「不知道該租什麼」用尺寸與難度比對邏輯直接判斷，而不是堆更多說明文字。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.2">原則二</span>
+        <h3 data-i18n="ogr.strategy.2.title">租與買共用同一個介面</h3>
+        <p data-i18n="ogr.strategy.2.desc">同一個商品頁承載租借與購買兩種決策路徑，而不是做成兩套獨立頁面。</p>
+      </div>
+      <div class="step">
+        <span class="num" data-i18n="case.strategy.3">原則三</span>
+        <h3 data-i18n="ogr.strategy.3.title">用真實可運作的流程驗證設計</h3>
+        <p data-i18n="ogr.strategy.3.desc">購物車、結帳、訂單與租轉買額度要真的能跑通，而不只是靜態畫面。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <div class="reveal">
+      <h2 data-i18n="case.section.decisions">關鍵決策</h2>
+      <table class="skill-table">
+        <tr>
+          <th data-i18n="ogr.decisions.1.point">尺寸／難度比對工具</th>
+          <td data-i18n="ogr.decisions.1.reason">依裝備類型分別比對鞋號、身高、體重或容量等條件，若使用者的經驗等級與裝備難度不符會即時顯示提醒，用工具取代大量說明文字。</td>
+        </tr>
+        <tr>
+          <th data-i18n="ogr.decisions.2.point">租／買模式切換</th>
+          <td data-i18n="ogr.decisions.2.reason">同一個商品頁用 Tab 切換租借與購買模式，價格與說明即時重新計算，不需要另外做兩套頁面。</td>
+        </tr>
+        <tr>
+          <th data-i18n="ogr.decisions.3.point">租轉買額度系統</th>
+          <td data-i18n="ogr.decisions.3.reason">已付租金的 60% 可折抵未來購買價，最高折抵買斷價的 50%，在商品頁與會員中心都即時顯示目前可折抵金額。</td>
+        </tr>
+        <tr>
+          <th data-i18n="ogr.decisions.4.point">端對端的購物流程</th>
+          <td data-i18n="ogr.decisions.4.reason">購物車、結帳、訂單狀態與歸還驗收整段流程都用真實的本機儲存打通，訂單狀態會依日期自動推進，而不是固定不變的靜態原型。</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.screens">關鍵畫面</h2>
+    <p class="lede reveal" data-i18n="ogr.screens.desc">從商品頁的租／買切換與尺寸比對工具，到結帳頁的訂單摘要與押金說明，再到會員中心的租轉買額度與訂單狀態時間軸，呈現完整的租購決策流程。</p>
+
+    <div class="shot-gallery reveal">
+      <figure>
+        <div class="frame"><img src="../assets/images/gearloop/product.jpg" alt="商品頁面，含租／買模式切換、日期選擇與即時價格計算" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="ogr.shot.product">商品頁 — 租／買模式切換，日期一選好就即時算出租金與折抵金額</figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="../assets/images/gearloop/checkout.jpg" alt="結帳頁面，含訂單摘要、押金授權說明與取貨資訊" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="ogr.shot.checkout">結帳頁 — 訂單摘要與押金授權說明一次呈現，取貨與歸還資訊清楚列出</figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="../assets/images/gearloop/account.jpg" alt="會員中心頁面，含先租後買折抵額度與訂單狀態時間軸" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="ogr.shot.account">會員中心 — 先租後買可用折抵額度，與訂單從預約到押金解除的狀態時間軸</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.validation">驗證</h2>
+    <p class="lede reveal" data-i18n="ogr.validation">獨立概念專案，沒有真實使用者測試資源，驗證聚焦在端對端的自動化測試：用 Playwright 涵蓋商品瀏覽、加入購物車、日期衝突處理、租／買模式切換、結帳驗證、額度兌換、訂單建立、會員中心渲染與歸還驗收共 9 種情境，確保整段租購流程真的能跑通，而不只是畫面好看。</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="container">
+    <h2 class="reveal" data-i18n="case.section.reflection">反思</h2>
+    <p class="lede reveal" data-i18n="ogr.outcome">這是第一個沒有 Figma 稿可以參考的案例，讓我練習直接從一份文字規格出發，同時兼顧資訊架構、視覺設計與前端邏輯。在明確禁止新增功能與即時庫存同步的規格限制下，仍然要解決「新手不知道該租什麼」這個核心問題，也讓我更清楚：好用的租購體驗，關鍵常常在工具與邏輯，而不是更多說明文字。</p>
+  </div>
+</section>
+
+<nav class="case-nav">
+  <a href="mwr-museum.html"><span class="dir">← Previous Case</span><span data-i18n="nav.dd.mwr.title">MWR 世界宗教博物館</span></a>
+  <a href="../index.html" class="next"><span class="dir">Back to</span><span data-i18n="case.nav.allWork">所有作品</span></a>
+</nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-contact">
+      <span class="footer-label" data-i18n="footer.contactLabel">聯絡</span>
+      <a href="mailto:william228sys@gmail.com" class="footer-contact-link">william228sys@gmail.com</a>
+      <a href="https://github.com/Russell06-web" target="_blank" rel="noopener" class="footer-contact-link">github.com/Russell06-web <svg class="icon-external" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    </div>
+    <div class="footer-mark" aria-hidden="true">
+      <span class="footer-mark-ring"></span>
+      <span class="footer-mark-dot"></span>
+    </div>
+    <div class="footer-info">
+      <p data-i18n="footer.tagline">本站以 Claude Code 開發，設計與程式皆為本人作品。</p>
+      <span class="footer-meta" data-i18n="footer.meta">台灣桃園 · © 2026 Russell Chiu</span>
+      <a href="#main-content" class="footer-top"><span aria-hidden="true">↑</span> <span data-i18n="footer.backTop">回到頂部</span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
