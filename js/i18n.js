@@ -67,6 +67,7 @@ window.I18N = {
     "about.story.1": "在投入 UI/UX 設計之前，曾有五年行政流程管理與跨部門協作經驗，長期處理資訊彙整、需求確認、進度追蹤與角色溝通。這些經驗讓我熟悉真實工作中資訊不完整、流程複雜，但使用者仍必須完成任務的情境。",
     "about.story.2": "美術背景培養了對構圖、色彩、比例與細節的敏感度。轉入產品設計後，將這些能力運用在資訊層級、操作流程與介面一致性上。",
     "about.story.3": "面對需求時，習慣先整理情境與流程，再建立資訊架構、User Flow 與原型，最後透過介面讓複雜內容變得容易理解。",
+    "about.story.4": "目前作品集中的專案皆為轉職期間自主發起的概念設計練習，用來累積可完整檢視流程的實戰經驗；正在積極尋找第一份正式的 UI/UX 工作，把這套方法應用到真實產品與使用者身上。",
 
     "about.work.h2": "我的工作方式",
     "about.work.1.h3": "01 釐清問題",
@@ -103,6 +104,7 @@ window.I18N = {
     "about.cta.lede": "目前尋找台灣地區的 UI/UX／Product Designer 全職機會，歡迎透過 Email 與我聯絡。",
     "about.cta.email.label": "Email",
     "about.cta.github.label": "GitHub",
+    "about.cta.linkedin.label": "LinkedIn",
     "about.cta.location.label": "所在地",
     "about.cta.location.value": "台灣桃園",
     "about.cta.btnPrimary": "寄信給我",
@@ -437,6 +439,7 @@ window.I18N = {
     "about.story.1": "Before moving into UI/UX design, I spent five years in administrative process management and cross-functional collaboration, handling information gathering, requirement confirmation, progress tracking, and stakeholder communication. That experience made me familiar with real work situations where information is incomplete and processes are complex, yet the user still has to get the task done.",
     "about.story.2": "A fine arts background trained my sensitivity to composition, color, proportion, and detail. Moving into product design, I apply that sensitivity to information hierarchy, task flow, and interface consistency.",
     "about.story.3": "Given a requirement, I start by mapping the context and process, then build out the information architecture, user flow, and prototype — finally using the interface to make complex content easy to understand.",
+    "about.story.4": "Every project in this portfolio is a self-directed concept design exercise I built during my career transition, to build up hands-on experience I can walk through end-to-end. I'm actively looking for my first full-time UI/UX role to apply this same approach to a real product and real users.",
 
     "about.work.h2": "How I Work",
     "about.work.1.h3": "01 Clarify the Problem",
@@ -473,6 +476,7 @@ window.I18N = {
     "about.cta.lede": "I'm currently looking for full-time UI/UX or Product Designer opportunities in Taiwan — feel free to reach out by email.",
     "about.cta.email.label": "Email",
     "about.cta.github.label": "GitHub",
+    "about.cta.linkedin.label": "LinkedIn",
     "about.cta.location.label": "Location",
     "about.cta.location.value": "Taoyuan, Taiwan",
     "about.cta.btnPrimary": "Send an Email",
