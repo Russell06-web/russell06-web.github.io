@@ -64,8 +64,11 @@ window.I18N = {
     "about.hero.resumeBtn": "查看履歷 PDF",
 
     "about.story.h2": "從行政與美術走向產品設計",
-    "about.story.1": "在投入 UI/UX 設計之前，曾有五年行政流程管理與跨部門協作經驗，長期處理資訊彙整、需求確認、進度追蹤與角色溝通。這些經驗讓我熟悉真實工作中資訊不完整、流程複雜，但使用者仍必須完成任務的情境。",
+    "about.story.1": "過去五年的高等教育行政經驗，讓我長期面對資料分散、流程協調與跨單位溝通等問題。我習慣先釐清每個角色需要的資訊，再將複雜業務整理成清楚的文件、執行順序與追蹤方式，這也成為我進行資訊架構與後台流程設計的基礎。",
     "about.story.2": "美術背景培養了對構圖、色彩、比例與細節的敏感度。轉入產品設計後，將這些能力運用在資訊層級、操作流程與介面一致性上。",
+    "about.story.volleyball": "擔任排球教練時，我需要依照球員程度、位置與團隊狀況調整訓練內容，也觀察到球友對活動程度的認知經常存在落差。這段經驗後來成為 Volleyball Hub 的設計起點，我將場地、時間、程度與名額等資訊整合，並規劃程度篩選與適合度提示，協助使用者更有效地判斷活動是否適合自己。",
+    "about.story.volleyball.cta": "查看 Volleyball Hub 案例",
+    "about.story.vet": "短期的獸醫助理經驗，則讓我學會在忙碌且高壓的情境下辨認資訊優先順序，並依照醫師、同事與飼主的需求調整溝通方式。這些經歷雖然來自不同領域，但都培養了我觀察問題、整理資訊、協調需求與降低操作錯誤的能力。",
     "about.story.3": "面對需求時，習慣先整理情境與流程，再建立資訊架構、User Flow 與原型，最後透過介面讓複雜內容變得容易理解。",
     "about.story.4": "目前作品集中的專案皆為轉職期間自主發起的概念設計練習，用來累積可完整檢視流程的實戰經驗；正在積極尋找第一份正式的 UI/UX 工作，把這套方法應用到真實產品與使用者身上。",
 
@@ -436,8 +439,11 @@ window.I18N = {
     "about.hero.resumeBtn": "View Resume (PDF)",
 
     "about.story.h2": "From Administration and Fine Arts to Product Design",
-    "about.story.1": "Before moving into UI/UX design, I spent five years in administrative process management and cross-functional collaboration, handling information gathering, requirement confirmation, progress tracking, and stakeholder communication. That experience made me familiar with real work situations where information is incomplete and processes are complex, yet the user still has to get the task done.",
+    "about.story.1": "Five years in higher-education administration meant constantly facing scattered data, cross-unit coordination, and process handoffs. I got in the habit of first clarifying what information each role actually needed, then organizing complex work into clear documents, execution sequences, and tracking methods — this became the foundation for how I approach information architecture and admin-system design today.",
     "about.story.2": "A fine arts background trained my sensitivity to composition, color, proportion, and detail. Moving into product design, I apply that sensitivity to information hierarchy, task flow, and interface consistency.",
+    "about.story.volleyball": "As a volleyball team coach, I had to adjust training content based on each player's skill level, position, and the team's overall state — and I noticed players often misjudged whether a session's skill level actually matched their own. That experience became the starting point for Volleyball Hub: I brought location, time, skill level, and open slots together into one view, and designed a skill-level filter and a fit indicator to help players judge more accurately whether a session suits them.",
+    "about.story.volleyball.cta": "View the Volleyball Hub case study",
+    "about.story.vet": "A short stint as a veterinary assistant taught me to triage information priority in a busy, high-pressure setting, and to adjust how I communicated depending on whether I was talking to the vet, a colleague, or a pet owner. These experiences come from very different fields, but each built the same underlying skills: observing problems, organizing information, coordinating needs, and reducing operational errors.",
     "about.story.3": "Given a requirement, I start by mapping the context and process, then build out the information architecture, user flow, and prototype — finally using the interface to make complex content easy to understand.",
     "about.story.4": "Every project in this portfolio is a self-directed concept design exercise I built during my career transition, to build up hands-on experience I can walk through end-to-end. I'm actively looking for my first full-time UI/UX role to apply this same approach to a real product and real users.",
 
