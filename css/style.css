@@ -591,6 +591,14 @@ section.case-section {
   margin-top: 28px;
 }
 
+.btn-note {
+  margin-top: 12px;
+  max-width: 520px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--color-text-faint);
+}
+
 .link-arrow {
   display: inline-flex;
   align-items: center;

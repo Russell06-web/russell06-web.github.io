@@ -141,7 +141,9 @@ window.I18N = {
 
     "vb.lede": "排球活動媒合平台，協助球友依照地點、時間與技能等級快速找到適合的活動，並簡化報名、繳費與活動管理流程。",
     "vb.quote": "讓找場地、報名、管理報名，都在同一個體驗裡完成。",
-    "vb.tools": "Figma、Adobe Illustrator",
+    "vb.tools": "Figma（設計）＋ Claude Code（前端開發）",
+    "vb.role.value": "UI/UX 設計＋前端開發（個人專案）",
+    "vb.btnNote": "「查看即時網站」是實際開發完成、可互動的網站（以 Claude Code 實作）；「查看 Figma 原型」是最初的 UI/UX 設計稿，兩者為不同階段的產出。",
     "vb.background": "許多球友想約球，卻常常卡在「不知道哪裡有場次」「不確定程度合不合適」「報名流程太麻煩」這幾個問題上。Volleyball Hub 希望把找活動、報名、管理報名這三件事，整合進一個好用的行動端體驗中，降低揪團與參加的門檻。",
     "vb.problem.1.title": "資訊分散",
     "vb.problem.1.desc": "場次資訊散落在不同社群與訊息群組，難以比較時間、地點與程度。",
@@ -509,7 +511,9 @@ window.I18N = {
 
     "vb.lede": "A volleyball meetup platform that helps players find the right match by location, time, and skill level — while simplifying registration, payment, and event management.",
     "vb.quote": "Finding a court, signing up, and managing registrations — all in one seamless experience.",
-    "vb.tools": "Figma, Adobe Illustrator",
+    "vb.tools": "Figma (Design) + Claude Code (Front-End Development)",
+    "vb.role.value": "UI/UX Design + Front-End Development (Personal Project)",
+    "vb.btnNote": "\"View Live Site\" is the actual working, interactive build (implemented with Claude Code); \"View Figma Prototype\" is the original UI/UX design file — two outputs from different stages of the project.",
     "vb.background": "Many players want to play but get stuck on “where are the games,” “is my level a fit,” and “signing up is a hassle.” Volleyball Hub brings finding, joining, and managing events into one easy mobile experience — lowering the barrier to organizing and joining games.",
     "vb.problem.1.title": "Scattered Information",
     "vb.problem.1.desc": "Game info is scattered across different communities and chat groups, making it hard to compare time, location, and skill level.",
