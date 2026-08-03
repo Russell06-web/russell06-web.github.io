@@ -895,6 +895,24 @@ section.case-section {
   min-width: 0;
 }
 
+.project-grid-note {
+  grid-column: 1 / -1;
+  margin: 8px 0 -8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}
+
+.project-card--compact .project-media {
+  aspect-ratio: 16 / 10;
+}
+
+.project-card--compact {
+  padding: var(--space-5);
+}
+
 .project-index {
   display: block;
   margin-bottom: var(--space-4);
@@ -1054,6 +1072,48 @@ section.case-section {
   overflow: hidden;
   border: 1px solid var(--color-border);
   background: var(--color-muted);
+}
+
+.case-snapshot {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
+}
+
+.case-snapshot-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.case-snapshot-row:first-child {
+  padding-top: 0;
+}
+
+.case-snapshot-row:last-child {
+  border-bottom: none;
+}
+
+.case-snapshot-row dt {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-faint);
+}
+
+.case-snapshot-row dd {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .case-snapshot-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
 }
 
 .case-stats {
