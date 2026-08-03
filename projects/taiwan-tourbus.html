@@ -54,13 +54,13 @@
   <div class="container">
     <span class="eyebrow reveal">Case Study · Responsive Travel Platform</span>
     <h1 class="reveal" data-i18n="nav.dd.tourbus.title">台灣好行 RWD</h1>
-    <p class="hero-lede reveal" data-i18n="tb.lede">公共交通旅遊網站重設計，把時刻表查詢、即時路線地圖、線上購票與會員票夾整合成一致的體驗，確保旅客從規劃行程到搭車購票，在手機、平板與桌機都能維持同一套操作邏輯。</p>
+    <p class="hero-lede reveal" data-i18n="tb.lede">台灣好行 Taiwan Tourist Shuttle 的非官方 UI/UX 概念改版，重新設計旅客從查詢路線、確認班次、購買套票到查看電子票券的完整流程，並同時考慮手機操作、無障礙與資料可信度。</p>
 
     <blockquote class="case-quote reveal" data-i18n="tb.quote">從查路線到刷票上車，讓同一套設計語言走完整趟旅程。</blockquote>
 
     <dl class="case-meta reveal">
-      <div><dt data-i18n="case.role.label">角色</dt><dd data-i18n="case.role.value">UI/UX 設計（個人專案）</dd></div>
-      <div><dt data-i18n="case.tools.label">工具</dt><dd>Figma</dd></div>
+      <div><dt data-i18n="case.role.label">角色</dt><dd data-i18n="tb.role.value">UI/UX 設計＋前端開發（個人專案）</dd></div>
+      <div><dt data-i18n="case.tools.label">工具</dt><dd data-i18n="tb.tools">Figma（設計）＋ Claude Code（前端開發）</dd></div>
       <div><dt data-i18n="case.timeline.label">時程</dt><dd>2025–2026</dd></div>
     </dl>
     <div class="tag-row reveal">
@@ -71,17 +71,18 @@
     </div>
 
     <div class="btn-row reveal">
+      <a href="https://russell06-web.github.io/taiwan-tourbus-redesign/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="case.viewLive">查看即時網站</a>
       <a href="https://www.figma.com/proto/YWeD4ROY6ZWaaN0yhmjyMT/%E5%8F%B0%E7%81%A3%E5%A5%BD%E8%A1%8C?node-id=869-15876&viewport=-1633%2C473%2C0.17&t=olOxQ5oSeQ9CukP7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=842%3A5330&page-id=832%3A383" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="case.viewPrototype">查看 Figma 原型</a>
     </div>
 
     <div class="case-hero-image reveal">
-      <img src="../assets/images/tourbus/hero.jpg" alt="台灣好行 RWD 網站首頁，台北101空拍主視覺搭配搜尋列與四大入口卡片" loading="eager" fetchpriority="high" decoding="async" />
+      <img src="../assets/images/tourbus/hero.jpg" alt="台灣好行 RWD 改版首頁，台北101空拍主視覺搭配景點搜尋列與四大服務入口" loading="eager" fetchpriority="high" decoding="async" />
     </div>
 
     <div class="case-stats reveal">
-      <div class="case-stat"><span class="case-stat-num">3</span><span class="case-stat-label" data-i18n="tb.stat1.label">種旅客情境</span></div>
+      <div class="case-stat"><span class="case-stat-num">4</span><span class="case-stat-label" data-i18n="tb.stat1.label">個核心頁面</span></div>
       <div class="case-stat"><span class="case-stat-num">5</span><span class="case-stat-label" data-i18n="tb.stat2.label">項關鍵決策</span></div>
-      <div class="case-stat"><span class="case-stat-num">6</span><span class="case-stat-label" data-i18n="tb.stat3.label">張跨裝置畫面</span></div>
+      <div class="case-stat"><span class="case-stat-num">4</span><span class="case-stat-label" data-i18n="tb.stat3.label">種票券狀態</span></div>
     </div>
   </div>
 </header>
@@ -89,30 +90,54 @@
 <section class="case-section">
   <div class="container">
     <h2 class="reveal" data-i18n="case.section.overview">專案總覽</h2>
-    <p class="lede reveal" data-i18n="tb.overview">台灣好行 RWD 最初是一個以公共交通旅遊服務為主題的響應式網站重設計專案，聚焦在旅客用手機查找路線、時刻表與票價時的體驗。隨著設計反覆迭代，範圍逐漸擴大到即時路線地圖、線上購票商城與會員票夾——讓專案從單純的資訊型網站，變成一套涵蓋「查詢、追蹤、購票、管理票券」完整旅程的響應式服務。目標始終不變：同一套內容在手機、平板與桌機上都能維持清楚一致的操作邏輯，而不是單純把桌機版縮小。</p>
+    <p class="lede reveal" data-i18n="tb.overview">台灣好行 RWD 是一個以「台灣好行 Taiwan Tourist Shuttle」為主題的非官方 UI/UX 概念改版，目標是重新設計旅客從查詢路線、確認班次、購買套票到查看電子票券的完整流程。這個作品不只是視覺改版，而是展現資訊架構、互動流程、RWD、無障礙與前端實作的整合能力；頁面中也清楚標示為非官方概念作品，班次、票價、評分與會員資料皆為模擬資料。</p>
+
+    <p class="lede reveal" data-i18n="tb.flow.label">旅客的完整任務流程：</p>
+    <div class="process-strip reveal">
+      <div class="step">
+        <span class="num">01</span>
+        <h3 data-i18n="tb.flow.1.title">快速開始</h3>
+        <p data-i18n="tb.flow.1.desc">首頁提供搜尋、熱門路線與服務快速入口，降低使用者進站後的判斷成本。</p>
+      </div>
+      <div class="step">
+        <span class="num">02</span>
+        <h3 data-i18n="tb.flow.2.title">資訊確認</h3>
+        <p data-i18n="tb.flow.2.desc">路線頁集中呈現下一班、營運時間、發車頻率、票價與沿線景點。</p>
+      </div>
+      <div class="step">
+        <span class="num">03</span>
+        <h3 data-i18n="tb.flow.3.title">購票決策</h3>
+        <p data-i18n="tb.flow.3.desc">套票頁補上退款規則、使用方式、是否立即確認與客服異常處理，讓使用者有足夠資訊做決定。</p>
+      </div>
+      <div class="step">
+        <span class="num">04</span>
+        <h3 data-i18n="tb.flow.4.title">票券管理</h3>
+        <p data-i18n="tb.flow.4.desc">會員中心呈現票券狀態與 QR Code 情境，補完整體服務閉環。</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="case-section">
   <div class="container">
     <h2 class="reveal" data-i18n="case.section.problem">問題</h2>
-    <p class="lede reveal" data-i18n="tb.background">台灣好行是提供旅客串連景點的公共交通服務。第一版重設計解決了手機版資訊層級混亂的問題，但隨著購票、會員與即時追蹤功能陸續加入，也連帶出現新的落差：部分畫面沿用舊的視覺語彙，跨裝置之間的品牌識別與版面邏輯不一致，購票與會員資訊也分散在不同流程裡，旅客得在多個頁面之間來回切換才能完成一趟行程的規劃與搭乘。</p>
+    <p class="lede reveal" data-i18n="tb.background">台灣好行是提供旅客串連景點的公共交通服務。旅客通常不是只想查一條路線，而是想完成一整段旅程規劃：先找到目的地，再確認班次與停靠站，接著判斷是否需要購買套票，最後管理電子票券——但原始網站把這幾件事拆成互不相關的頁面，旅客得自己在中間來回切換、拼湊出完整的行程。</p>
 
     <div class="process-strip reveal">
       <div class="step">
         <span class="num" data-i18n="case.problem.1">問題一</span>
-        <h3 data-i18n="tb.problem.1.title">跨裝置與版本一致性</h3>
-        <p data-i18n="tb.problem.1.desc">早期畫面與後期新增的購票、會員功能使用不同的視覺語彙與導覽邏輯，同一個網站在不同裝置上看起來像兩套系統。</p>
+        <h3 data-i18n="tb.problem.1.title">資訊分散</h3>
+        <p data-i18n="tb.problem.1.desc">路線、班次、購票與會員資訊分散在不同頁面，旅客需要自行切換查找，難以完成一次完整的行程規劃。</p>
       </div>
       <div class="step">
         <span class="num" data-i18n="case.problem.2">問題二</span>
-        <h3 data-i18n="tb.problem.2.title">查詢、購票、會員資訊分散</h3>
-        <p data-i18n="tb.problem.2.desc">時刻表查詢、購票與會員票夾原本是三個獨立流程，旅客規劃行程、購票到搭車後查票，中間需要來回切換頁面。</p>
+        <h3 data-i18n="tb.problem.2.title">首頁缺乏任務入口</h3>
+        <p data-i18n="tb.problem.2.desc">首頁缺少明確的任務入口，旅客不容易快速開始查詢路線或購票。</p>
       </div>
       <div class="step">
         <span class="num" data-i18n="case.problem.3">問題三</span>
-        <h3 data-i18n="tb.problem.3.title">公共服務可及性</h3>
-        <p data-i18n="tb.problem.3.desc">使用族群橫跨不同年齡層，需兼顧清楚的字級對比與操作可及性，尤其在購票與付款流程中更不能造成操作疑慮。</p>
+        <h3 data-i18n="tb.problem.3.title">購票信任資訊不足</h3>
+        <p data-i18n="tb.problem.3.desc">套票購買前缺少退款規則、使用方式等信任資訊，旅客難以放心下決定。</p>
       </div>
     </div>
   </div>
@@ -174,24 +199,24 @@
       <h2 data-i18n="case.section.decisions">關鍵決策</h2>
       <table class="skill-table">
         <tr>
-          <th data-i18n="tb.decisions.1.point">全站視覺統一</th>
-          <td data-i18n="tb.decisions.1.reason">把購票商城、會員中心從舊有紅色系介面，重新套用首頁與路線頁的橙色品牌系統，統一按鈕、卡片與標籤樣式，消除跨頁面的品牌落差。</td>
+          <th data-i18n="tb.decisions.1.point">首頁快速任務入口</th>
+          <td data-i18n="tb.decisions.1.reason">首屏加入景點搜尋框、公告輪播與四個服務快速入口（路線與時刻表、套票商城、推薦行程、常見問題），降低旅客進站後的判斷成本。</td>
         </tr>
         <tr>
-          <th data-i18n="tb.decisions.2.point">即時路線地圖與動態時刻表</th>
-          <td data-i18n="tb.decisions.2.reason">路線頁加入即時追蹤地圖與動態時刻表卡片，讓旅客能同時看到目前車輛位置與各站預估到達時間，取代原本只能查詢固定時刻表的做法。</td>
+          <th data-i18n="tb.decisions.2.point">路線頁資訊整合</th>
+          <td data-i18n="tb.decisions.2.reason">路線頁集中呈現下一班時刻、營運狀態、示範動態時刻表與路線示意圖，並用頁籤切換班次、路線資訊、沿線景點與推薦套票，取代原本分散在多頁面查找的方式。</td>
         </tr>
         <tr>
-          <th data-i18n="tb.decisions.3.point">線上購票與電子票夾</th>
-          <td data-i18n="tb.decisions.3.reason">套票商城支援分類篩選、購物車與多種付款方式；購買後的票券自動存入會員中心的電子票夾，以 QR Code 呈現，不需要另外列印或翻找訂單信件。</td>
+          <th data-i18n="tb.decisions.3.point">套票商城信任資訊</th>
+          <td data-i18n="tb.decisions.3.reason">套票頁加入退款規則、使用方式、是否立即確認與客服異常處理，並清楚標示評分與資料皆為概念展示內容，讓旅客購買前有足夠資訊做決定。</td>
         </tr>
         <tr>
-          <th data-i18n="tb.decisions.4.point">景點與路線雙向串接</th>
-          <td data-i18n="tb.decisions.4.reason">路線頁附上沿線景點與推薦套票，景點與套票也各自連回對應路線，讓旅客在規劃與購票之間不必重新搜尋。</td>
+          <th data-i18n="tb.decisions.4.point">會員電子票夾</th>
+          <td data-i18n="tb.decisions.4.reason">會員中心以有效、未啟用、已使用、已過期四種狀態呈現票券，狀態依目前日期自動計算，並支援 QR Code 出示與票券轉贈。</td>
         </tr>
         <tr>
-          <th data-i18n="tb.decisions.5.point">無障礙與可及性</th>
-          <td data-i18n="tb.decisions.5.reason">提高本文與按鈕的對比度並放大觸控熱區，付款表單加上明確的欄位標籤與安全提示，因應公共服務網站橫跨不同年齡層使用者的需求。</td>
+          <th data-i18n="tb.decisions.5.point">全站無障礙與手機版優化</th>
+          <td data-i18n="tb.decisions.5.reason">加入 skip link、語意化標題、焦點樣式與 ARIA 狀態，並針對 390px 手機版調整導覽、搜尋、卡片與選單 CTA，確保跨裝置操作一致。</td>
         </tr>
       </table>
     </div>
@@ -201,22 +226,18 @@
 <section class="case-section">
   <div class="container">
     <h2 class="reveal" data-i18n="tb.devices.h2">跨裝置呈現</h2>
-    <p class="lede reveal" data-i18n="tb.devices.desc">首頁採用同一套設計系統延伸至手機、平板與筆電，統一後的品牌色彩與版面邏輯確保三種裝置呈現一致的第一印象。</p>
+    <p class="lede reveal" data-i18n="tb.devices.desc">同一套設計系統延伸至桌機與手機，390px 手機版重新調整導覽、搜尋、卡片與選單 CTA，確保兩種裝置呈現一致的操作邏輯。</p>
 
     <div class="shot-gallery wide reveal">
       <figure>
-        <div class="frame"><img src="../assets/images/tourbus/macbook.jpg" alt="台灣好行網站首頁於筆電呈現，主視覺為台北101空拍與四大入口卡片" loading="lazy" decoding="async" /></div>
-        <figcaption data-i18n="tb.shot.macbook">桌機版首頁 — 台北 101 空拍為主視覺，四大入口清楚分流路線、購票與常見問題</figcaption>
+        <div class="frame"><img src="../assets/images/tourbus/hero.jpg" alt="台灣好行 RWD 改版首頁於桌機呈現" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="tb.shot.macbook">桌機版首頁 — 台北 101 空拍為主視覺，搜尋框與四大服務入口清楚分流</figcaption>
       </figure>
     </div>
-    <div class="shot-gallery reveal">
+    <div class="shot-gallery narrow reveal">
       <figure>
-        <div class="frame"><img src="../assets/images/tourbus/ipad.jpg" alt="台灣好行網站首頁於平板呈現" loading="lazy" decoding="async" /></div>
-        <figcaption data-i18n="tb.shot.ipad">平板版首頁 — 維持桌機版的資訊層級，僅調整版面比例</figcaption>
-      </figure>
-      <figure>
-        <div class="frame frame--tall"><img src="../assets/images/tourbus/app-home.jpg" alt="手機版首頁，搜尋列與四大入口卡片上移" loading="lazy" decoding="async" /></div>
-        <figcaption data-i18n="tb.shot.appHome">手機版首頁 — 搜尋列與四大入口上移，個人化推薦主題以卡片橫向呈現</figcaption>
+        <div class="frame frame--tall"><img src="../assets/images/tourbus/redesign-mobile.jpg" alt="台灣好行 RWD 改版首頁於 390px 手機版呈現，導覽收合為漢堡選單" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="tb.shot.appHome">手機版首頁 — 導覽收合為漢堡選單，服務入口改為雙欄卡片</figcaption>
       </figure>
     </div>
   </div>
@@ -225,20 +246,20 @@
 <section class="case-section">
   <div class="container">
     <h2 class="reveal" data-i18n="case.section.screens">關鍵畫面</h2>
-    <p class="lede reveal" data-i18n="tb.screens.desc">從即時路線地圖、線上購票商城到會員電子票夾，皆沿用同一套橙色品牌語彙，補齊先前版本新舊介面並存的落差。</p>
+    <p class="lede reveal" data-i18n="tb.screens.desc">從路線頁的班次與景點資訊、套票商城的購買信任資訊，到會員中心的電子票夾狀態，皆沿用同一套橙色品牌語彙。</p>
 
     <div class="shot-gallery reveal">
       <figure>
-        <div class="frame frame--wide"><img src="../assets/images/tourbus/route-map.jpg" alt="路線與動態時刻表頁面，左側為即時時刻表，右側為互動地圖" loading="lazy" decoding="async" /></div>
-        <figcaption data-i18n="tb.shot.routeMap">路線與動態時刻表 — 左側即時時刻表，右側互動地圖同步顯示車輛位置</figcaption>
+        <div class="frame frame--wide"><img src="../assets/images/tourbus/redesign-routes.jpg" alt="路線與時刻表頁面，呈現下一班時刻、路線頁籤與示範動態時刻表" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="tb.shot.routeMap">路線與時刻表 — 下一班時刻、班次／路線資訊／沿線景點／推薦套票頁籤整合於同一頁</figcaption>
       </figure>
       <figure>
-        <div class="frame frame--wide"><img src="../assets/images/tourbus/ticket-store.jpg" alt="套票商城頁面，含分類篩選與套票卡片" loading="lazy" decoding="async" /></div>
-        <figcaption data-i18n="tb.shot.ticketStore">套票商城 — 依路線分類篩選，購物車與價格資訊一次呈現</figcaption>
+        <div class="frame frame--wide"><img src="../assets/images/tourbus/redesign-tickets.jpg" alt="套票商城頁面，含退款規則、使用方式與客服資訊區塊" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="tb.shot.ticketStore">套票商城 — 退款規則、使用方式、立即確認與客服異常處理一次呈現</figcaption>
       </figure>
       <figure>
-        <div class="frame frame--wide"><img src="../assets/images/tourbus/member-wallet.jpg" alt="會員中心頁面，含電子票夾與 QR Code 顯示按鈕" loading="lazy" decoding="async" /></div>
-        <figcaption data-i18n="tb.shot.memberWallet">會員中心 — 電子票夾以 QR Code 呈現票券，購票後不必列印或翻找信件</figcaption>
+        <div class="frame frame--wide"><img src="../assets/images/tourbus/redesign-member.jpg" alt="會員中心頁面，含電子票夾與有效/未啟用/已使用/已過期四種票券狀態" loading="lazy" decoding="async" /></div>
+        <figcaption data-i18n="tb.shot.memberWallet">會員中心 — 電子票夾以有效、未啟用、已使用、已過期四種狀態呈現，支援 QR Code 與轉贈</figcaption>
       </figure>
     </div>
   </div>
@@ -247,14 +268,14 @@
 <section class="case-section">
   <div class="container">
     <h2 class="reveal" data-i18n="case.section.validation">驗證</h2>
-    <p class="lede reveal" data-i18n="tb.validation">沒有正式的跨裝置測試資源，驗證方式聚焦於實機走查與自我檢核：在手機、平板、筆電三種實際裝置上重新測試路線查詢、購票與會員查票等關鍵流程，並對照 WCAG 對比度標準逐一檢查文字與按鈕配色，同時確認全站色彩與元件樣式是否統一。</p>
+    <p class="lede reveal" data-i18n="tb.validation">沒有正式的跨裝置測試資源，驗證方式聚焦於自我檢核：檢查 console error、favicon、手機版顯示、搜尋流程與購物車金額計算是否正確，並確認全站標示模擬資料與非官方聲明清楚可見，避免使用者誤認為官方服務。</p>
   </div>
 </section>
 
 <section class="case-section">
   <div class="container">
     <h2 class="reveal" data-i18n="case.section.reflection">反思</h2>
-    <p class="lede reveal" data-i18n="tb.outcome">透過重新規劃資訊架構、統一先前版本累積下來的視覺落差，並把路線查詢、購票與會員票券串成同一套流程，讓旅客在手機上也能快速完成從查路線到刷票搭車的完整任務。這個專案也讓我更清楚，公共服務類網站的重設計不只是一次性的版面調整，而是要在功能持續擴充的過程中，持續回頭檢查一致性與可及性。</p>
+    <p class="lede reveal" data-i18n="tb.outcome">這個作品展示的不只是視覺設計，而是完整的旅遊交通服務流程設計——把路線查詢、班次確認、套票購買與會員電子票券串成一個完整體驗，同時兼顧手機操作、無障礙與資料可信度。這個專案也讓我更清楚，一個服務型網站的體驗設計，關鍵在於任務的連續性，而不是單一頁面的視覺呈現。</p>
   </div>
 </section>
 

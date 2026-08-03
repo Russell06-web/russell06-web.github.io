@@ -1159,6 +1159,10 @@ section.case-section {
   grid-template-columns: 1fr;
 }
 
+.shot-gallery.narrow {
+  grid-template-columns: minmax(0, 320px);
+}
+
 .process-strip {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
