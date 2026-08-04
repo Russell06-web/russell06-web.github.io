@@ -447,7 +447,7 @@ window.I18N = {
     "a11y.skip": "Skip to main content",
 
     "home.hero.availability": "Available for UI/UX opportunities (Taiwan)",
-    "home.hero.h1": "Junior UI/UX Designer,<br>turning complex processes<br>into clear, usable products.",
+    "home.hero.h1": "Junior UI/UX Designer, <br>turning complex processes <br>into clear, usable products.",
     "home.lede": "5 years of administrative process and cross-functional collaboration experience, plus a fine arts background — focused on information architecture, complex-process organization, and admin/service-flow design.",
     "home.hero.captionRole": "Junior UI/UX Designer · Taiwan",
     "home.btn.work": "View Featured Work",

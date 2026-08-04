@@ -1,0 +1,2 @@
+Participant ID,Project,User Type,Task,Completed,Completion Time,Errors,Backtracks,Confusing Moment,User Quote,Severity,Suggested Change,Notes
+Example-P0,art-ticketing,範例列，僅示範欄位填寫方式，非真實測試資料,任務一,Yes / No,mm:ss,0,0,受測者猶豫的畫面或步驟,受測者當下說的原話（逐字）,Low / Medium / High,對應的設計修改建議,其他觀察補充
