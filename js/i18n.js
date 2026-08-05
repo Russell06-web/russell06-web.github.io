@@ -16,7 +16,7 @@ window.I18N = {
 
     "home.hero.availability": "目前接受 UI/UX 全職機會（台灣）",
     "home.hero.h1": "Junior UI/UX Designer，<br>把複雜流程整理成<br>清楚可用的產品體驗。",
-    "home.lede": "我具備 5 年行政流程與跨部門協作經驗，以及美術背景，專注於資訊架構、複雜流程整理與後台／服務流程設計。",
+    "home.lede": "我具備行政流程與跨部門協作經驗，以及美術背景，專注於資訊架構、複雜流程整理與後台／服務流程設計。",
     "home.hero.captionRole": "Junior UI/UX Designer · Taiwan",
     "home.btn.work": "查看精選作品",
     "project.view": "查看案例",
@@ -46,7 +46,7 @@ window.I18N = {
     "home.strengths.3.title": "後台與服務流程設計",
 
     "home.about.h2": "從行政流程到產品設計",
-    "home.about.body1": "在投入 UI/UX 設計之前，我有 5 年行政流程管理與跨部門協作經驗。這段經歷讓我熟悉資訊不完整、權責複雜、時間有限，但使用者仍必須完成任務的真實情境。",
+    "home.about.body1": "在投入 UI/UX 設計之前，我有行政流程管理與跨部門協作經驗。這段經歷讓我熟悉資訊不完整、權責複雜、時間有限，但使用者仍必須完成任務的真實情境。",
     "home.about.body2": "美術背景訓練我對構圖、色彩、比例與留白的敏感度；排球教練經驗則讓我習慣觀察不同使用者的理解方式與決策節奏。",
     "home.about.quote": "好的流程，應該讓使用者不需要多想，就能順利完成任務。",
     "home.aboutPreview.cta": "深入了解我的背景",
@@ -448,7 +448,7 @@ window.I18N = {
 
     "home.hero.availability": "Available for UI/UX opportunities (Taiwan)",
     "home.hero.h1": "Junior UI/UX Designer, <br>turning complex processes <br>into clear, usable products.",
-    "home.lede": "5 years of administrative process and cross-functional collaboration experience, plus a fine arts background — focused on information architecture, complex-process organization, and admin/service-flow design.",
+    "home.lede": "Administrative process and cross-functional collaboration experience, plus a fine arts background — focused on information architecture, complex-process organization, and admin/service-flow design.",
     "home.hero.captionRole": "Junior UI/UX Designer · Taiwan",
     "home.btn.work": "View Featured Work",
     "project.view": "View Case Study",
@@ -478,7 +478,7 @@ window.I18N = {
     "home.strengths.3.title": "Admin & Service Flow Design",
 
     "home.about.h2": "From Administrative Process to Product Design",
-    "home.about.body1": "Before moving into UI/UX design, I spent 5 years in administrative process management and cross-functional coordination. That experience made me familiar with real situations where information is incomplete, responsibilities are complex, and time is limited — yet the user still has to get the task done.",
+    "home.about.body1": "Before moving into UI/UX design, I worked in administrative process management and cross-functional coordination. That experience made me familiar with real situations where information is incomplete, responsibilities are complex, and time is limited — yet the user still has to get the task done.",
     "home.about.body2": "A fine arts background trained my sensitivity to composition, color, proportion, and whitespace; coaching a volleyball team made me used to observing how different people understand things and make decisions.",
     "home.about.quote": "Good process design should let users complete their tasks smoothly, without having to think twice.",
     "home.aboutPreview.cta": "More About Me",
