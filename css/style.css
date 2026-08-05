@@ -333,7 +333,7 @@ section.case-section {
   align-items: center;
   justify-content: space-between;
   height: 66px;
-  padding: 0 10px 0 26px;
+  padding: 0 20px 0 26px;
   border-radius: 999px;
   border: 1px solid var(--color-border);
   background: var(--nav-bg);
