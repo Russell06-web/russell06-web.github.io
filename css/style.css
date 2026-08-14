@@ -352,14 +352,17 @@ section.case-section {
 }
 
 .nav-logo {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 19px;
-  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-text-primary);
 }
 
-.nav-logo span {
-  color: var(--color-accent-secondary);
+.nav-logo svg {
+  display: block;
+}
+
+.nav-logo-dot {
+  fill: var(--color-accent-secondary);
 }
 
 .nav-links {

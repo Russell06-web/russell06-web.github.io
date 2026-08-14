@@ -1,5 +1,6 @@
 window.I18N = {
   zh: {
+    "nav.logoAria": "Russell Chiu，回到首頁",
     "nav.home": "首頁",
     "nav.work": "作品案例",
     "nav.about": "關於我",
@@ -432,6 +433,7 @@ window.I18N = {
   },
 
   en: {
+    "nav.logoAria": "Russell Chiu — go to homepage",
     "nav.home": "Home",
     "nav.work": "Case Studies",
     "nav.about": "About",
