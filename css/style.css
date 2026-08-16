@@ -888,6 +888,72 @@ section.case-section {
 }
 
 /* ==========================================================================
+   Resume panel
+   ========================================================================== */
+.resume-panel {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 32px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.resume-panel-mark {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+}
+
+.resume-panel-body h2 {
+  margin: 2px 0 8px;
+}
+
+.resume-panel-body > p {
+  color: var(--color-text-secondary);
+  max-width: 60ch;
+  margin: 0 0 18px;
+}
+
+.resume-panel-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px;
+}
+
+.resume-panel-tags li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--color-text-secondary);
+}
+
+.resume-panel-tags svg {
+  flex-shrink: 0;
+  color: var(--color-accent-secondary);
+}
+
+@media (max-width: 640px) {
+  .resume-panel {
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px;
+  }
+}
+
+/* ==========================================================================
    About, Strengths & AI Workflow (merged homepage section)
    ========================================================================== */
 .about-body {
@@ -2024,12 +2090,14 @@ section.case-section {
 }
 
 @media (max-width: 480px) {
-  .case-links {
+  .case-links,
+  .resume-panel-body .btn-row {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .case-links .btn {
+  .case-links .btn,
+  .resume-panel-body .btn-row .btn {
     flex: 1 1 auto;
     width: 100%;
     min-height: 52px;
