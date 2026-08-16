@@ -32,6 +32,10 @@
 <nav class="site-nav">
   <div class="container nav-inner">
     <a href="../index.html" class="nav-logo" data-i18n-aria="nav.logoAria" aria-label="Russell Chiu，回到首頁">
+      <svg class="nav-logo-badge" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <rect x="0" y="0" width="24" height="24" rx="6" />
+        <text x="12" y="17" font-family="Georgia, &apos;Times New Roman&apos;, serif" font-size="14" font-weight="700" text-anchor="middle">R</text>
+      </svg>
       <svg width="78" height="22" viewBox="0 0 78 22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
         <text x="0" y="17" font-family="Georgia, &apos;Times New Roman&apos;, &apos;Hiragino Sans&apos;, &apos;PingFang TC&apos;, serif" font-size="19" font-weight="600" letter-spacing="-0.3" fill="currentColor">Russell<tspan class="nav-logo-dot">.</tspan></text>
       </svg>
@@ -117,14 +121,14 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.overview">專案總覽</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span data-i18n="case.section.overview">專案總覽</span></h2>
     <p class="lede reveal" data-i18n="mwr.overview">MWR 世界宗教博物館是一個以「虛構博物館網站」為題的個人練習專案，起點是一份 Figma Make 產生的概念稿。目標不是設計一個新的資訊架構，而是測試 AI 輔助工作流能把一份高視覺複雜度、高動效需求的靜態設計，實作到多接近真實、可上線的程度——包含真實互動、雙語切換與無障礙支援。</p>
   </div>
 </section>
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.problem">問題</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg><span data-i18n="case.section.problem">問題</span></h2>
     <p class="lede reveal" data-i18n="mwr.background">原始概念稿只是一組靜態畫面，導覽選單、輪播、篩選頁籤等關鍵互動都必須從頭定義行為與動效；同時全站採用深色主題並疊加大量攝影與動效，容易在氛圍感與可讀性之間失衡；館內參觀／展覽／館藏／關於／訪客服務橫跨 9 個頁面，也需要清楚的導覽避免使用者迷路。</p>
 
     <div class="process-strip reveal">
@@ -149,7 +153,7 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.research">研究</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="M20 20l-5.5-5.5"/></svg><span data-i18n="case.section.research">研究</span></h2>
     <p class="lede reveal" data-i18n="mwr.research.desc">這是虛構機構、沒有真實使用者可以訪談。驗證方式改為：逐一比對 Figma Make 原始碼與畫面稿，確認動效與互動邏輯的真實設計意圖，並用 WCAG 對比標準檢查深色介面的文字可讀性。</p>
 
     <div class="process-strip reveal">
@@ -171,7 +175,7 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.strategy">設計策略</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg><span data-i18n="case.section.strategy">設計策略</span></h2>
     <p class="lede reveal" data-i18n="mwr.strategy.desc">依上述觀察整理出三個設計原則，作為互動、動效與資訊架構決策的依據。</p>
 
     <div class="process-strip reveal">
@@ -197,7 +201,7 @@
 <section class="case-section">
   <div class="container">
     <div class="reveal">
-      <h2 data-i18n="case.section.decisions">關鍵決策</h2>
+      <h2 class="case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v7"/><path d="M12 9 6 13"/><path d="M12 9l6 4"/><path d="M6 13v7"/><path d="M18 13v7"/></svg><span data-i18n="case.section.decisions">關鍵決策</span></h2>
       <table class="skill-table">
         <tr>
           <th data-i18n="mwr.decisions.1.point">全螢幕導覽疊層</th>
@@ -222,7 +226,7 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.screens">關鍵畫面</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="1"/><path d="M8 20h8"/><path d="M12 18v2"/></svg><span data-i18n="case.section.screens">關鍵畫面</span></h2>
     <p class="lede reveal" data-i18n="mwr.screens.desc">從首頁沉浸式視覺、全螢幕導覽疊層到展覽與館藏頁的篩選互動，維持一致的深色語彙與動效節奏。</p>
 
     <div class="shot-gallery reveal">
@@ -244,14 +248,14 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.validation">驗證</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="case.section.validation">驗證</span></h2>
     <p class="lede reveal" data-i18n="mwr.validation">虛構機構、練習性質專案，沒有真人使用者測試資源。驗證聚焦在自我檢核：用 Playwright 逐頁檢查零 console error、零版面溢出、導覽疊層開關與鍵盤操作是否正常，並人工核對深色文字與互動元件的對比度是否符合 WCAG AA。</p>
   </div>
 </section>
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.reflection">反思</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a6 6 0 0 0-4 10.5c.6.5 1 1.3 1 2.1V16h6v-1.4c0-.8.4-1.6 1-2.1A6 6 0 0 0 12 2z"/></svg><span data-i18n="case.section.reflection">反思</span></h2>
     <p class="lede reveal" data-i18n="mwr.outcome">這個專案讓我練習把一份靜態、高視覺複雜度的設計稿，轉換成有真實互動邏輯、無障礙與雙語支援的完整網站，也更清楚 AI 輔助工作流在動效與互動實作上能承擔多少、哪些判斷仍必須自己把關——例如對比度、可讀性與整體資訊架構是否清楚。</p>
   </div>
 </section>
@@ -269,7 +273,7 @@
       <a href="mailto:william228sys@gmail.com" class="footer-contact-link">william228sys@gmail.com</a>
       <a href="https://github.com/Russell06-web" target="_blank" rel="noopener" class="footer-contact-link">github.com/Russell06-web <svg class="icon-external" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       <a href="https://www.linkedin.com/in/志綸-邱-9a3a23399/" target="_blank" rel="noopener" class="footer-contact-link">LinkedIn <svg class="icon-external" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-      <a href="../assets/resume/Russell-Chiu-Resume.pdf" target="_blank" rel="noopener" class="footer-contact-link" data-i18n="about.hero.resumeBtn">查看履歷 PDF</a>
+      <a href="../assets/resume/Russell-Chiu-Resume.pdf" target="_blank" rel="noopener" class="footer-contact-link"><svg class="btn-icon" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg><span data-i18n="about.hero.resumeBtn">查看履歷 PDF</span></a>
     </div>
     <div class="footer-mark" aria-hidden="true">
       <span class="footer-mark-ring"></span>

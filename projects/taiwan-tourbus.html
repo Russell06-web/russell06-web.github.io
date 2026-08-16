@@ -32,6 +32,10 @@
 <nav class="site-nav">
   <div class="container nav-inner">
     <a href="../index.html" class="nav-logo" data-i18n-aria="nav.logoAria" aria-label="Russell Chiu，回到首頁">
+      <svg class="nav-logo-badge" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <rect x="0" y="0" width="24" height="24" rx="6" />
+        <text x="12" y="17" font-family="Georgia, &apos;Times New Roman&apos;, serif" font-size="14" font-weight="700" text-anchor="middle">R</text>
+      </svg>
       <svg width="78" height="22" viewBox="0 0 78 22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
         <text x="0" y="17" font-family="Georgia, &apos;Times New Roman&apos;, &apos;Hiragino Sans&apos;, &apos;PingFang TC&apos;, serif" font-size="19" font-weight="600" letter-spacing="-0.3" fill="currentColor">Russell<tspan class="nav-logo-dot">.</tspan></text>
       </svg>
@@ -118,7 +122,7 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.overview">專案總覽</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span data-i18n="case.section.overview">專案總覽</span></h2>
     <p class="lede reveal" data-i18n="tb.overview">台灣好行 RWD 是一個以「台灣好行 Taiwan Tourist Shuttle」為主題的非官方 UI/UX 概念改版，目標是重新設計旅客從查詢路線、確認班次、購買套票到查看電子票券的完整流程。這個作品不只是視覺改版，而是展現資訊架構、互動流程、RWD、無障礙與前端實作的整合能力；頁面中也清楚標示為非官方概念作品，班次、票價、評分與會員資料皆為模擬資料。</p>
 
     <p class="lede reveal" data-i18n="tb.flow.label">旅客的完整任務流程：</p>
@@ -149,7 +153,7 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.problem">問題</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg><span data-i18n="case.section.problem">問題</span></h2>
     <p class="lede reveal" data-i18n="tb.background">台灣好行是提供旅客串連景點的公共交通服務。旅客通常不是只想查一條路線，而是想完成一整段旅程規劃：先找到目的地，再確認班次與停靠站，接著判斷是否需要購買套票，最後管理電子票券——但原始網站把這幾件事拆成互不相關的頁面，旅客得自己在中間來回切換、拼湊出完整的行程。</p>
 
     <div class="process-strip reveal">
@@ -174,7 +178,7 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.research">研究</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="M20 20l-5.5-5.5"/></svg><span data-i18n="case.section.research">研究</span></h2>
     <p class="lede reveal" data-i18n="tb.research.desc">以現有台灣好行官網與專案自身早期畫面為對象進行可用性走查，並用 ChatGPT 模擬不同旅客情境（首次到訪的自由行旅客、行前規劃並登入會員的回頭客、上車前臨時查詢即時路線的旅客），比對走查結果與情境模擬之間的落差，找出真正卡住旅客的環節。</p>
 
     <div class="process-strip reveal">
@@ -199,7 +203,7 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.strategy">設計策略</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg><span data-i18n="case.section.strategy">設計策略</span></h2>
     <p class="lede reveal" data-i18n="tb.strategy.desc">根據走查結果整理出三個設計原則，作為視覺統一、跨裝置版面與購票流程決策的依據。</p>
 
     <div class="process-strip reveal">
@@ -225,7 +229,7 @@
 <section class="case-section">
   <div class="container">
     <div class="reveal">
-      <h2 data-i18n="case.section.decisions">關鍵決策</h2>
+      <h2 class="case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v7"/><path d="M12 9 6 13"/><path d="M12 9l6 4"/><path d="M6 13v7"/><path d="M18 13v7"/></svg><span data-i18n="case.section.decisions">關鍵決策</span></h2>
       <table class="skill-table">
         <tr>
           <th data-i18n="tb.decisions.1.point">首頁快速任務入口</th>
@@ -274,7 +278,7 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.screens">關鍵畫面</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="1"/><path d="M8 20h8"/><path d="M12 18v2"/></svg><span data-i18n="case.section.screens">關鍵畫面</span></h2>
     <p class="lede reveal" data-i18n="tb.screens.desc">從路線頁的班次與景點資訊、套票商城的購買信任資訊，到會員中心的電子票夾狀態，皆沿用同一套橙色品牌語彙。</p>
 
     <div class="shot-gallery reveal">
@@ -296,14 +300,14 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.validation">驗證</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="case.section.validation">驗證</span></h2>
     <p class="lede reveal" data-i18n="tb.validation">沒有正式的跨裝置測試資源，驗證方式聚焦於自我檢核：檢查 console error、favicon、手機版顯示、搜尋流程與購物車金額計算是否正確，並確認全站標示模擬資料與非官方聲明清楚可見，避免使用者誤認為官方服務。</p>
   </div>
 </section>
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.reflection">反思</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a6 6 0 0 0-4 10.5c.6.5 1 1.3 1 2.1V16h6v-1.4c0-.8.4-1.6 1-2.1A6 6 0 0 0 12 2z"/></svg><span data-i18n="case.section.reflection">反思</span></h2>
     <p class="lede reveal" data-i18n="tb.outcome">這個作品展示的不只是視覺設計，而是完整的旅遊交通服務流程設計——把路線查詢、班次確認、套票購買與會員電子票券串成一個完整體驗，同時兼顧手機操作、無障礙與資料可信度。這個專案也讓我更清楚，一個服務型網站的體驗設計，關鍵在於任務的連續性，而不是單一頁面的視覺呈現。</p>
   </div>
 </section>
@@ -321,7 +325,7 @@
       <a href="mailto:william228sys@gmail.com" class="footer-contact-link">william228sys@gmail.com</a>
       <a href="https://github.com/Russell06-web" target="_blank" rel="noopener" class="footer-contact-link">github.com/Russell06-web <svg class="icon-external" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       <a href="https://www.linkedin.com/in/志綸-邱-9a3a23399/" target="_blank" rel="noopener" class="footer-contact-link">LinkedIn <svg class="icon-external" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-      <a href="../assets/resume/Russell-Chiu-Resume.pdf" target="_blank" rel="noopener" class="footer-contact-link" data-i18n="about.hero.resumeBtn">查看履歷 PDF</a>
+      <a href="../assets/resume/Russell-Chiu-Resume.pdf" target="_blank" rel="noopener" class="footer-contact-link"><svg class="btn-icon" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg><span data-i18n="about.hero.resumeBtn">查看履歷 PDF</span></a>
     </div>
     <div class="footer-mark" aria-hidden="true">
       <span class="footer-mark-ring"></span>

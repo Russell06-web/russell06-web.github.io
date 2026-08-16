@@ -32,6 +32,10 @@
 <nav class="site-nav">
   <div class="container nav-inner">
     <a href="../index.html" class="nav-logo" data-i18n-aria="nav.logoAria" aria-label="Russell Chiu，回到首頁">
+      <svg class="nav-logo-badge" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <rect x="0" y="0" width="24" height="24" rx="6" />
+        <text x="12" y="17" font-family="Georgia, &apos;Times New Roman&apos;, serif" font-size="14" font-weight="700" text-anchor="middle">R</text>
+      </svg>
       <svg width="78" height="22" viewBox="0 0 78 22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
         <text x="0" y="17" font-family="Georgia, &apos;Times New Roman&apos;, &apos;Hiragino Sans&apos;, &apos;PingFang TC&apos;, serif" font-size="19" font-weight="600" letter-spacing="-0.3" fill="currentColor">Russell<tspan class="nav-logo-dot">.</tspan></text>
       </svg>
@@ -116,14 +120,14 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.overview">專案總覽</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span data-i18n="case.section.overview">專案總覽</span></h2>
     <p class="lede reveal" data-i18n="ogr.overview">GearLoop 是一個從零開始的戶外裝備電商概念專案，也是目前唯一一個沒有 Figma 稿作為起點的案例——直接從一份文字規格（使用者痛點、核心功能、作品集角度）出發，由我一人完成資訊架構、視覺設計與前端實作。核心訴求是「先租後買」：讓使用者在真正買下登山鞋、帳篷等裝備前，先用租借的方式實際試用，已付租金還能折抵未來的購買價。</p>
   </div>
 </section>
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.problem">問題</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg><span data-i18n="case.section.problem">問題</span></h2>
     <p class="lede reveal" data-i18n="ogr.background">戶外新手往往不確定自己該租哪些裝備、尺寸或難度是否合適；一般電商網站的介面設計是為了「買斷」而生，看不出租借特有的可租日期、庫存與租/買雙模式資訊；裝備一次買齊的門檻也高，卻沒有一個介於「用朋友的」跟「直接買」之間的低成本試用選項。</p>
 
     <div class="process-strip reveal">
@@ -148,14 +152,14 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.research">研究</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><path d="M20 20l-5.5-5.5"/></svg><span data-i18n="case.section.research">研究</span></h2>
     <p class="lede reveal" data-i18n="ogr.research.desc">這是一個獨立概念專案，沒有真實使用者可以訪談，起點也不是 Figma 稿，而是一份寫清楚使用者痛點與核心功能的文字規格。開始動工前，先用結構化的問答鎖定兩個關鍵決策（視覺方向、要做完整可互動原型還是先做線框），避免猜錯方向造成白工，之後再依這份規格持續迭代。</p>
   </div>
 </section>
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.strategy">設計策略</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg><span data-i18n="case.section.strategy">設計策略</span></h2>
     <p class="lede reveal" data-i18n="ogr.strategy.desc">依上述問題整理出三個設計原則，作為商品頁、租購邏輯與驗證方式的依據。</p>
 
     <div class="process-strip reveal">
@@ -181,7 +185,7 @@
 <section class="case-section">
   <div class="container">
     <div class="reveal">
-      <h2 data-i18n="case.section.decisions">關鍵決策</h2>
+      <h2 class="case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v7"/><path d="M12 9 6 13"/><path d="M12 9l6 4"/><path d="M6 13v7"/><path d="M18 13v7"/></svg><span data-i18n="case.section.decisions">關鍵決策</span></h2>
       <table class="skill-table">
         <tr>
           <th data-i18n="ogr.decisions.1.point">尺寸／難度比對工具</th>
@@ -206,7 +210,7 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.screens">關鍵畫面</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="1"/><path d="M8 20h8"/><path d="M12 18v2"/></svg><span data-i18n="case.section.screens">關鍵畫面</span></h2>
     <p class="lede reveal" data-i18n="ogr.screens.desc">從商品頁的租／買切換與尺寸比對工具，到結帳頁的訂單摘要與押金說明，再到會員中心的租轉買額度與訂單狀態時間軸，呈現完整的租購決策流程。</p>
 
     <div class="shot-gallery reveal">
@@ -228,14 +232,14 @@
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.validation">驗證</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg><span data-i18n="case.section.validation">驗證</span></h2>
     <p class="lede reveal" data-i18n="ogr.validation">獨立概念專案，沒有真實使用者測試資源，驗證聚焦在端對端的自動化測試：用 Playwright 涵蓋商品瀏覽、加入購物車、日期衝突處理、租／買模式切換、結帳驗證、額度兌換、訂單建立、會員中心渲染與歸還驗收共 9 種情境，確保整段租購流程真的能跑通，而不只是畫面好看。</p>
   </div>
 </section>
 
 <section class="case-section">
   <div class="container">
-    <h2 class="reveal" data-i18n="case.section.reflection">反思</h2>
+    <h2 class="reveal case-section-heading"><svg class="case-icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a6 6 0 0 0-4 10.5c.6.5 1 1.3 1 2.1V16h6v-1.4c0-.8.4-1.6 1-2.1A6 6 0 0 0 12 2z"/></svg><span data-i18n="case.section.reflection">反思</span></h2>
     <p class="lede reveal" data-i18n="ogr.outcome">這是第一個沒有 Figma 稿可以參考的案例，讓我練習直接從一份文字規格出發，同時兼顧資訊架構、視覺設計與前端邏輯。在明確禁止新增功能與即時庫存同步的規格限制下，仍然要解決「新手不知道該租什麼」這個核心問題，也讓我更清楚：好用的租購體驗，關鍵常常在工具與邏輯，而不是更多說明文字。</p>
   </div>
 </section>
@@ -253,7 +257,7 @@
       <a href="mailto:william228sys@gmail.com" class="footer-contact-link">william228sys@gmail.com</a>
       <a href="https://github.com/Russell06-web" target="_blank" rel="noopener" class="footer-contact-link">github.com/Russell06-web <svg class="icon-external" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       <a href="https://www.linkedin.com/in/志綸-邱-9a3a23399/" target="_blank" rel="noopener" class="footer-contact-link">LinkedIn <svg class="icon-external" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-      <a href="../assets/resume/Russell-Chiu-Resume.pdf" target="_blank" rel="noopener" class="footer-contact-link" data-i18n="about.hero.resumeBtn">查看履歷 PDF</a>
+      <a href="../assets/resume/Russell-Chiu-Resume.pdf" target="_blank" rel="noopener" class="footer-contact-link"><svg class="btn-icon" aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/></svg><span data-i18n="about.hero.resumeBtn">查看履歷 PDF</span></a>
     </div>
     <div class="footer-mark" aria-hidden="true">
       <span class="footer-mark-ring"></span>

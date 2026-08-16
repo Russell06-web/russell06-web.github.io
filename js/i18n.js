@@ -17,7 +17,7 @@ window.I18N = {
 
     "home.hero.availability": "目前接受 UI/UX 全職機會（台灣）",
     "home.hero.h1": "Junior UI/UX Designer，<br>把複雜流程整理成<br>清楚可用的產品體驗。",
-    "home.lede": "我具備行政流程與跨部門協作經驗，以及美術背景，專注於資訊架構、複雜流程整理與後台／服務流程設計。",
+    "home.lede": "我專注於資訊架構與流程設計，擅長把複雜的 B2B／SaaS 後台系統，轉化成清楚、好上手的操作體驗；也習慣親自把設計稿做成可互動的網頁，方便跟工程端一起討論。",
     "home.hero.captionRole": "Junior UI/UX Designer · Taiwan",
     "home.btn.work": "查看精選作品",
     "project.view": "查看案例",
@@ -66,13 +66,10 @@ window.I18N = {
     "about.hero.resumeBtn": "查看履歷 PDF",
 
     "about.story.h2": "從流程整理與美術背景，走向產品設計",
-    "about.story.1": "在高等教育行政工作期間，我長期面對資料分散、流程協調與跨單位溝通等挑戰。我習慣先釐清每個角色需要的資訊，再將複雜業務整理成清楚的文件、執行順序與追蹤方式——這套流程整理與需求釐清的能力，後來成為我進行資訊架構與後台系統設計的基礎。",
-    "about.story.2": "美術背景培養了對構圖、色彩、比例與細節的敏感度。轉入產品設計後，將這些能力運用在資訊層級、操作流程與介面一致性上。",
-    "about.story.volleyball": "擔任排球教練時，我需要依照球員程度、位置與團隊狀況調整訓練內容，也觀察到球友對活動程度的認知經常存在落差。這段經驗後來成為 Volleyball Hub 的設計起點，我將場地、時間、程度與名額等資訊整合，並規劃程度篩選與適合度提示，協助使用者更有效地判斷活動是否適合自己。",
+    "about.story.1": "我從行政與美術背景轉入 UI/UX 設計。過去在資訊分散、跨單位協作的環境裡工作，養成先釐清問題、再把複雜流程整理成清楚步驟的習慣；美術背景則讓我對構圖、比例與視覺層級更敏感。這兩者後來自然成為我做資訊架構與介面設計時的判斷依據。",
+    "about.story.volleyball": "擔任排球教練時，我常發現球友對活動程度的認知落差很大。這個觀察後來成為 Volleyball Hub 的設計起點——把場地、時間與程度整合成清楚的篩選與適合度提示，幫助使用者更快判斷一場活動適不適合自己。",
     "about.story.volleyball.cta": "查看 Volleyball Hub 案例",
-    "about.story.vet": "短期的獸醫助理經驗，則讓我學會在忙碌且高壓的情境下辨認資訊優先順序，並依照醫師、同事與飼主的需求調整溝通方式。這些經歷雖然來自不同領域，但都培養了我觀察問題、整理資訊、協調需求與降低操作錯誤的能力。",
-    "about.story.3": "面對需求時，習慣先整理情境與流程，再建立資訊架構、User Flow 與原型，最後透過介面讓複雜內容變得容易理解。",
-    "about.story.4": "目前作品集中的專案皆為轉職期間自主發起的概念設計練習，用來累積可完整檢視流程的實戰經驗；正在積極尋找第一份正式的 UI/UX 工作，把這套方法應用到真實產品與使用者身上。",
+    "about.story.3": "設計時我習慣先釐清情境與任務，再建立資訊架構、User Flow 與原型，用介面把複雜內容變得好理解。目前作品集裡的專案都是轉職期間自主發起的練習，用來累積完整的實戰經驗；我正在尋找第一份正式的 UI/UX 工作。",
 
     "about.work.h2": "我的工作方式",
     "about.work.1.h3": "01 釐清問題",
@@ -450,7 +447,7 @@ window.I18N = {
 
     "home.hero.availability": "Available for UI/UX opportunities (Taiwan)",
     "home.hero.h1": "Junior UI/UX Designer, <br>turning complex processes <br>into clear, usable products.",
-    "home.lede": "Administrative process and cross-functional collaboration experience, plus a fine arts background — focused on information architecture, complex-process organization, and admin/service-flow design.",
+    "home.lede": "I focus on information architecture and process design — turning complex B2B/SaaS admin systems into clear, usable experiences, and I usually build my own designs into interactive web pages so I can work through details directly with engineering.",
     "home.hero.captionRole": "Junior UI/UX Designer · Taiwan",
     "home.btn.work": "View Featured Work",
     "project.view": "View Case Study",
@@ -499,13 +496,10 @@ window.I18N = {
     "about.hero.resumeBtn": "View Resume (PDF)",
 
     "about.story.h2": "From Process Organization and Fine Arts to Product Design",
-    "about.story.1": "During my time in higher-education administration, I regularly dealt with scattered data, cross-unit process coordination, and cross-department communication. I got in the habit of first clarifying what information each role actually needed, then organizing complex work into clear documents, execution sequences, and tracking methods — that same process-organization and requirements-clarification skill set later became the foundation for how I approach information architecture and admin-system design.",
-    "about.story.2": "A fine arts background trained my sensitivity to composition, color, proportion, and detail. Moving into product design, I apply that sensitivity to information hierarchy, task flow, and interface consistency.",
-    "about.story.volleyball": "As a volleyball team coach, I had to adjust training content based on each player's skill level, position, and the team's overall state — and I noticed players often misjudged whether a session's skill level actually matched their own. That experience became the starting point for Volleyball Hub: I brought location, time, skill level, and open slots together into one view, and designed a skill-level filter and a fit indicator to help players judge more accurately whether a session suits them.",
+    "about.story.1": "I moved into UI/UX design from a background in administration and fine arts. Working in an environment with scattered information and cross-unit coordination taught me to clarify the real problem first, then break complex work into clear steps; my fine arts background sharpened my sense of composition, proportion, and visual hierarchy. Both habits now shape how I approach information architecture and interface design.",
+    "about.story.volleyball": "As a volleyball coach, I often saw players misjudge whether a session's skill level actually matched their own. That observation became the starting point for Volleyball Hub — bringing location, time, and skill level together into a clear filter and fit indicator that helps players judge a session more quickly.",
     "about.story.volleyball.cta": "View the Volleyball Hub case study",
-    "about.story.vet": "A short stint as a veterinary assistant taught me to triage information priority in a busy, high-pressure setting, and to adjust how I communicated depending on whether I was talking to the vet, a colleague, or a pet owner. These experiences come from very different fields, but each built the same underlying skills: observing problems, organizing information, coordinating needs, and reducing operational errors.",
-    "about.story.3": "Given a requirement, I start by mapping the context and process, then build out the information architecture, user flow, and prototype — finally using the interface to make complex content easy to understand.",
-    "about.story.4": "Every project in this portfolio is a self-directed concept design exercise I built during my career transition, to build up hands-on experience I can walk through end-to-end. I'm actively looking for my first full-time UI/UX role to apply this same approach to a real product and real users.",
+    "about.story.3": "When I take on a design problem, I clarify the context and task first, then build out the information architecture, user flow, and prototype — using the interface to make complex content easy to follow. Every project in this portfolio is a self-directed exercise from my career transition, built to gain full end-to-end experience; I'm now looking for my first full-time UI/UX role.",
 
     "about.work.h2": "How I Work",
     "about.work.1.h3": "01 Clarify the Problem",
