@@ -1139,13 +1139,23 @@ section.case-section {
   z-index: 2;
   display: inline-flex;
   align-items: center;
-  padding: 4px 9px;
+  gap: 5px;
+  padding: 4px 10px 4px 8px;
   border-radius: 999px;
   background: var(--color-accent);
   color: var(--color-accent-contrast);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.05em;
+}
+
+.project-badge svg {
+  flex-shrink: 0;
+}
+
+.case-hero-image .project-badge {
+  top: 14px;
+  left: 14px;
 }
 
 .project-media img {
@@ -1209,6 +1219,7 @@ section.case-section {
 }
 
 .case-hero-image {
+  position: relative;
   margin-top: 40px;
   border-radius: var(--radius-md);
   overflow: hidden;
